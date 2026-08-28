@@ -26,7 +26,7 @@ My research interests are deep learning for time-series forecasting (hybrid LSTM
 - **ML Competition Platform (ARISE)**: a Kaggle-style competition platform for BINUS students, self-hosted on a single $5 VPS (FastAPI, cloudflared, daily submission caps, admin analytics).
 - **Course Quiz Portals**: weekly quiz portals for ML courses: single-attempt, NIM-gated submissions with instant feedback and live results.
 - **Backpropagation Teaching Tool**: a browser-based tool that teaches backpropagation through a 4-beat story: *guess, measure, blame, nudge*.
-- **Build Diary**: an [automated public log](https://github.com/Zayphen/build-diary) of what I ship, committed truthfully week by week.
+- **Build Diary**: an [automated public log](https://github.com/asaeltarigan/build-diary) of what I ship, committed truthfully week by week.
 
 ## Publications
 

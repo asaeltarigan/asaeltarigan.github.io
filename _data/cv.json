@@ -3,7 +3,7 @@
     "name": "Gabriel Asael Tarigan",
     "email": "gabriel.tarigan@binus.edu",
     "phone": "",
-    "website": "https://zayphen.github.io",
+    "website": "https://asaeltarigan.github.io",
     "summary": "Applied ML lecturer at BINUS University. I teach it, I build it, I run it: curriculum design, production ML systems, and research in time-series forecasting.",
     "location": {
       "address": "",
@@ -15,8 +15,8 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "Zayphen",
-        "url": "https://github.com/Zayphen"
+        "username": "asaeltarigan",
+        "url": "https://github.com/asaeltarigan"
       }
     ]
   },
@@ -115,7 +115,7 @@
       "name": "Build Diary",
       "category": "automation",
       "date": "2026-08-01",
-      "url": "https://github.com/Zayphen/build-diary",
+      "url": "https://github.com/asaeltarigan/build-diary",
       "description": "An automated public log of what I ship, committed truthfully week by week."
     },
     {

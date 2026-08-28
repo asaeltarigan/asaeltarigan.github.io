@@ -11,4 +11,4 @@ A Kaggle-style ML competition platform that makes machine learning hands-on and 
 - Admin analytics: submission logs, leaderboards, open/close flags
 - Built, deployed, and operated by me — I teach it, I build it, I run it
 
-Source repo: sanitized version in preparation (see [GitHub](https://github.com/Zayphen)).
+Source repo: sanitized version in preparation (see [GitHub](https://github.com/asaeltarigan)).

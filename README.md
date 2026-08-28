@@ -1,4 +1,4 @@
-# zayphen.github.io
+# asaeltarigan.github.io
 
 Academic homepage of **Gabriel Asael Tarigan**: lecturer in Artificial Intelligence at BINUS University (School of Computer Science).
 
@@ -8,4 +8,4 @@ Built on [Academic Pages](https://github.com/academicpages/academicpages.github.
 - Site config: `_config.yml`
 - Push to `main` → GitHub builds and deploys automatically
 
-See also: [build-diary](https://github.com/Zayphen/build-diary), my automated public log of what I ship.
+See also: [build-diary](https://github.com/asaeltarigan/build-diary), my automated public log of what I ship.
