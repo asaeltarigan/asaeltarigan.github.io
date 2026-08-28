@@ -1,0 +1,129 @@
+{
+  "basics": {
+    "name": "Gabriel Asael Tarigan",
+    "email": "gabriel.tarigan@binus.edu",
+    "phone": "",
+    "website": "https://zayphen.github.io",
+    "summary": "Applied ML lecturer at BINUS University. I teach it, I build it, I run it: curriculum design, production ML systems, and research in time-series forecasting.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Jakarta",
+      "countryCode": "ID",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Zayphen",
+        "url": "https://github.com/Zayphen"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "BINUS University",
+      "position": "Lecturer, Artificial Intelligence Program (School of Computer Science)",
+      "website": "https://www.binus.ac.id",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Designed and authored the AI program's core curriculum (5 courses authored, 2 co-authored): ML foundations, applied NLP, deep learning, MLOps, signal processing, IoT & robotics. Build and operate the production systems that run the program: ML competition platform, course quiz portals, interactive teaching tools. Research in deep learning for time-series forecasting.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bina Nusantara University",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "3.95",
+      "courses": ["Summa Cum Laude"]
+    },
+    {
+      "institution": "Bina Nusantara University",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "startDate": "",
+      "endDate": "",
+      "gpa": null,
+      "courses": ["Best graduate of the cohort"]
+    }
+  ],
+  "skills": [
+    { "name": "Python", "level": "" },
+    { "name": "Deep Learning (LSTM, GRU, Transformers)", "level": "" },
+    { "name": "MLOps & Self-hosting (FastAPI, uvicorn, systemd, cloudflared)", "level": "" },
+    { "name": "SQLite", "level": "" },
+    { "name": "Git & GitHub", "level": "" },
+    { "name": "LaTeX", "level": "" }
+  ],
+  "languages": [
+    { "language": "Indonesian", "fluency": "Native" },
+    { "language": "English", "fluency": "Professional" }
+  ],
+  "interests": [
+    { "name": "Deep Learning" },
+    { "name": "Time-Series Forecasting" },
+    { "name": "ML Systems & MLOps" },
+    { "name": "Educational Technology" }
+  ],
+  "references": [],
+  "publications": [
+    {
+      "name": "Parallelization of LSTM-GRU Architectures for Multivariate Prediction of Stock Prices",
+      "publisher": "In preparation",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Hybrid LSTM-GRU architectures, parallelized for multivariate stock price prediction and benchmarked against transformer-based comparators."
+    }
+  ],
+  "presentations": [],
+  "teaching": [
+    {
+      "course": "Machine Learning Operations (COMP6984001)",
+      "institution": "BINUS University",
+      "date": "2026-01-01",
+      "role": "Graduate course",
+      "description": "Building and operating ML systems end-to-end: experimentation, model serving, monitoring, and production discipline."
+    },
+    {
+      "course": "AI Program Curriculum Design",
+      "institution": "BINUS University",
+      "date": "2025-07-01",
+      "role": "Curriculum author",
+      "description": "5 courses authored, 2 co-authored: ML foundations, applied NLP, deep learning, MLOps, signal processing, IoT & robotics."
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "ML Competition Platform (ARISE)",
+      "category": "platform",
+      "date": "2026-01-01",
+      "url": "",
+      "description": "Kaggle-style ML competition platform for BINUS students, self-hosted on a $5 VPS: FastAPI, cloudflared tunnel, daily submission caps, admin analytics."
+    },
+    {
+      "name": "Course Quiz Portals",
+      "category": "platform",
+      "date": "2026-01-01",
+      "url": "",
+      "description": "Weekly quiz portals for ML courses: single-attempt, NIM-gated submissions with instant feedback and live results."
+    },
+    {
+      "name": "Build Diary",
+      "category": "automation",
+      "date": "2026-08-01",
+      "url": "https://github.com/Zayphen/build-diary",
+      "description": "An automated public log of what I ship, committed truthfully week by week."
+    },
+    {
+      "name": "Backpropagation Teaching Tool",
+      "category": "teaching",
+      "date": "2026-01-01",
+      "url": "",
+      "description": "A browser-based tool that teaches backpropagation through a 4-beat story: guess, measure, blame, nudge."
+    }
+  ]
+}
