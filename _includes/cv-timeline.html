@@ -1,0 +1,37 @@
+{% if site.data.cv_timeline %}
+<style>
+  .cv-timeline { list-style: none; margin: 0 0 1.25rem; padding: 0 0 0 1.25rem; border-left: 2px solid #d1d5db; }
+  .cv-timeline .tl-item { position: relative; padding: 0 0 1.6rem 1.35rem; margin: 0; }
+  .cv-timeline .tl-item::before { content: ""; position: absolute; left: -1.35rem; top: 0.32rem; width: 12px; height: 12px; border-radius: 50%; background: #1f3a5f; border: 2px solid #ffffff; transform: translateX(-50%); }
+  .cv-timeline .tl-time { display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-style: italic; font-size: 0.78rem; color: #6b7280; background: #eef2f7; border: 1px solid #e5e7eb; border-radius: 999px; padding: 0.06rem 0.6rem; margin-bottom: 0.4rem; }
+  .cv-timeline .tl-title { font-weight: 700; }
+  .cv-timeline .tl-org { color: #1f3a5f; font-weight: 600; font-size: 0.9rem; margin-top: 0.1rem; }
+  .cv-timeline .tl-loc { color: #6b7280; font-weight: 400; }
+  .cv-timeline .tl-desc { color: #6b7280; font-size: 0.9rem; margin-top: 0.35rem; }
+  .cv-timeline-heading { font-size: 1.1rem; margin-top: 1.5rem; }
+</style>
+
+<h2 class="cv-timeline-heading">Experience</h2>
+<ul class="cv-timeline">
+  {% for item in site.data.cv_timeline.experience %}
+  <li class="tl-item">
+    <span class="tl-time">{{ item.time }}</span>
+    <div class="tl-title">{{ item.title }}</div>
+    <div class="tl-org">{{ item.org }}{% if item.location %} <span class="tl-loc">&middot; {{ item.location }}</span>{% endif %}</div>
+    {% if item.description %}<div class="tl-desc">{{ item.description }}</div>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="cv-timeline-heading">Education</h2>
+<ul class="cv-timeline">
+  {% for item in site.data.cv_timeline.education %}
+  <li class="tl-item">
+    <span class="tl-time">{{ item.time }}</span>
+    <div class="tl-title">{{ item.title }}</div>
+    <div class="tl-org">{{ item.org }}{% if item.location %} <span class="tl-loc">&middot; {{ item.location }}</span>{% endif %}</div>
+    {% if item.description %}<div class="tl-desc">{{ item.description }}</div>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

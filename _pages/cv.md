@@ -9,24 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* M.S. in Computer Science, Bina Nusantara University — Summa Cum Laude (GPA 3.95)
-* B.S. in Computer Science, Bina Nusantara University — best graduate of the cohort
-
-Work experience
-======
-* Lecturer, Artificial Intelligence Program — School of Computer Science, BINUS University
-  * Designed and authored the AI program's core curriculum (5 courses authored, 2 co-authored): ML foundations, applied NLP, deep learning, MLOps, signal processing, and IoT & robotics.
-  * Build and operate the production systems that run the program: ML competition platform, course quiz portals, and interactive teaching tools.
-  * Research in deep learning for time-series forecasting (hybrid LSTM-GRU architectures).
+{% include cv-timeline.html %}
 
 Skills
 ======
-* Python, FastAPI, SQLite
+* Python, SQLite, Bash
 * Deep Learning: LSTM, GRU, Transformers (PyTorch)
-* MLOps & self-hosting: uvicorn, systemd, cloudflared, Linux (VPS)
-* Git & GitHub, LaTeX, Playwright
+* ML Systems & MLOps: FastAPI, uvicorn, systemd, cloudflared; self-hosted on a single VPS
+* Research & Writing: LaTeX, IEEE format, academic writing
 
 Publications
 ======

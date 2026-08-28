@@ -2,7 +2,7 @@
 title: "Parallelization of LSTM-GRU Architectures for Multivariate Prediction of Stock Prices"
 collection: publications
 category: manuscripts
-permalink: /publication/plg-lstm-gru-parallelization
+permalink: /publication/plg-lstm-gru-parallelization/
 excerpt: 'Hybrid LSTM-GRU architectures, parallelized for multivariate stock price prediction and benchmarked against transformer-based comparators.'
 date: 2026-08-23
 venue: 'In preparation (SINTA/Scopus/IEEE target)'
