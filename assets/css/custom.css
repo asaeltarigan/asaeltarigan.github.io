@@ -31,13 +31,15 @@ html[data-theme="dark"] {
 }
 
 /* Sidebar: theme JS forces position:fixed which overlaps the footer on short
-   pages. Make it sticky instead so it scrolls with content and never collides. */
+   pages. Make it sticky + cap its height so it can never collide with the
+   footer at any viewport size. */
 .sidebar.sticky {
   position: sticky !important;
   top: 2em !important;
   height: auto !important;
+  max-height: calc(100vh - 7em);
+  overflow-y: auto;
   align-self: start;
-  overflow: visible;
 }
 
 /* Sidebar: name + bio colors */
