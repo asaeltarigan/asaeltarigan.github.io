@@ -1,0 +1,79 @@
+/* ============================================================
+   Custom design layer: navy accent + classy sidebar card
+   Loaded after main.css in head.html. Overrides CSS variables
+   and adds sidebar/section polish.
+   ============================================================ */
+
+:root {
+  --global-base-color: #1f3a5f;
+  --global-link-color: #1f5c8b;
+  --global-link-color-hover: #16324f;
+  --global-link-color-visited: #3a6ea5;
+  --global-masthead-link-color-hover: #1f3a5f;
+  --global-border-color: #d8e2ee;
+  --global-code-background-color: #f6f8fb;
+}
+
+html[data-theme="dark"] {
+  --global-base-color: #93b4d8;
+  --global-link-color: #8ab4d8;
+  --global-link-color-hover: #b0cde8;
+  --global-link-color-visited: #7fb3d5;
+  --global-border-color: #243049;
+  --global-code-background-color: #16213a;
+}
+
+/* Sidebar: avatar ring */
+.author__avatar img {
+  border: 3px solid var(--global-base-color, #1f3a5f);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(31, 58, 95, 0.18);
+}
+
+/* Sidebar: profile card with accent top border */
+.author__content {
+  background: #f4f7fb;
+  border: 1px solid var(--global-border-color, #d8e2ee);
+  border-radius: 10px;
+  border-top: 4px solid var(--global-base-color, #1f3a5f);
+  padding: 1rem 1rem 0.5rem;
+}
+
+html[data-theme="dark"] .author__content {
+  background: #16213a;
+}
+
+/* Sidebar: name + bio colors */
+.author__name {
+  color: var(--global-base-color, #1f3a5f);
+}
+
+.author__bio {
+  color: #4b5a6a;
+}
+
+html[data-theme="dark"] .author__bio {
+  color: #94a3b8;
+}
+
+/* Sidebar: icon links hover */
+.author__urls li a:hover {
+  color: var(--global-base-color, #1f3a5f);
+}
+
+/* Section headers: accent underline */
+.archive__subtitle,
+.page__inner h2 {
+  color: var(--global-base-color, #1f3a5f);
+}
+
+.archive__subtitle {
+  border-bottom: 2px solid var(--global-border-color, #d8e2ee);
+  padding-bottom: 0.35rem;
+}
+
+/* Footer: quiet */
+.page__footer-copyright {
+  color: #6b7280;
+  font-size: 0.85em;
+}
