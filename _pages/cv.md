@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<div style="margin-bottom:1.2rem;"><a class="btn btn--primary" href="{{ base_path }}/files/cv.pdf"><i class="fas fa-download" aria-hidden="true"></i> Download CV (PDF)</a></div>
+
 {% include cv-timeline.html %}
 
 Skills
