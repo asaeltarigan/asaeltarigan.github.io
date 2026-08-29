@@ -35,6 +35,7 @@ html[data-theme="dark"] {
    keeps the sidebar in normal flow so the footer can never touch it. */
 .sidebar.sticky {
   position: static !important;
+  align-self: start;
 }
 
 /* Sidebar: name + bio colors */
