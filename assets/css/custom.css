@@ -30,6 +30,16 @@ html[data-theme="dark"] {
   box-shadow: 0 2px 8px rgba(31, 58, 95, 0.18);
 }
 
+/* Sidebar: theme JS forces position:fixed which overlaps the footer on short
+   pages. Make it sticky instead so it scrolls with content and never collides. */
+.sidebar.sticky {
+  position: sticky !important;
+  top: 2em !important;
+  height: auto !important;
+  align-self: start;
+  overflow: visible;
+}
+
 /* Sidebar: name + bio colors */
 .author__name {
   color: var(--global-base-color, #1f3a5f);
