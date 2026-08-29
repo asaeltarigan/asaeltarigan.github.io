@@ -35,10 +35,10 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # URL
+  googlescholar    : "https://scholar.google.com/citations?user=FCaQ7i0AAAAJ&hl"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # URL
+  orcid            : "https://orcid.org/0009-0005-2246-5209"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
@@ -64,11 +64,11 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "asaelum"
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "gabrielasael"
   mastodon         : # URL
-  medium           : "https://medium.com/@asaeltarigan"
+  medium           : "https://asaeltarigan.medium.com/"
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
