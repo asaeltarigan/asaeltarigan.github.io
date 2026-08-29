@@ -4,6 +4,13 @@
 
 {% include seo.html %}
 
+{% unless page.header.image or page.header.overlay_image %}
+  <meta property="og:image" content="{{ '/images/profile.jpg' | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="twitter:image" content="{{ '/images/profile.jpg' | absolute_url }}">
+{% endunless %}
+
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
