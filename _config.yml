@@ -42,7 +42,7 @@ author:
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
-  researchgate     : # URL
+  researchgate      : "https://www.researchgate.net/profile/Gabriel-Asael-Tarigan"
   scopus           : # URL
   zotero           : # URL
 
@@ -154,6 +154,9 @@ social:
     - "https://github.com/asaeltarigan"
     - "https://www.linkedin.com/in/gabrielasael"
     - "https://medium.com/@asael.tarigan"
+    - "https://orcid.org/0009-0005-2246-5209"
+    - "https://scholar.google.com/citations?user=FCaQ7i0AAAAJ"
+    - "https://www.researchgate.net/profile/Gabriel-Asael-Tarigan"
 
 
 # Analytics
