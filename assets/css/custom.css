@@ -98,3 +98,110 @@ html[data-theme="dark"] .author__bio {
   color: #6b7280;
   font-size: 0.85em;
 }
+
+/* ---------- Blog list cards with thumbnails ---------- */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.blog-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border: 1px solid var(--global-border-color, #d8e2ee);
+  border-radius: 12px;
+  padding: 0.85rem;
+  background: var(--global-code-background-color, #f6f8fb);
+  color: #1f2937;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.blog-item:hover {
+  border-color: var(--global-base-color, #1f3a5f);
+  box-shadow: 0 2px 8px rgba(31, 58, 95, 0.08);
+  text-decoration: none;
+}
+
+html[data-theme="dark"] .blog-item {
+  background: #16213a;
+  color: #e5e7eb;
+}
+
+.blog-thumb {
+  width: 110px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex: 0 0 auto;
+  border: 1px solid var(--global-border-color, #d8e2ee);
+}
+
+.blog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.blog-title {
+  font-weight: 700;
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+html[data-theme="dark"] .blog-date {
+  color: #94a3b8;
+}
+
+.blog-excerpt {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+html[data-theme="dark"] .blog-excerpt {
+  color: #94a3b8;
+}
+
+@media (max-width: 480px) {
+  .blog-thumb {
+    width: 84px;
+    height: 64px;
+  }
+}
+
+/* ---------- Sidebar scroll-down hint arrow ---------- */
+
+.sidebar {
+  position: relative;
+}
+
+.sidebar-scroll-hint {
+  position: sticky;
+  bottom: 8px;
+  width: 26px;
+  height: 26px;
+  margin: 6px auto 0;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #d8e2ee;
+  color: #1f3a5f;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  pointer-events: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+}
+
+html[data-theme="dark"] .sidebar-scroll-hint {
+  background: #16213a;
+  border-color: #243049;
+  color: #93b4d8;
+}

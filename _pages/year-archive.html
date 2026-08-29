@@ -2,18 +2,23 @@
 layout: archive
 permalink: /year-archive/
 title: "Blog posts"
-author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+{% if site.posts.size == 0 %}
+<p>No posts yet.</p>
+{% else %}
+<div class="blog-list">
+  {% for post in site.posts %}
+  <a class="blog-item" href="{{ post.url | relative_url }}">
+    {% if post.image %}<img class="blog-thumb" src="{{ post.image }}" alt="" loading="lazy">{% endif %}
+    <span class="blog-body">
+      <span class="blog-title">{{ post.title }}</span>
+      <span class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      {% if post.excerpt %}<span class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 130 }}</span>{% endif %}
+    </span>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}

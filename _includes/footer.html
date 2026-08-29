@@ -1,3 +1,24 @@
 <div class="page__footer-copyright">
   &copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}
 </div>
+<script>
+  /* Sidebar scroll-down hint: small arrow when the sidebar can scroll further */
+  (function () {
+    var s = document.querySelector(".sidebar");
+    if (!s) return;
+    var hint = document.createElement("div");
+    hint.className = "sidebar-scroll-hint";
+    hint.setAttribute("aria-hidden", "true");
+    hint.textContent = "\u25BE";
+    s.appendChild(hint);
+    function upd() {
+      var can = s.scrollHeight > s.clientHeight + 4 &&
+                s.scrollTop + s.clientHeight < s.scrollHeight - 8;
+      hint.style.display = can ? "flex" : "none";
+    }
+    upd();
+    s.addEventListener("scroll", upd);
+    window.addEventListener("resize", upd);
+    setInterval(upd, 2000);
+  })();
+</script>
