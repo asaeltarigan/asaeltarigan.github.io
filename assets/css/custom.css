@@ -23,19 +23,24 @@ html[data-theme="dark"] {
   --global-code-background-color: #16213a;
 }
 
-/* Sidebar: avatar ring */
+/* Sidebar: avatar ring + sane size (theme renders it oversized) */
 .author__avatar img {
   border: 3px solid var(--global-base-color, #1f3a5f);
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(31, 58, 95, 0.18);
+  width: 130px;
+  height: 130px;
 }
 
 /* Sidebar: theme JS forces position:fixed which overlaps the footer on short
-   pages (fixed height + sticky offsets both collide at laptop sizes). Static
-   keeps the sidebar in normal flow so the footer can never touch it. */
+   pages, and adds 65px inline padding. Static + content-height + a height cap
+   guarantees the sidebar can never collide with the footer at any viewport. */
 .sidebar.sticky {
   position: static !important;
   align-self: start;
+  padding-top: 0 !important;
+  max-height: calc(100vh - 10em);
+  overflow-y: auto;
 }
 
 /* Sidebar: name + bio colors */
