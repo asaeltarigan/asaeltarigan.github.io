@@ -34,13 +34,34 @@ html[data-theme="dark"] {
 
 /* Sidebar: theme JS forces position:fixed which overlaps the footer on short
    pages, and adds 65px inline padding. Static + content-height + a height cap
-   guarantees the sidebar can never collide with the footer at any viewport. */
+   guarantees the sidebar can never collide with the footer at any viewport.
+   Scrollbar hidden (wheel/touch still scroll); desc gets breathing room. */
 .sidebar.sticky {
   position: static !important;
   align-self: start;
   padding-top: 0 !important;
   max-height: calc(100vh - 10em);
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sidebar.sticky::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.sidebar .author__content {
+  padding-right: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  /* Mobile: sidebar stacks at top, no footer collision -> no cap, no scroll */
+  .sidebar.sticky {
+    max-height: none;
+    overflow-y: visible;
+  }
 }
 
 /* Sidebar: name + bio colors */

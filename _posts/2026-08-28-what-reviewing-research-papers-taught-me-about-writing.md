@@ -2,6 +2,8 @@
 layout: single
 title: "What Reviewing Research Papers Taught Me About Writing"
 date: 2026-08-28
+header:
+  image: "https://cdn-images-1.medium.com/max/1024/1*7Mo1tddgJyec32E38j_tIg.jpeg"
 tags: [medium]
 ---
 
