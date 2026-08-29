@@ -30,19 +30,6 @@ html[data-theme="dark"] {
   box-shadow: 0 2px 8px rgba(31, 58, 95, 0.18);
 }
 
-/* Sidebar: profile card with accent top border */
-.author__content {
-  background: #f4f7fb;
-  border: 1px solid var(--global-border-color, #d8e2ee);
-  border-radius: 10px;
-  border-top: 4px solid var(--global-base-color, #1f3a5f);
-  padding: 1rem 1rem 0.5rem;
-}
-
-html[data-theme="dark"] .author__content {
-  background: #16213a;
-}
-
 /* Sidebar: name + bio colors */
 .author__name {
   color: var(--global-base-color, #1f3a5f);

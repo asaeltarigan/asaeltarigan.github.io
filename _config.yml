@@ -23,7 +23,7 @@ repository               : "asaeltarigan/asaeltarigan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.svg"
+  avatar           : "profile.jpg"
   name             : "Gabriel Asael Tarigan"
   pronouns         : # example: "she/her"  
   bio              : "Applied ML lecturer at BINUS University. I design the AI curriculum, build the systems that run it, and research time-series forecasting."
