@@ -8,23 +8,17 @@ date: 2024-02-01
 excerpt: 'Foundations of machine learning: supervised and unsupervised methods, from data analysis and regression to clustering and dimensionality reduction.'
 ---
 
-Undergraduate course at BINUS University providing a comprehensive overview of machine learning, covering key concepts, methodologies, and applications. Students learn to analyze variables and distributions within datasets, apply parameter tuning techniques and learning algorithms, and implement supervised and unsupervised machine learning methods on real datasets.
+Undergraduate course at BINUS University providing a comprehensive overview of machine learning: analyzing variables and distributions, parameter tuning techniques, and supervised and unsupervised learning methods applied to real datasets.
 
-## Course Topics
+## Sessions
 
-1. Introduction to Machine Learning
-2. Exploratory Data Analysis and Preprocessing Data
-3. Linear Regression
-4. Logistic Regression
-5. Model Selection and Regularization
-6. Naive Bayes
-7. Recommender System
-8. Decision Tree and Ensemble Learning
-9. Support Vector Machine
-10. Clustering
-11. Dimensionality Reduction
-12. Machine Learning Operations
-13. Review and Presentation
+- **Sessions 1-2: Introduction to Machine Learning** — AI trends, learning problem types, learning techniques
+- **Sessions 3-4: Data and Regression** — exploratory data analysis, preprocessing, linear regression
+- **Sessions 5-6: Classification** — logistic regression, model selection and regularization
+- **Sessions 7-8: Probabilistic and Recommendation Methods** — naive Bayes, recommender systems
+- **Sessions 9-10: Trees and Margins** — decision trees and ensemble learning, support vector machines
+- **Sessions 11-12: Unsupervised Learning** — clustering, dimensionality reduction
+- **Session 13: Machine Learning Operations and Review**
 
 ## Learning Outcomes
 
