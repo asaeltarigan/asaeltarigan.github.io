@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Gabriel Asael Tarigan, S.Kom., M.Kom."
+seo_title: "Gabriel Asael's Personal Page"
 author_profile: true
 redirect_from:
   - /about/

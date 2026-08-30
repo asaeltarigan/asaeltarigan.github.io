@@ -222,3 +222,27 @@ html[data-theme="dark"] .sidebar-scroll-hint {
 }
 html[data-theme="dark"] .teaching-section { color: #e2e8f0; }
 html[data-theme="dark"] .teaching-section-note { color: #94a3b8; }
+
+/* Other courses taught list */
+.teaching-subsection {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #1f3a5f;
+  margin-top: 2em;
+}
+.taught-list {
+  columns: 2;
+  -webkit-columns: 2;
+  column-gap: 3em;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.6em;
+}
+.taught-list li {
+  padding: 0.35em 0 0.35em 0.9em;
+  border-left: 3px solid #2dd4bf;
+  margin-bottom: 0.4em;
+  color: #33475b;
+}
+html[data-theme="dark"] .teaching-subsection { color: #e2e8f0; }
+html[data-theme="dark"] .taught-list li { color: #cbd5e1; border-left-color: #2dd4bf; }
