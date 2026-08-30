@@ -1,6 +1,7 @@
 ---
 title: "Artificial Intelligence Solution (COMP6986001)"
 collection: teaching
+role: authored
 type: Undergraduate course
 permalink: /teaching/ai-solution-comp6986001
 venue: BINUS University, Artificial Intelligence Program

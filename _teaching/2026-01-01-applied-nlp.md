@@ -1,6 +1,7 @@
 ---
 title: "Applied Natural Language Processing (COMP6965001)"
 collection: teaching
+role: authored
 type: Undergraduate course
 permalink: /teaching/applied-nlp-comp6965001
 venue: BINUS University, Artificial Intelligence Program

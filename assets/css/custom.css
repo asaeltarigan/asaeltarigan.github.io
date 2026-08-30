@@ -205,3 +205,20 @@ html[data-theme="dark"] .sidebar-scroll-hint {
   border-color: #243049;
   color: #93b4d8;
 }
+
+/* Teaching page section grouping (authored vs taught) */
+.teaching-section {
+  font-size: 1.45em;
+  font-weight: 700;
+  color: #1f3a5f;
+  border-bottom: 3px solid #2dd4bf;
+  padding-bottom: 0.25em;
+  margin-top: 2.2em;
+}
+.teaching-section-note {
+  color: #5a6b80;
+  font-style: italic;
+  margin-bottom: 1.6em;
+}
+html[data-theme="dark"] .teaching-section { color: #e2e8f0; }
+html[data-theme="dark"] .teaching-section-note { color: #94a3b8; }

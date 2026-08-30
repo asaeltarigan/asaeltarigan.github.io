@@ -1,6 +1,7 @@
 ---
 title: "Internet of Things and Robotics (COMP6967001)"
 collection: teaching
+role: authored
 type: Undergraduate course
 permalink: /teaching/iot-robotics-comp6967001
 venue: BINUS University, Artificial Intelligence Program

@@ -1,6 +1,7 @@
 ---
 title: "Final Year Project Preparation (B2030)"
 collection: teaching
+role: taught
 type: Workshop series
 permalink: /teaching/fyp-preparation-b2030
 venue: BINUS University

@@ -1,6 +1,7 @@
 ---
 title: "Signal Processing (COMP6987001)"
 collection: teaching
+role: authored
 type: Undergraduate course
 permalink: /teaching/signal-processing-comp6987001
 venue: BINUS University, Artificial Intelligence Program

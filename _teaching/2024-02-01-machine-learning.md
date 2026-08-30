@@ -1,6 +1,7 @@
 ---
 title: "Machine Learning (COMP6577001)"
 collection: teaching
+role: taught
 type: Undergraduate course
 permalink: /teaching/machine-learning-comp6577001
 venue: BINUS University, Computer Science program

@@ -11,6 +11,20 @@ I designed and authored the core Artificial Intelligence curriculum at BINUS Uni
 
 The pages below show each course's session structure and assessment design. Full session materials are shared with enrolled students only.
 
+<h2 class="teaching-section authored">Authored curriculum — BINUS AI Program</h2>
+<p class="teaching-section-note">Courses I designed and built: course outlines, assessment (AoL) design, and lecture materials.</p>
+
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% if post.role == "authored" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="teaching-section taught">Courses taught</h2>
+<p class="teaching-section-note">Courses and workshops delivered as a lecturer, based on official or shared outlines.</p>
+
+{% for post in site.teaching reversed %}
+  {% if post.role == "taught" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}

@@ -1,6 +1,7 @@
 ---
 title: "Deep Learning Foundations (AI3DL001)"
 collection: teaching
+role: authored
 type: Undergraduate course
 permalink: /teaching/deep-learning-foundations-ai3dl001
 venue: BINUS University, Artificial Intelligence Program (Semester 3)

@@ -1,6 +1,7 @@
 ---
 title: "Research Methodology"
 collection: teaching
+role: taught
 type: Course
 permalink: /teaching/research-methodology
 venue: BINUS University

@@ -1,6 +1,7 @@
 ---
 title: "Applied Computer Vision (COMP6966001)"
 collection: teaching
+role: authored
 type: Undergraduate course
 permalink: /teaching/applied-computer-vision-comp6966001
 venue: BINUS University, Artificial Intelligence Program
