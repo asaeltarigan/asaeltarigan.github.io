@@ -11,7 +11,7 @@ locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Gabriel Asael Tarigan | AI Lecturer & Researcher"
 title_separator          : "-"
-name                     : &name "Gabriel Asael Tarigan, S.Kom., M.Kom."
+name                     : &name "Gabriel Asael Tarigan"
 description              : &description "Gabriel Asael Tarigan - lecturer in Artificial Intelligence at BINUS University. Applied ML: time-series forecasting, ML systems, MLOps, and the AI curriculum I designed and built."
 url                      : https://asaeltarigan.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
