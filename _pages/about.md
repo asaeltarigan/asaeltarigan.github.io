@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Gabriel Asael Tarigan, S.Kom., M.Kom."
-seo_title: "Gabriel Asael's Personal Page"
+seo_title: "Gabriel Asael Tarigan | AI Lecturer & Researcher"
 author_profile: true
 redirect_from:
   - /about/

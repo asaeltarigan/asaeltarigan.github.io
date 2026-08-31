@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Gabriel Asael's Personal Page"
+title                    : "Gabriel Asael Tarigan | AI Lecturer & Researcher"
 title_separator          : "-"
 name                     : &name "Gabriel Asael Tarigan"
 description              : &description "Gabriel Asael Tarigan - lecturer in Artificial Intelligence at BINUS University. Applied ML: time-series forecasting, ML systems, MLOps, and the AI curriculum I designed and built."
