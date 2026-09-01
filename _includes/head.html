@@ -4,6 +4,12 @@
 
 {% include seo.html %}
 
+{% if page.url == '/' %}
+<link rel="alternate" hreflang="en" href="https://asaeltarigan.github.io/">
+<link rel="alternate" hreflang="id" href="https://asaeltarigan.github.io/id/">
+<link rel="alternate" hreflang="x-default" href="https://asaeltarigan.github.io/">
+{% endif %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
