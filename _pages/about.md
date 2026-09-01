@@ -13,8 +13,6 @@ redirect_from:
 My research focuses on **Deep Learning**, **Computer Vision (pose estimation and engagement detection)**, **Time-Series Forecasting**, and **Applied ML Systems**. I am currently preparing applications for doctoral (PhD) positions in machine learning.
 
 > **What I do: I teach it, I build it, I run it.**
----
-Gabriel Asael Tarigan, S.Kom., M.Kom. adalah dosen Artificial Intelligence (AI) di BINUS University dan peneliti di bidang machine learning, deep learning, dan computer vision.
 
 ## Research Interests
 
