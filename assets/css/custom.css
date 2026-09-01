@@ -246,3 +246,19 @@ html[data-theme="dark"] .teaching-section-note { color: #94a3b8; }
 }
 html[data-theme="dark"] .teaching-subsection { color: #e2e8f0; }
 html[data-theme="dark"] .taught-list li { color: #cbd5e1; border-left-color: #2dd4bf; }
+
+/* Language switcher (EN | ID) */
+.author__lang {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+.author__lang .lang-active { font-weight: 700; color: #1f3a5f; }
+.author__lang a { color: #6b7280; }
+.author__lang a:hover { color: #1f3a5f; }
+html[data-theme="dark"] .author__lang { border-top-color: #334155; color: #94a3b8; }
+html[data-theme="dark"] .author__lang .lang-active { color: #e2e8f0; }
+html[data-theme="dark"] .author__lang a { color: #94a3b8; }
+html[data-theme="dark"] .author__lang a:hover { color: #2dd4bf; }
