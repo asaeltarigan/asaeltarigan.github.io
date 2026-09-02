@@ -3,6 +3,43 @@
   &copy; {{ site.time | date: '%Y' }} Gabriel Asael Tarigan, S.Kom., M.Kom. &middot; Lecturer Specialist, AI Program, BINUS University
 </div>
 <script>
+  /* Responsive nav controller: flex-based overflow handling (replaces the theme's
+     width-table greedy logic so controls can pin right with no dead gap) */
+  (function () {
+    var nav = document.querySelector("#site-nav");
+    if (!nav) return;
+    var ul = nav.querySelector(".visible-links");
+    var hidden = nav.querySelector(".hidden-links");
+    var btn = nav.querySelector("button");
+    if (!ul || !hidden || !btn) return;
+    function isPersist(li) { return li.classList.contains("persist"); }
+    function update() {
+      // 1) bring all hidden items back to their slot (before the controls cluster)
+      while (hidden.firstChild) {
+        var anchor = ul.querySelector(".burger-cell") || ul.querySelector(".persist.tail") || null;
+        if (anchor) ul.insertBefore(hidden.firstChild, anchor);
+        else ul.appendChild(hidden.firstChild);
+      }
+      // 2) hide rightmost non-persist items until content fits the nav
+      var avail = nav.clientWidth;
+      var guard = 0;
+      while (ul.scrollWidth > avail && guard++ < 50) {
+        var lis = Array.prototype.slice.call(ul.children).filter(function (li) { return !isPersist(li); });
+        if (!lis.length) break;
+        var last = lis[lis.length - 1];
+        hidden.insertBefore(last, hidden.firstChild);
+      }
+      // 3) show the burger only when something is tucked away
+      btn.classList.toggle("hidden", hidden.children.length === 0);
+    }
+    var t;
+    function schedule() { clearTimeout(t); t = setTimeout(update, 60); }
+    window.addEventListener("resize", schedule);
+    document.addEventListener("DOMContentLoaded", function () { setTimeout(update, 120); });
+    setTimeout(update, 150); /* after theme main.min.js settles */
+  })();
+</script>
+<script>
   /* Dropdown (burger) menu: open aligned under the burger, not at the nav's right edge */
   (function () {
     var nav = document.querySelector("#site-nav");
