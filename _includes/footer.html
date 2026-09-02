@@ -3,8 +3,7 @@
   &copy; {{ site.time | date: '%Y' }} Gabriel Asael Tarigan, S.Kom., M.Kom. &middot; Lecturer Specialist, AI Program, BINUS University
 </div>
 <script>
-  /* Responsive nav controller: flex overflow handling + dropdown anchored under
-     the burger. Watches the lists so the theme's greedy-nav cannot override it. */
+  /* Responsive nav controller: flex overflow handling + dropdown anchored under the burger. Watches the lists so the theme's greedy-nav cannot override it. NOTE: only block comments here - the site build collapses inline-script whitespace and line comments would swallow the rest of the script. */
   (function () {
     var nav = document.querySelector("#site-nav");
     if (!nav) return;
@@ -15,13 +14,13 @@
     function isPersist(li) { return li.classList.contains("persist"); }
     var lastState = "";
     function update() {
-      // 1) bring all hidden items back to their slot (before the controls cluster)
+      /* bring all hidden items back to their slot (before the controls cluster) */
       while (hidden.firstChild) {
         var anchor = ul.querySelector(".burger-cell") || ul.querySelector(".persist.tail") || null;
         if (anchor) ul.insertBefore(hidden.firstChild, anchor);
         else ul.appendChild(hidden.firstChild);
       }
-      // 2) hide rightmost non-persist items until content fits the nav
+      /* hide rightmost non-persist items until content fits the nav */
       var avail = nav.clientWidth;
       var guard = 0;
       while (ul.scrollWidth > avail && guard++ < 60) {
@@ -29,9 +28,9 @@
         if (!lis.length) break;
         hidden.insertBefore(lis[lis.length - 1], hidden.firstChild);
       }
-      // 3) show the burger only when something is tucked away
+      /* show the burger only when something is tucked away */
       btn.classList.toggle("hidden", hidden.children.length === 0);
-      // 4) keep the dropdown aligned under the burger while open
+      /* keep the dropdown aligned under the burger while open */
       if (!hidden.classList.contains("hidden")) {
         var n = nav.getBoundingClientRect();
         var b = btn.getBoundingClientRect();
@@ -46,13 +45,13 @@
     var t;
     function schedule() { clearTimeout(t); t = setTimeout(function () { update(); }, 80); }
     window.addEventListener("resize", schedule);
-    // The theme's greedy-nav also moves items on load/resize; react to any change
+    /* the theme's greedy-nav also moves items on load/resize; react to any change */
     var mo = new MutationObserver(schedule);
     mo.observe(hidden, { childList: true });
     mo.observe(ul, { childList: true });
     btn.addEventListener("click", function () { setTimeout(update, 0); });
     window.addEventListener("load", function () { setTimeout(update, 200); });
-    // poll until two consecutive runs agree (theme may act late)
+    /* poll until two consecutive runs agree (the theme may act late) */
     var attempts = 0;
     (function loop() {
       var stable = update();
