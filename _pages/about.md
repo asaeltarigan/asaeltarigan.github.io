@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-[I am](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) a Lecturer Specialist and AI Researcher at [BINUS University](https://www.binus.ac.id), School of Computer Science, where I serve as a Subject Developer and does Community Outreach for the Artificial Intelligence program. I design and author core AI/ML curricula and engineer the production systems that run them—including competitive machine learning platforms, automated evaluation portals, and interactive visual learning tools.
+[I am](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) a Lecturer Specialist and AI Researcher at [BINUS University](https://www.binus.ac.id), School of Computer Science, where I serve as a Subject Developer and do Community Outreach for the Artificial Intelligence program. I design and author core AI/ML curricula and engineer the production systems that run them, including competitive machine learning platforms, automated evaluation portals, and interactive visual learning tools.
 
 My research focuses on **Deep Learning**, **Computer Vision (pose estimation and engagement detection)**, **Time-Series Forecasting**, and **Applied ML Systems**. I am currently preparing applications for doctoral (PhD) positions in machine learning.
 
