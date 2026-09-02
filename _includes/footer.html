@@ -21,6 +21,8 @@
         else ul.appendChild(hidden.firstChild);
       }
       /* hide rightmost non-persist items until content fits the nav */
+      var brandLi = ul.querySelector(".masthead__menu-item--lg");
+      if (brandLi) brandLi.style.flexShrink = "0"; /* measure with brand at full width */
       var avail = nav.clientWidth;
       var guard = 0;
       while (ul.scrollWidth > avail && guard++ < 60) {
@@ -28,6 +30,7 @@
         if (!lis.length) break;
         hidden.insertBefore(lis[lis.length - 1], hidden.firstChild);
       }
+      if (brandLi) brandLi.style.flexShrink = ""; /* allow truncation only as last resort */
       /* show the burger only when something is tucked away */
       btn.classList.toggle("hidden", hidden.children.length === 0);
       /* keep the dropdown aligned under the burger while open */
