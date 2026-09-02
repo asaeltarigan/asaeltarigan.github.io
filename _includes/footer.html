@@ -14,27 +14,32 @@
     function isPersist(li) { return li.classList.contains("persist"); }
     var lastState = "";
     function update() {
-      /* bring all hidden items back to their slot (before the controls cluster) */
-      while (hidden.firstChild) {
-        var anchor = ul.querySelector(".burger-cell") || ul.querySelector(".persist.tail") || null;
-        if (anchor) ul.insertBefore(hidden.firstChild, anchor);
-        else ul.appendChild(hidden.firstChild);
+      var open = !hidden.classList.contains("hidden");
+      /* when the dropdown is open the user may be clicking its items: never
+         move them (return/hide churn would detach the node mid-click). */
+      if (!open) {
+        /* bring all hidden items back to their slot (before the controls cluster) */
+        while (hidden.firstChild) {
+          var anchor = ul.querySelector(".burger-cell") || ul.querySelector(".persist.tail") || null;
+          if (anchor) ul.insertBefore(hidden.firstChild, anchor);
+          else ul.appendChild(hidden.firstChild);
+        }
+        /* hide rightmost non-persist items until content fits the nav */
+        var brandLi = ul.querySelector(".masthead__menu-item--lg");
+        if (brandLi) brandLi.style.flexShrink = "0"; /* measure with brand at full width */
+        var avail = nav.clientWidth;
+        var guard = 0;
+        while (ul.scrollWidth > avail && guard++ < 60) {
+          var lis = Array.prototype.slice.call(ul.children).filter(function (li) { return !isPersist(li); });
+          if (!lis.length) break;
+          hidden.insertBefore(lis[lis.length - 1], hidden.firstChild);
+        }
+        if (brandLi) brandLi.style.flexShrink = ""; /* allow truncation only as last resort */
+        /* show the burger only when something is tucked away */
+        btn.classList.toggle("hidden", hidden.children.length === 0);
       }
-      /* hide rightmost non-persist items until content fits the nav */
-      var brandLi = ul.querySelector(".masthead__menu-item--lg");
-      if (brandLi) brandLi.style.flexShrink = "0"; /* measure with brand at full width */
-      var avail = nav.clientWidth;
-      var guard = 0;
-      while (ul.scrollWidth > avail && guard++ < 60) {
-        var lis = Array.prototype.slice.call(ul.children).filter(function (li) { return !isPersist(li); });
-        if (!lis.length) break;
-        hidden.insertBefore(lis[lis.length - 1], hidden.firstChild);
-      }
-      if (brandLi) brandLi.style.flexShrink = ""; /* allow truncation only as last resort */
-      /* show the burger only when something is tucked away */
-      btn.classList.toggle("hidden", hidden.children.length === 0);
       /* keep the dropdown aligned under the burger while open */
-      if (!hidden.classList.contains("hidden")) {
+      if (open) {
         var n = nav.getBoundingClientRect();
         var b = btn.getBoundingClientRect();
         hidden.style.right = Math.round(n.right - b.right) + "px";
