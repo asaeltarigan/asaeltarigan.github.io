@@ -264,5 +264,5 @@ html[data-theme="dark"] .lang-nav a:hover { color: #2dd4bf; }
    top row so they don't sink below the wrapped brand title */
 @media (max-width: 768px) {
   .masthead__menu-item.persist.tail,
-  .masthead__menu-item.burger-cell { vertical-align: top; }
+  .greedy-nav .masthead__menu-item.burger-cell { vertical-align: top; }
 }
