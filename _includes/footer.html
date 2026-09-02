@@ -3,67 +3,6 @@
   &copy; {{ site.time | date: '%Y' }} Gabriel Asael Tarigan, S.Kom., M.Kom. &middot; Lecturer Specialist, AI Program, BINUS University
 </div>
 <script>
-  /* Responsive nav controller: flex-based overflow handling (replaces the theme's
-     width-table greedy logic so controls can pin right with no dead gap) */
-  (function () {
-    var nav = document.querySelector("#site-nav");
-    if (!nav) return;
-    var ul = nav.querySelector(".visible-links");
-    var hidden = nav.querySelector(".hidden-links");
-    var btn = nav.querySelector("button");
-    if (!ul || !hidden || !btn) return;
-    function isPersist(li) { return li.classList.contains("persist"); }
-    function update() {
-      // 1) bring all hidden items back to their slot (before the controls cluster)
-      while (hidden.firstChild) {
-        var anchor = ul.querySelector(".burger-cell") || ul.querySelector(".persist.tail") || null;
-        if (anchor) ul.insertBefore(hidden.firstChild, anchor);
-        else ul.appendChild(hidden.firstChild);
-      }
-      // 2) hide rightmost non-persist items until content fits the nav
-      var avail = nav.clientWidth;
-      var guard = 0;
-      while (ul.scrollWidth > avail && guard++ < 50) {
-        var lis = Array.prototype.slice.call(ul.children).filter(function (li) { return !isPersist(li); });
-        if (!lis.length) break;
-        var last = lis[lis.length - 1];
-        hidden.insertBefore(last, hidden.firstChild);
-      }
-      // 3) show the burger only when something is tucked away
-      btn.classList.toggle("hidden", hidden.children.length === 0);
-    }
-    var t;
-    function schedule() { clearTimeout(t); t = setTimeout(update, 60); }
-    window.addEventListener("resize", schedule);
-    // The theme's greedy-nav also runs on load/resize and re-hides items with its
-    // own logic; poll until our flex-based result is the stable, last word.
-    var attempts = 0;
-    (function loop() {
-      update();
-      if (++attempts < 16) setTimeout(loop, 250);
-    })();
-  })();
-</script>
-<script>
-  /* Dropdown (burger) menu: open aligned under the burger, not at the nav's right edge */
-  (function () {
-    var nav = document.querySelector("#site-nav");
-    var btn = nav ? nav.querySelector("button") : null;
-    var hl = nav ? nav.querySelector(".hidden-links") : null;
-    if (!nav || !btn || !hl) return;
-    function place() {
-      if (hl.classList.contains("hidden")) return;
-      var n = nav.getBoundingClientRect();
-      var b = btn.getBoundingClientRect();
-      hl.style.right = Math.round(n.right - b.right) + "px";
-      hl.style.left = "auto";
-    }
-    btn.addEventListener("click", function () { setTimeout(place, 0); });
-    window.addEventListener("resize", place);
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") place(); });
-  })();
-</script>
-<script>
   /* Sidebar scroll-down hint: small arrow when the sidebar can scroll further */
   (function () {
     var s = document.querySelector(".sidebar");

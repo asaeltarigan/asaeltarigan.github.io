@@ -257,13 +257,9 @@ html[data-theme="dark"] .lang-nav .lang-cur { color: #e2e8f0; }
 html[data-theme="dark"] .lang-nav a { color: #94a3b8; }
 html[data-theme="dark"] .lang-nav a:hover { color: #2dd4bf; }
 
-/* Burger now lives INSIDE the visible list (before the lang switcher): make it a normal in-flow nav item */
-.greedy-nav .visible-links button { position: static; right: auto; z-index: auto; }
-
-/* Nav = flex row: brand left (shrinks + ellipsis on narrow), controls pinned right,
-   overflow items handled by the responsive controller in footer.html */
-.greedy-nav .visible-links { display: flex; align-items: center; }
-.greedy-nav .visible-links > li { flex-shrink: 0; }
-.greedy-nav .visible-links > .masthead__menu-item--lg { flex-shrink: 1; min-width: 0; }
-.greedy-nav .visible-links > .masthead__menu-item--lg a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.greedy-nav .visible-links .burger-cell { margin-left: auto; }
+/* Mobile masthead: keep controls (lang switcher + theme toggle) on the same
+   top row as the burger so they don't sink below the wrapped brand title */
+@media (max-width: 768px) {
+  .greedy-nav .visible-links { padding-right: 44px; }
+  .masthead__menu-item.persist.tail { vertical-align: top; }
+}
