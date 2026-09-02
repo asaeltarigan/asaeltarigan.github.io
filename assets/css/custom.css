@@ -256,3 +256,10 @@ html[data-theme="dark"] .taught-list li { color: #cbd5e1; border-left-color: #2d
 html[data-theme="dark"] .lang-nav .lang-cur { color: #e2e8f0; }
 html[data-theme="dark"] .lang-nav a { color: #94a3b8; }
 html[data-theme="dark"] .lang-nav a:hover { color: #2dd4bf; }
+
+/* Mobile masthead: keep controls (lang switcher + theme toggle) on the same
+   top row as the burger so they don't sink below the wrapped brand title */
+@media (max-width: 768px) {
+  .greedy-nav .visible-links { padding-right: 44px; }
+  .masthead__menu-item.persist.tail { vertical-align: top; }
+}
