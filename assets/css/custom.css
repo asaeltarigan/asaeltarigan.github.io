@@ -257,9 +257,12 @@ html[data-theme="dark"] .lang-nav .lang-cur { color: #e2e8f0; }
 html[data-theme="dark"] .lang-nav a { color: #94a3b8; }
 html[data-theme="dark"] .lang-nav a:hover { color: #2dd4bf; }
 
-/* Mobile masthead: keep controls (lang switcher + theme toggle) on the same
-   top row as the burger so they don't sink below the wrapped brand title */
+/* Burger now lives INSIDE the visible list (before the lang switcher): make it a normal in-flow nav item */
+.greedy-nav .visible-links button { position: static; right: auto; z-index: auto; }
+
+/* Mobile masthead: keep controls (burger + lang switcher + theme toggle) on the same
+   top row so they don't sink below the wrapped brand title */
 @media (max-width: 768px) {
-  .greedy-nav .visible-links { padding-right: 44px; }
-  .masthead__menu-item.persist.tail { vertical-align: top; }
+  .masthead__menu-item.persist.tail,
+  .masthead__menu-item:has(> button) { vertical-align: top; }
 }
