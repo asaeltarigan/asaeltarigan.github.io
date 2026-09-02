@@ -10,6 +10,7 @@ Beyond the classroom, I design and deliver workshops, training, and mentoring fo
 <h2 class="teaching-section">School workshops and outreach</h2>
 <ul class="taught-list">
   <li>Trial classes and intro-to-programming sessions for SMA Karangturi, SMA Kesatuan, SMAN 82, SMA Immanuel, SMA Saint John, and SMA Narada</li>
+  <li>Trial classes and intro-to-programming sessions for SMA Kristoforus 2, SMA Tarsisius, and SMA Regina Pacis</li>
   <li>Coding with AI workshop for SMA Yakobus</li>
   <li>Coding workshops for Binus School Bekasi</li>
   <li>Extracurricular (ekskul) programming sessions</li>
