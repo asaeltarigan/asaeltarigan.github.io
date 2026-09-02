@@ -251,7 +251,7 @@ html[data-theme="dark"] .taught-list li { color: #cbd5e1; border-left-color: #2d
 .lang-nav { font-size: 0.8rem; padding: 0 0.6rem; white-space: nowrap; }
 .lang-nav .lang-cur { font-weight: 700; color: #1f3a5f; }
 .lang-nav .lang-sep { color: #9aa5b1; }
-.lang-nav a { color: #6b7280; }
+.lang-nav a { color: #6b7280; display: inline-block; }
 .lang-nav a:hover { color: #1f3a5f; }
 html[data-theme="dark"] .lang-nav .lang-cur { color: #e2e8f0; }
 html[data-theme="dark"] .lang-nav a { color: #94a3b8; }
