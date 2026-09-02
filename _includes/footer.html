@@ -35,8 +35,13 @@
     var t;
     function schedule() { clearTimeout(t); t = setTimeout(update, 60); }
     window.addEventListener("resize", schedule);
-    document.addEventListener("DOMContentLoaded", function () { setTimeout(update, 120); });
-    setTimeout(update, 150); /* after theme main.min.js settles */
+    // The theme's greedy-nav also runs on load/resize and re-hides items with its
+    // own logic; poll until our flex-based result is the stable, last word.
+    var attempts = 0;
+    (function loop() {
+      update();
+      if (++attempts < 16) setTimeout(loop, 250);
+    })();
   })();
 </script>
 <script>
