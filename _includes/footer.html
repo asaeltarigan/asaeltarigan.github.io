@@ -3,6 +3,25 @@
   &copy; {{ site.time | date: '%Y' }} Gabriel Asael Tarigan, S.Kom., M.Kom. &middot; Lecturer Specialist, AI Program, BINUS University
 </div>
 <script>
+  /* Dropdown (burger) menu: open aligned under the burger, not at the nav's right edge */
+  (function () {
+    var nav = document.querySelector("#site-nav");
+    var btn = nav ? nav.querySelector("button") : null;
+    var hl = nav ? nav.querySelector(".hidden-links") : null;
+    if (!nav || !btn || !hl) return;
+    function place() {
+      if (hl.classList.contains("hidden")) return;
+      var n = nav.getBoundingClientRect();
+      var b = btn.getBoundingClientRect();
+      hl.style.right = Math.round(n.right - b.right) + "px";
+      hl.style.left = "auto";
+    }
+    btn.addEventListener("click", function () { setTimeout(place, 0); });
+    window.addEventListener("resize", place);
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") place(); });
+  })();
+</script>
+<script>
   /* Sidebar scroll-down hint: small arrow when the sidebar can scroll further */
   (function () {
     var s = document.querySelector(".sidebar");
