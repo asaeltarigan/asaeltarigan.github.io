@@ -23,8 +23,6 @@ Beyond the classroom, I design and deliver workshops, training, and mentoring fo
 <ul class="taught-list">
   <li>GreatNusa: AI and computer vision learning materials and sessions</li>
   <li>CommDev UMKM: generative AI materials for small business community development</li>
-  <li>DBS Foundation partnership coordination</li>
-  <li>Chubb Life community program</li>
   <li>Book drive and literacy socialization (Batch 6)</li>
 </ul>
 
