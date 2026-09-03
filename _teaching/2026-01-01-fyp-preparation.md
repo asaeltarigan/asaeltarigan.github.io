@@ -1,5 +1,5 @@
 ---
-title: "First Year Program Preparation"
+title: "First Year Program"
 collection: teaching
 role: taught
 type: Workshop series
