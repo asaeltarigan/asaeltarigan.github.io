@@ -3,7 +3,7 @@ title: "First Year Program"
 collection: teaching
 role: taught
 type: Workshop series
-permalink: /teaching/fyp-preparation-b2030
+permalink: /teaching/fyp-series
 venue: BINUS University
 date: 2026-01-01
 excerpt: 'Preparation workshops for final year project students: algorithms, C programming, Python and machine learning, and computational thinking.'
