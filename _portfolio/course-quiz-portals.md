@@ -14,9 +14,9 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 
 ## Live portals
 
-- [Session 17 - Markov Decision Process](https://seating-soldier-collectables-consumers.trycloudflare.com)
-- [Session 18 - Introduction to Machine Learning](https://teacher-psychology-calls-implied.trycloudflare.com)
-- [Session 19 - Linear Regression](https://sole-thickness-lisa-ensuring.trycloudflare.com)
-- [Session 20 - Decision Tree](https://january-protocols-visited-points.trycloudflare.com)
-- [Session 21 - KNN](https://doors-yields-glasgow-cut.trycloudflare.com)
-- [Session 22 - Neural Network](https://twisted-poems-addresses-motel.trycloudflare.com)
+- [Session 17 - Markov Decision Process](https://sodium-enhancement-head-mill.trycloudflare.com/)
+- [Session 18 - Introduction to Machine Learning](https://provinces-gold-ferry-tony.trycloudflare.com/)
+- [Session 19 - Linear Regression](https://msgid-gave-edgar-briefs.trycloudflare.com/)
+- [Session 20 - Decision Tree](https://indirect-makes-purposes-bookmarks.trycloudflare.com/)
+- [Session 21 - KNN](https://executed-technological-figured-gonna.trycloudflare.com/)
+- [Session 22 - Neural Network](https://dist-supplied-makeup-ppm.trycloudflare.com/)
