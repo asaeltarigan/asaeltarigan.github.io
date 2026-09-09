@@ -14,6 +14,7 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 
 ## Live portals
 
+- [Session 1 - NLP](https://terrorism-became-unity-coaches.trycloudflare.com/)
 - [Session 1 - Speech Recognition](https://promotes-automobile-filling-previous.trycloudflare.com/)
 - [Session 1 - Introduction to AI](https://polyphonic-miscellaneous-wholesale-except.trycloudflare.com/)
 - [Session 2 - Intelligent Agents](https://americans-informal-exempt-parameters.trycloudflare.com/)
