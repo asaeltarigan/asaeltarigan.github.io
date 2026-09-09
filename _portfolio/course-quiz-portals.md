@@ -14,13 +14,13 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 
 ## Live portals
 
-- [Session 1 - NLP](https://terrorism-became-unity-coaches.trycloudflare.com/)
-- [Session 1 - Speech Recognition](https://promotes-automobile-filling-previous.trycloudflare.com/)
-- [Session 1 - Introduction to AI](https://polyphonic-miscellaneous-wholesale-except.trycloudflare.com/)
-- [Session 2 - Intelligent Agents](https://americans-informal-exempt-parameters.trycloudflare.com/)
-- [Session 17 - Markov Decision Process](https://sodium-enhancement-head-mill.trycloudflare.com/)
-- [Session 18 - Introduction to Machine Learning](https://provinces-gold-ferry-tony.trycloudflare.com/)
-- [Session 19 - Linear Regression](https://msgid-gave-edgar-briefs.trycloudflare.com/)
-- [Session 20 - Decision Tree](https://indirect-makes-purposes-bookmarks.trycloudflare.com/)
-- [Session 21 - KNN](https://executed-technological-figured-gonna.trycloudflare.com/)
-- [Session 22 - Neural Network](https://dist-supplied-makeup-ppm.trycloudflare.com/)
+- [Session 1 - NLP](https://middle-birds-pen-asking.trycloudflare.com/)
+- [Session 1 - Speech Recognition](https://probability-jack-incident-cultural.trycloudflare.com/)
+- [Session 1 - Introduction to AI](https://volvo-robbie-children-assistance.trycloudflare.com/)
+- [Session 2 - Intelligent Agents](https://prescription-pentium-databases-recruiting.trycloudflare.com/)
+- [Session 17 - Markov Decision Process](https://easy-allergy-partly-erik.trycloudflare.com/)
+- [Session 18 - Introduction to Machine Learning](https://directive-decided-brad-yards.trycloudflare.com/)
+- [Session 19 - Linear Regression](https://identified-muscle-clone-cfr.trycloudflare.com/)
+- [Session 20 - Decision Tree](https://leaves-ali-grocery-colored.trycloudflare.com/)
+- [Session 21 - KNN](https://understand-dirt-likewise-collectables.trycloudflare.com/)
+- [Session 22 - Neural Network](https://thanksgiving-peaceful-african-publications.trycloudflare.com/)
