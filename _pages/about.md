@@ -54,4 +54,4 @@ A full list with citation metrics is available on my [Google Scholar](https://sc
 
 * **Parallelization of LSTM-GRU Architectures for Multivariate Prediction of Stock Prices**  
   *Gabriel Asael Tarigan*, Eric Savero Hermawan, Abba Suganda Girsang.  
-  *(Manuscript in preparation / conference presentation)*.
+  *2024 International Conference on Information Management and Technology (ICIMTech), IEEE*, 2024.

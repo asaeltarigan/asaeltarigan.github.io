@@ -73,9 +73,9 @@
   "publications": [
     {
       "name": "Parallelization of LSTM-GRU Architectures for Multivariate Prediction of Stock Prices",
-      "publisher": "In preparation",
-      "releaseDate": "",
-      "website": "",
+      "publisher": "2024 International Conference on Information Management and Technology (ICIMTech), IEEE",
+      "releaseDate": "2024-08-28",
+      "website": "https://doi.org/10.1109/ICIMTech63123.2024.10780885",
       "summary": "Hybrid LSTM-GRU architectures, parallelized for multivariate stock price prediction and benchmarked against transformer-based comparators."
     }
   ],
