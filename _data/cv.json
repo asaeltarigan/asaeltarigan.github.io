@@ -4,7 +4,7 @@
     "email": "gabriel.tarigan@binus.edu",
     "phone": "",
     "website": "https://asaeltarigan.github.io",
-    "summary": "Applied ML lecturer at BINUS University. I teach it, I build it, I run it: curriculum design, production ML systems, and research in time-series forecasting.",
+    "summary": "Applied ML lecturer at BINUS University. I teach it, I build it, I run it: curriculum design, production ML systems, supervision of student projects and competition teams, and research in time-series forecasting.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -27,7 +27,7 @@
       "website": "https://www.binus.ac.id",
       "startDate": "",
       "endDate": "",
-      "summary": "Designed and authored the AI program's core curriculum (5 courses authored, 2 co-authored): ML foundations, applied NLP, deep learning, MLOps, signal processing, IoT & robotics. Build and operate the production systems that run the program: ML competition platform, course quiz portals, interactive teaching tools. Research in deep learning for time-series forecasting.",
+      "summary": "Designed and authored the AI program's core curriculum (5 courses authored, 2 co-authored): ML foundations, applied NLP, deep learning, MLOps, signal processing, IoT & robotics. Build and operate the production systems that run the program: ML competition platform, course quiz portals, interactive teaching tools. Supervise a broad range of student projects and national competition teams. Research in deep learning for time-series forecasting.",
       "highlights": []
     }
   ],
