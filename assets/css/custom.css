@@ -211,7 +211,7 @@ html[data-theme="dark"] .sidebar-scroll-hint {
   font-size: 1.45em;
   font-weight: 700;
   color: #1f3a5f;
-  border-bottom: 3px solid #2dd4bf;
+  border-bottom: 3px solid #64748b;
   padding-bottom: 0.25em;
   margin-top: 2.2em;
 }
@@ -228,7 +228,7 @@ html[data-theme="dark"] .teaching-section-note { color: #94a3b8; }
   font-size: 1.45em;
   font-weight: 700;
   color: #1f3a5f;
-  border-bottom: 3px solid #2dd4bf;
+  border-bottom: 3px solid #64748b;
   padding-bottom: 0.25em;
   margin-top: 2.2em;
 }
@@ -251,12 +251,12 @@ html[data-theme="dark"] .publication-section { color: #e2e8f0; }
 }
 .taught-list li {
   padding: 0.35em 0 0.35em 0.9em;
-  border-left: 3px solid #2dd4bf;
+  border-left: 3px solid #64748b;
   margin-bottom: 0.4em;
   color: #33475b;
 }
 html[data-theme="dark"] .teaching-subsection { color: #e2e8f0; }
-html[data-theme="dark"] .taught-list li { color: #cbd5e1; border-left-color: #2dd4bf; }
+html[data-theme="dark"] .taught-list li { color: #cbd5e1; border-left-color: #64748b; }
 
 /* Language switcher in masthead (EN | ID) */
 .lang-nav { font-size: 0.8rem; padding: 0 0.6rem; white-space: nowrap; }
@@ -266,7 +266,7 @@ html[data-theme="dark"] .taught-list li { color: #cbd5e1; border-left-color: #2d
 .lang-nav a:hover { color: #1f3a5f; }
 html[data-theme="dark"] .lang-nav .lang-cur { color: #e2e8f0; }
 html[data-theme="dark"] .lang-nav a { color: #94a3b8; }
-html[data-theme="dark"] .lang-nav a:hover { color: #2dd4bf; }
+html[data-theme="dark"] .lang-nav a:hover { color: #94a3b8; }
 
 /* Nav = flex row (burger sits BEFORE the lang switcher, controls cluster pins
    right via auto-margin; overflow items handled by the controller in footer.html) */
