@@ -11,33 +11,32 @@ I designed and authored the core Artificial Intelligence curriculum at BINUS Uni
 
 The pages below show each course's session structure and assessment design. Full session materials are shared with enrolled students only.
 
+{% assign authored_courses = site.teaching | sort: 'title' | where: 'role', 'authored' %}
+{% assign taught_courses = site.teaching | sort: 'title' | where: 'role', 'taught' %}
+
 <h2 class="teaching-section authored">Authored curriculum — BINUS AI Program</h2>
 <p class="teaching-section-note">Courses I designed and built: course outlines, assessment (AoL) design, and lecture materials.</p>
 
-{% for post in site.teaching reversed %}
-  {% if post.role == "authored" %}
-    {% include archive-single.html %}
-  {% endif %}
+{% for post in authored_courses %}
+  {% include archive-single.html %}
 {% endfor %}
 
 <h2 class="teaching-section taught">Courses taught</h2>
 <p class="teaching-section-note">Courses and workshops delivered as a lecturer, based on official or shared outlines.</p>
 
-{% for post in site.teaching reversed %}
-  {% if post.role == "taught" %}
-    {% include archive-single.html %}
-  {% endif %}
+{% for post in taught_courses %}
+  {% include archive-single.html %}
 {% endfor %}
 
 <h3 class="teaching-subsection">Other courses taught</h3>
 <ul class="taught-list">
   <li>Artificial Intelligence</li>
   <li>Code Reengineering (in Java)</li>
+  <li>Computer Vision</li>
   <li>Data Mining (including Global Class)</li>
   <li>Data Structures (in C)</li>
   <li>Deep Learning</li>
   <li>Foundations of AI</li>
   <li>Natural Language Processing (Global Class)</li>
   <li>Speech Recognition</li>
-  <li>Computer Vision</li>
 </ul>
