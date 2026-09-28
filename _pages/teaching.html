@@ -22,13 +22,7 @@ The pages below show each course's session structure and assessment design. Full
 {% endfor %}
 
 <h2 class="teaching-section taught">Courses taught</h2>
-<p class="teaching-section-note">Courses and workshops delivered as a lecturer, based on official or shared outlines.</p>
-
-{% for post in taught_courses %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<h3 class="teaching-subsection">Other courses taught</h3>
+<p class="teaching-section-note">Courses and workshops delivered across programs, including global classes.</p>
 <ul class="taught-list">
   <li>Artificial Intelligence</li>
   <li>Code Reengineering (in Java)</li>
@@ -40,3 +34,8 @@ The pages below show each course's session structure and assessment design. Full
   <li>Natural Language Processing (Global Class)</li>
   <li>Speech Recognition</li>
 </ul>
+
+<h3 class="teaching-subsection">Other courses taught</h3>
+{% for post in taught_courses %}
+  {% include archive-single.html %}
+{% endfor %}
