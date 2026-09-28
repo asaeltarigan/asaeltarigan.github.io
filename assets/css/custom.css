@@ -223,6 +223,17 @@ html[data-theme="dark"] .sidebar-scroll-hint {
 html[data-theme="dark"] .teaching-section { color: #e2e8f0; }
 html[data-theme="dark"] .teaching-section-note { color: #94a3b8; }
 
+/* Publications page category headings (Journal vs Conference dividers) */
+.publication-section {
+  font-size: 1.45em;
+  font-weight: 700;
+  color: #1f3a5f;
+  border-bottom: 3px solid #2dd4bf;
+  padding-bottom: 0.25em;
+  margin-top: 2.2em;
+}
+html[data-theme="dark"] .publication-section { color: #e2e8f0; }
+
 /* Other courses taught list */
 .teaching-subsection {
   font-size: 1.1em;
