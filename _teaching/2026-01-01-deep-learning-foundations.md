@@ -1,9 +1,9 @@
 ---
-title: "Deep Learning Foundations (COSC6051001)"
+title: "Deep Learning (COSC6051001)"
 collection: teaching
 role: authored
 type: Undergraduate course
-permalink: /teaching/deep-learning-foundations-cosc6051001
+permalink: /teaching/deep-learning-cosc6051001
 venue: BINUS University, Artificial Intelligence Program (Semester 3)
 date: 2026-01-01
 excerpt: 'Theoretical and probabilistic foundations of deep learning: probability, distributions, neural architectures, and generative models.'
