@@ -4,7 +4,7 @@ collection: teaching
 role: authored
 type: Undergraduate course
 permalink: /teaching/deep-learning-cosc6051001
-venue: BINUS University, Artificial Intelligence Program (Semester 3)
+venue: BINUS University, Artificial Intelligence Program
 date: 2026-01-01
 excerpt: 'Theoretical and probabilistic foundations of deep learning: probability, distributions, neural architectures, and generative models.'
 ---
