@@ -21,6 +21,8 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 
 <a href="https://qualifying-amsterdam-salmon-able.trycloudflare.com/">Session 2 - Intelligent Agents</a>
 
+<a href="https://constitute-against-cheese-earnings.trycloudflare.com/">Session 3 & 4 - Search</a>
+
 </details>
 
 <details>
@@ -53,3 +55,18 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 <a href="https://para-partially-tutorial-excluded.trycloudflare.com/">Session 22 - Neural Network</a>
 
 </details>
+
+<details>
+<summary><strong>Pre-Final Exam Review</strong> <em>(Kuis Sebelum Final Exam)</em></summary>
+
+<a href="https://area-trans-had-signed.trycloudflare.com/">Kuis Sebelum Final Exam</a>
+
+</details>
+
+<details>
+<summary><strong>MLOps — Data Management</strong></summary>
+
+<a href="https://treasures-advantages-focuses-mega.trycloudflare.com/">MLOps Recall - Data Management</a>
+
+</details>
+
