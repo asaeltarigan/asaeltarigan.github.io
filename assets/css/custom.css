@@ -99,18 +99,19 @@ html[data-theme="dark"] .author__bio {
   font-size: 0.85em;
 }
 
-/* Content must clear the theme's pinned (.page__footer position:fixed) footer.
-   Instead of a fixed overlay footer that covers the last row on short pages,
-   keep the footer in normal flow on desktop (the theme already does this on
-   mobile: .page__footer position:relative under 768px). A static footer sits
-   below the content and can never overlap cards/links. */
+/* Footer stays pinned to the bottom of the screen (position:fixed, theme default on
+   desktop; the theme keeps it position:relative on mobile). A pinned footer always
+   covers the bottom ~60px band of the viewport, so the LAST row of content would sit
+   permanently behind it at full scroll. Give the page bottom padding equal to the
+   footer height (+ breathing room) so the final content can always be scrolled clear
+   of the fixed footer. */
 @media (min-width: 769px) {
   .page__footer {
-    position: static;
-    float: none;
-    margin-top: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
-  #main { padding-bottom: 2em; }
+  body { padding-bottom: 4em; }
 }
 
 /* ---------- Blog list cards with thumbnails ---------- */
