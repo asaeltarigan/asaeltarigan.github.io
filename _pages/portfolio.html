@@ -7,8 +7,40 @@ author_profile: true
 
 {% include base_path %}
 
+<p class="portfolio-intro">Systems I designed, built, and run myself. Proof over claims: these are live in production and power the BINUS AI program.</p>
 
+{% comment %}Flagship feature card{% endcomment %}
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  {% if post.featured %}
+<div class="pf-feature">
+  <div class="pf-feature-body">
+    <span class="pf-feature-flag">Flagship build</span>
+    <h2 class="pf-feature-title">
+      <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p class="pf-feature-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <ul class="pf-stats">
+      {% for s in post.stats %}<li>{{ s }}</li>{% endfor %}
+    </ul>
+    <div class="pf-actions">
+      {% if post.source %}<a class="btn btn--primary" href="{{ post.source }}" rel="noopener">Source</a>{% endif %}
+      <a class="btn" href="{{ base_path }}{{ post.url }}">Project details</a>
+    </div>
+  </div>
+</div>
+  {% endif %}
 {% endfor %}
 
+{% comment %}Metric cards for the rest{% endcomment %}
+<div class="pf-grid">
+{% for post in site.portfolio %}
+  {% unless post.featured %}
+  <a class="pf-card" href="{{ base_path }}{{ post.url }}">
+    <h3 class="pf-card-title">{{ post.title }}</h3>
+    <p class="pf-card-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% if post.chips %}<div class="pf-chips">{% for c in post.chips %}<span class="pf-chip">{{ c }}</span>{% endfor %}</div>{% endif %}
+    <span class="pf-card-cta">Explore project &rsaquo;</span>
+  </a>
+  {% endunless %}
+{% endfor %}
+</div>

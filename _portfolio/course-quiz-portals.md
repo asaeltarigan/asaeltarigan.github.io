@@ -2,6 +2,12 @@
 title: "Course Quiz Portals"
 excerpt: "Weekly quiz portals for ML courses: practice-mode, NIM-gated submissions with instant feedback."
 collection: portfolio
+chips:
+  - "FastAPI"
+  - "NIM-gated"
+  - "auto-graded"
+  - "per-course"
+source: "https://github.com/asaeltarigan"
 ---
 
 Weekly quiz portals for machine learning courses at BINUS.

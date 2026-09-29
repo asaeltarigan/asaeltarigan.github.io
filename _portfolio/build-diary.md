@@ -2,6 +2,12 @@
 title: "Build Diary"
 excerpt: "An automated public log of what I ship, committed truthfully week by week."
 collection: portfolio
+chips:
+  - "automated"
+  - "public repo"
+  - "no fake commits"
+  - "weekly"
+source: "https://github.com/asaeltarigan/build-diary"
 ---
 
 An [automated public build diary](https://github.com/asaeltarigan/build-diary): a truthful, machine-generated log of what I ship.

@@ -1,7 +1,12 @@
 ---
 title: "Interactive Teaching Tools"
-excerpt: "Visual, interactive tools that make abstract ML concepts click: the backpropagation teaching tool and its 4-beat story."
+excerpt: "Visual, interactive tools that make abstract ML concepts click, built on the backpropagation teaching tool and its 4-beat story."
 collection: portfolio
+chips:
+  - "single-file"
+  - "browser-based"
+  - "no backend"
+  - "4-beat pedagogy"
 ---
 
 I build visual, interactive tools for teaching abstract machine learning concepts. Visual and interactive beats abstract wherever possible.
