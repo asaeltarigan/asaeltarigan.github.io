@@ -100,11 +100,17 @@ html[data-theme="dark"] .author__bio {
 }
 
 /* Content must clear the theme's pinned (.page__footer position:fixed) footer.
-   Without this, a short page's last row sits behind the fixed 60px footer
-   (portfolio metric cards, short cv/pub pages). Desktop only: on mobile the
-   footer is position:relative and needs no clearance. */
+   Instead of a fixed overlay footer that covers the last row on short pages,
+   keep the footer in normal flow on desktop (the theme already does this on
+   mobile: .page__footer position:relative under 768px). A static footer sits
+   below the content and can never overlap cards/links. */
 @media (min-width: 769px) {
-  #main { padding-bottom: 5em; }
+  .page__footer {
+    position: static;
+    float: none;
+    margin-top: 2em;
+  }
+  #main { padding-bottom: 2em; }
 }
 
 /* ---------- Blog list cards with thumbnails ---------- */
