@@ -41,17 +41,11 @@ html[data-theme="dark"] {
   top: 4.7em;
   align-self: flex-start;
   padding-top: 0 !important;
-  max-height: none;
-  overflow: visible;
+  max-height: calc(100vh - 10em);
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-
-/* Sidebar: one common LEFT edge for avatar + name + bio + links, and a
-   lighter avatar ring (8 Oct 2026). The theme centres the avatar while the
-   link list is left-aligned, which reads as "off centre". */
-.sidebar .author__avatar { display: block; width: auto; max-width: 100%; text-align: left; }
-.sidebar .author__avatar img { display: block; margin: 0; border-width: 2px; }
-.sidebar .author__name,
-.sidebar .author__bio { text-align: left; }
 
 .sidebar.sticky::-webkit-scrollbar {
   width: 0;
@@ -505,13 +499,6 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   border-radius: var(--ds-radius);
   box-shadow: var(--ds-shadow);
   padding: 1.15rem 1.15rem 0.5rem;
-  height: auto;                /* theme forces 100vh -> dead space under the links */
-}
-
-/* Wider sidebar so the name + links fit without cramped wrapping (8 Oct 2026) */
-@media (min-width: 769px) {
-  .sidebar { width: 24%; }
-  .page { width: 74%; }
 }
 
 /* Masthead + footer ride the gradient instead of painting white */
