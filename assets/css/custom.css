@@ -505,6 +505,7 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   border-radius: var(--ds-radius);
   box-shadow: var(--ds-shadow);
   padding: 1.15rem 1.15rem 0.5rem;
+  height: auto;                /* theme forces 100vh -> dead space under the links */
 }
 
 /* Masthead + footer ride the gradient instead of painting white */
