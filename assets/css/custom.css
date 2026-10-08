@@ -40,7 +40,7 @@ html[data-theme="dark"] {
   position: sticky !important;
   top: 4.7em;
   align-self: flex-start;
-  padding-top: 0 !important;
+  padding-top: 1.3rem !important;
   max-height: calc(100vh - 10em);
   overflow-y: auto;
   scrollbar-width: none;
@@ -496,7 +496,8 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   border: 1px solid rgba(21, 32, 51, 0.08);
   border-radius: var(--ds-radius);
   box-shadow: var(--ds-shadow);
-  padding: 1.15rem 1.15rem 0.5rem;
+  padding: 1.3rem 1.15rem;
+  height: auto;      /* theme forces 100vh -> collapses card to content, kills dead space below links */
 }
 
 /* Masthead + footer ride the gradient instead of painting white */
