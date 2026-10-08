@@ -28,8 +28,9 @@ html[data-theme="dark"] {
   border: 3px solid var(--global-base-color, #1f3a5f);
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(31, 58, 95, 0.18);
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
 }
 
 /* Sidebar: theme JS forces position:fixed which overlaps the footer on short
