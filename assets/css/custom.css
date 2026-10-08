@@ -538,8 +538,13 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
 .sidebar .author__desktop { font-size: 0.72rem !important; }
 .sidebar .author__urls li a { color: #64748b; }
 
-/* Masthead + footer ride the gradient instead of painting white */
-.masthead, .page__footer { background: transparent; }
+/* Masthead + footer ride the gradient instead of painting solid, but need an
+   OPAQUE-ish backdrop or page content bleeds through while scrolling (hit 8 Oct
+   2026: transparent bars looked broken). Frosted white + blur in light, frosted
+   surface in dark. */
+.masthead, .page__footer { background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(4px); }
+html[data-theme="dark"] .masthead,
+html[data-theme="dark"] .page__footer { background: rgba(17, 28, 49, 0.92); backdrop-filter: blur(4px); }
 .masthead::after { background: var(--ds-line); }
 .page__footer { border-top: 1px solid var(--ds-line); }
 
