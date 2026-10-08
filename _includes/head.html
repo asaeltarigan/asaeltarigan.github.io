@@ -10,63 +10,67 @@
 <link rel="alternate" hreflang="x-default" href="https://asaeltarigan.github.io/">
 {% endif %}
 
+{% assign site_url = site.url | append: site.baseurl %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://asaeltarigan.github.io/#person",
-  "name": "Gabriel Asael Tarigan",
-  "givenName": "Gabriel Asael",
-  "familyName": "Tarigan",
-  "honorificSuffix": "S.Kom., M.Kom.",
-  "jobTitle": "Artificial Intelligence Lecturer & Researcher",
-  "worksFor": {
-    "@type": "EducationalOrganization",
-    "name": "BINUS University",
-    "url": "https://socs.binus.ac.id/"
-  },
-  "alumniOf": [
+  "@graph": [
+{% if page.url == "/" %}    {
+      "@type": "WebSite",
+      "@id": "{{ site_url }}/#website",
+      "url": "{{ site_url }}/",
+      "name": "Gabriel Asael Tarigan",
+      "publisher": { "@id": "{{ site_url }}/#person" }
+    },
     {
-      "@type": "EducationalOrganization",
-      "name": "BINUS University",
-      "url": "https://binus.ac.id/"
+      "@type": "ProfilePage",
+      "@id": "{{ site_url }}/#profile-page",
+      "url": "{{ site_url }}/",
+      "name": "Gabriel Asael Tarigan",
+      "isPartOf": { "@id": "{{ site_url }}/#website" },
+      "mainEntity": { "@id": "{{ site_url }}/#person" }
+    },
+{% endif %}    {
+      "@type": "Person",
+      "@id": "{{ site_url }}/#person",
+      "name": "Gabriel Asael Tarigan",
+      "givenName": "Gabriel Asael",
+      "familyName": "Tarigan",
+      "honorificSuffix": "S.Kom., M.Kom.",
+      "jobTitle": "Artificial Intelligence Lecturer & Researcher",
+      "worksFor": {
+        "@type": "EducationalOrganization",
+        "name": "BINUS University",
+        "url": "https://socs.binus.ac.id/"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "BINUS University",
+          "url": "https://binus.ac.id/"
+        }
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "MLOps",
+        "Transformer Architectures"
+      ],
+      "url": "{{ site_url }}/",
+      "identifier": "https://orcid.org/0009-0005-2246-5209",
+      "sameAs": [
+        "https://orcid.org/0009-0005-2246-5209",
+        "https://scholar.google.com/citations?user=FCaQ7i0AAAAJ",
+        "https://www.researchgate.net/profile/Gabriel-Asael-Tarigan",
+        "https://www.linkedin.com/in/gabrielasael/",
+        "https://asaeltarigan.medium.com/",
+        "https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/",
+        "https://github.com/asaeltarigan"
+      ]
     }
-  ],
-  "knowsAbout": [
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Deep Learning",
-    "Computer Vision",
-    "MLOps",
-    "Transformer Architectures"
-  ],
-  "url": "https://asaeltarigan.github.io/",
-  "identifier": "https://orcid.org/0009-0005-2246-5209",
-  "sameAs": [
-    "https://orcid.org/0009-0005-2246-5209",
-    "https://scholar.google.com/citations?user=FCaQ7i0AAAAJ",
-    "https://www.researchgate.net/profile/Gabriel-Asael-Tarigan",
-    "https://www.linkedin.com/in/gabrielasael/",
-    "https://asaeltarigan.medium.com/",
-    "https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/",
-    "https://github.com/asaeltarigan"
   ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://asaeltarigan.github.io/#website",
-  "name": "Gabriel Asael Tarigan",
-  "alternateName": "AI Lecturer & Researcher",
-  "url": "https://asaeltarigan.github.io/",
-  "publisher": {
-    "@type": "Person",
-    "@id": "https://asaeltarigan.github.io/#person",
-    "name": "Gabriel Asael Tarigan"
-  }
 }
 </script>
 
