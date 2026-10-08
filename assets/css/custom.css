@@ -41,11 +41,17 @@ html[data-theme="dark"] {
   top: 4.7em;
   align-self: flex-start;
   padding-top: 0 !important;
-  max-height: calc(100vh - 10em);
-  overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  max-height: none;
+  overflow: visible;
 }
+
+/* Sidebar: one common LEFT edge for avatar + name + bio + links, and a
+   lighter avatar ring (8 Oct 2026). The theme centres the avatar while the
+   link list is left-aligned, which reads as "off centre". */
+.sidebar .author__avatar { display: block; width: auto; max-width: 100%; text-align: left; }
+.sidebar .author__avatar img { display: block; margin: 0; border-width: 2px; }
+.sidebar .author__name,
+.sidebar .author__bio { text-align: left; }
 
 .sidebar.sticky::-webkit-scrollbar {
   width: 0;
