@@ -12,9 +12,7 @@ redirect_from:
 
 My research focuses on **Deep Learning**, **Computer Vision (pose estimation and engagement detection)**, **Time-Series Forecasting**, and **Applied ML Systems**.
 
-## Background
-
-I was selected from more than 63,000 applicants to join **Bangkit Academy**, the Google-led career-readiness program. I was also selected for BINUS University's **Faculty Development Program (FDP)**, which fully funded my master's degree.
+Before this, I was selected from more than 63,000 applicants to join **Bangkit Academy**, the Google-led career-readiness program, and I was selected for BINUS University's **Faculty Development Program (FDP)**, which fully funded my master's degree.
 
 ## Research Interests
 
