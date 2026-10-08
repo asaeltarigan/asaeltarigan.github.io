@@ -508,6 +508,12 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   height: auto;                /* theme forces 100vh -> dead space under the links */
 }
 
+/* Wider sidebar so the name + links fit without cramped wrapping (8 Oct 2026) */
+@media (min-width: 769px) {
+  .sidebar { width: 24%; }
+  .page { width: 74%; }
+}
+
 /* Masthead + footer ride the gradient instead of painting white */
 .masthead, .page__footer { background: transparent; }
 .masthead::after { background: var(--ds-line); }
