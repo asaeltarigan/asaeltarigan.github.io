@@ -41,7 +41,7 @@ html[data-theme="dark"] {
   top: 4.7em;
   align-self: flex-start;
   padding-top: 0 !important;
-  max-height: calc(100vh - 7em);
+  max-height: calc(100vh - 10em);
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
