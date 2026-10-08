@@ -26,17 +26,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Gabriel Asael Tarigan, S.Kom., M.Kom."
   pronouns         : # example: "she/her"  
-  bio              : >-
-    <ul class="author-roles">
-    <li>Lecturer Specialist, AI Program (BINUS University)</li>
-    <li>Curriculum Author, AI/ML</li>
-    <li>Applied ML Researcher</li>
-    <li>Peer Reviewer, EMACS Journal</li>
-    <li>Auditor, ASIIN e.V.</li>
-    <li>Competition Coordinator, ARISE &amp; AIPLEX</li>
-    <li>Session Chair, ICCSCI</li>
-    <li>Community Outreach Lead</li>
-    </ul>
+  bio              : "Lecturer · Researcher · Peer Reviewer (EMACS)"
   location         : "Jakarta, Indonesia"
   employer         : "BINUS University"
   uri              : # URL

@@ -45,6 +45,13 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 
 </details>
 
+<details>
+<summary><strong>NLP — Session 4</strong> <em>(Named Entity Recognition)</em></summary>
+
+<a href="https://jpg-secondary-gratis-findings.trycloudflare.com/">NLP Session 4 - Named Entity Recognition</a>
+
+</details>
+
 <details open>
 <summary><strong>Machine Learning series</strong> <em>(Session 17 – 22)</em></summary>
 

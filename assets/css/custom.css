@@ -430,15 +430,3 @@ html { font-size: 16px; }
 .sidebar .author__name { font-size: 1.05rem; }
 .author__bio { font-size: 0.92rem; }
 .masthead__inner-wrap { padding: 0.4em 1em; }
-
-/* Sidebar roles list (8 Oct 2026) */
-.author__bio { margin-bottom: 0.6rem; }
-ul.author-roles {
-  margin: 0.2rem 0 0.6rem;
-  padding-left: 1.05em;
-  font-size: 0.88rem;
-  line-height: 1.5;
-  color: #4b5a6a;
-}
-ul.author-roles li { margin-bottom: 0.2rem; }
-html[data-theme="dark"] ul.author-roles { color: #94a3b8; }
