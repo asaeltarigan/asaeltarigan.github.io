@@ -124,6 +124,10 @@
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 {% if page.date %}
   <meta property="og:type" content="article">
+{% elsif page.url == "/" %}
+  <meta property="og:type" content="profile">
+{% else %}
+  <meta property="og:type" content="website">
 {% endif %}
 {% if page.excerpt %}
   <meta property="og:description" name="description" content="{{ seo_description }}">
