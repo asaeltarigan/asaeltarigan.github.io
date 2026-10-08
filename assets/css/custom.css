@@ -519,6 +519,11 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   width: 21%;
   height: auto;      /* theme forces 100vh -> collapses card to content, kills dead space below links */
 }
+/* Sidebar wider than theme default -> the floated two-column layout needs both
+   widths set together or the main card wraps below the sidebar (hit 8 Oct 2026). */
+@media (min-width: 769px) {
+  .page, .archive { width: 78%; }
+}
 
 /* Sidebar type scale (taller name -> muted details, 8 Oct 2026) */
 .sidebar .author__name {
