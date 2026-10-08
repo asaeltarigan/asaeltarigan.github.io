@@ -59,12 +59,14 @@ html[data-theme="dark"] {
 
 /* Sidebar: name credentials on their own lighter line (Gabriel Asael Tarigan /
    S.Kom., M.Kom.) */
+.sidebar .author__name { font-size: 12px !important; letter-spacing: -0.3px; }
 .author__name .author__credentials {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.70rem;
   font-weight: 400;
   color: #6b7280;
   margin-top: 0.15rem;
+  letter-spacing: normal;
 }
 html[data-theme="dark"] .author__credentials { color: #94a3b8; }
 
