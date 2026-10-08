@@ -10,6 +10,16 @@ redirect_from:
 
 [I am](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) a **Lecturer Specialist** and **AI Researcher** at [BINUS University](https://www.binus.ac.id), School of Computer Science, where I serve as a **Subject Developer** and do **Community Outreach** for the Artificial Intelligence program. I design and author the program's **core AI/ML curricula**, engineer the **production systems** that run them (competitive machine learning platforms, automated evaluation portals, interactive visual learning tools), and supervise a broad range of student projects and national competition teams. I was selected from more than **63,000 applicants** to join **Bangkit Academy**, the Google-led career-readiness program, and selected for BINUS University's **Faculty Development Program (FDP)**, which fully funded my master's degree.
 
+<ul class="role-chips">
+<li>Lecturer Specialist, AI Program (BINUS)</li>
+<li>Curriculum Author, AI Program (BINUS)</li>
+<li>National Machine Learning Competition Coordinator, ARISE &amp; AIPLEX</li>
+<li>Applied Machine Learning Researcher</li>
+<li>Peer Reviewer, EMACS Journal</li>
+<li>Session Chair, ICCSCI</li>
+<li>Community Outreach Lead</li>
+</ul>
+
 ## Research Interests
 
 * **Computer Vision**: Pose estimation, skeletal keypoint tracking, and engagement detection.
