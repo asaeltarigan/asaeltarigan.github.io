@@ -422,3 +422,11 @@ html[data-theme="dark"] .pf-card-cta { color: #e2e8f0; }
   .pf-feature { padding: 1.2em 1.2em; }
   .pf-grid { grid-template-columns: 1fr; }
 }
+
+/* --- Sizing pass (8 Oct 2026): smaller base font + tighter top area, following chunyang-chen.github.io --- */
+html { font-size: 16px; }
+.page__title { font-size: 1.4rem !important; line-height: 1.2; }
+.author__avatar img { width: 110px !important; height: 110px !important; }
+.sidebar .author__name { font-size: 1.05rem; }
+.author__bio { font-size: 0.92rem; }
+.masthead__inner-wrap { padding: 0.4em 1em; }
