@@ -15,7 +15,8 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    {% assign _name_parts = author.name | split: ", " %}
+    <h3 class="author__name">{{ _name_parts[0] }}{% if _name_parts.size > 1 %}<br><span class="author__credentials">{{ _name_parts | slice: 1, 99 | join: ", " }}</span>{% endif %}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>

@@ -57,6 +57,25 @@ html[data-theme="dark"] {
   padding-right: 0.7rem;
 }
 
+/* Sidebar: name credentials on their own lighter line (Gabriel Asael Tarigan /
+   S.Kom., M.Kom.) */
+.author__name .author__credentials {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #6b7280;
+  margin-top: 0.15rem;
+}
+html[data-theme="dark"] .author__credentials { color: #94a3b8; }
+
+/* Sidebar: divider BEFORE the first clickable link (Email), grouping the
+   non-clickable info (Jakarta, BINUS University) above it */
+.sidebar .author__urls.social-icons > li.author__desktop + li:not(.author__desktop) {
+  border-top: 1px solid var(--ds-line, #d9e1ee);
+  margin-top: 0.7rem;
+  padding-top: 0.7rem;
+}
+
 @media (max-width: 768px) {
   /* Mobile: sidebar stacks at top, no footer collision -> no cap, no scroll */
   .sidebar.sticky {
@@ -496,7 +515,7 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   border: 1px solid rgba(21, 32, 51, 0.08);
   border-radius: var(--ds-radius);
   box-shadow: var(--ds-shadow);
-  padding: 1.3rem 1.15rem;
+  padding: 1.3rem 1.6rem 1.3rem 1.9rem;
   height: auto;      /* theme forces 100vh -> collapses card to content, kills dead space below links */
 }
 
