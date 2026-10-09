@@ -95,6 +95,10 @@ html[data-theme="dark"] .author__credentials { color: #94a3b8; }
     max-height: none;
     overflow-y: visible;
   }
+  /* Mobile sidebar must be FULL WIDTH - the desktop 19% width override must not
+     leak down here (it would squash the card to ~74px and clip Jakarta/BINUS,
+     hit 9 Oct 2026). Enforced explicitly so a regressive width can't hide them. */
+  .sidebar { width: 100% !important; }
 }
 
 /* Sidebar: name + bio colors */
