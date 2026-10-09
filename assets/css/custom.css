@@ -104,12 +104,18 @@ html[data-theme="dark"] .author__credentials { color: #94a3b8; }
      Overrides the theme's 36px table-cell avatar width, which otherwise
      squashes/clips the photo. */
   .sidebar .author__avatar { display: table-cell; vertical-align: top; width: auto !important; padding-right: 1.1rem; text-align: left; }
-  .sidebar .author__avatar img { display: block; margin: 0; width: 112px !important; height: 112px !important; object-fit: cover; border-radius: 18px !important; }
+  .sidebar .author__avatar img { display: block; margin: 0; width: 112px !important; height: 112px !important; object-fit: cover; border-radius: 18px !important; background: #1f3a5f !important; }
   .sidebar .author__content { display: table-cell; vertical-align: top; width: auto; text-align: left; margin-top: 0; padding-right: 0; }
   .sidebar .author__name, .sidebar .author__bio { text-align: left; }
-  .sidebar .author__urls-wrapper { display: block; margin: 0.8rem 0 0 0; text-align: right; }
-  .sidebar .author__urls-wrapper .author__urls { text-align: right; }
-  .sidebar .author__urls-wrapper .btn--inverse { display: inline-block; margin-left: 0; }
+  /* Grid: avatar spans 2 rows (col 1), content row1 + Contact row2 in the RIGHT
+     column so the button sits JUST BELOW the role text (not at card bottom).
+     Left pic / right name-role, button under the role. White line on photo =
+     white bg showing in rounded corners -> navy img background fixes it. */
+  .sidebar > div[itemscope] { display: grid !important; grid-template-columns: auto 1fr; grid-auto-rows: auto; align-items: start; }
+  .sidebar .author__avatar { grid-column: 1; grid-row: 1 / span 2; justify-self: start; align-self: start; }
+  .sidebar .author__content { grid-column: 2; grid-row: 1; }
+  .sidebar .author__urls-wrapper { grid-column: 2; grid-row: 2; text-align: left; margin-top: 0.4rem; }
+  /* Contact button: navy, rounded (was gray/inverse - confusing) */
   .sidebar .author__urls-wrapper .btn--inverse,
   .btn--inverse { background: #1f3a5f !important; color: #fff !important; border: none; padding: 0.5em 1.1em; border-radius: 8px; }
 }
