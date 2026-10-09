@@ -103,15 +103,15 @@ html[data-theme="dark"] .author__credentials { color: #94a3b8; }
      Contact button under the text in the right column (hit 9 Oct 2026).
      Overrides the theme's 36px table-cell avatar width, which otherwise
      squashes/clips the photo. */
-  .sidebar .author__avatar { display: table-cell; vertical-align: top; width: auto !important; padding-right: 1rem; text-align: left; }
-  .sidebar .author__avatar img { display: block; margin: 0; width: 120px !important; height: 120px !important; object-fit: cover; border-radius: 18px !important; }
+  .sidebar .author__avatar { display: table-cell; vertical-align: top; width: auto !important; padding-right: 1.1rem; text-align: left; }
+  .sidebar .author__avatar img { display: block; margin: 0; width: 112px !important; height: 112px !important; object-fit: cover; border-radius: 18px !important; }
   .sidebar .author__content { display: table-cell; vertical-align: top; width: auto; text-align: left; margin-top: 0; padding-right: 0; }
   .sidebar .author__name, .sidebar .author__bio { text-align: left; }
-  .sidebar .author__urls-wrapper { display: block; margin: 0.7rem 0 0 0; }
-  .sidebar .author__urls-wrapper .author__urls { margin-left: 0; }
-  .sidebar .author__urls-wrapper .btn--inverse { margin-left: 131px; }
+  .sidebar .author__urls-wrapper { display: block; margin: 0.8rem 0 0 0; text-align: right; }
+  .sidebar .author__urls-wrapper .author__urls { text-align: right; }
+  .sidebar .author__urls-wrapper .btn--inverse { display: inline-block; margin-left: 0; }
   .sidebar .author__urls-wrapper .btn--inverse,
-  .btn--inverse { background: #1f3a5f !important; color: #fff !important; border: none; }
+  .btn--inverse { background: #1f3a5f !important; color: #fff !important; border: none; padding: 0.5em 1.1em; border-radius: 8px; }
 }
 
 /* Sidebar: name + bio colors */
