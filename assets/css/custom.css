@@ -62,6 +62,7 @@ html[data-theme="dark"] {
 
 .sidebar .author__content {
   padding-right: 0.7rem;
+  margin-top: 1.5rem;
 }
 
 /* Sidebar: name credentials on their own lighter line (Gabriel Asael Tarigan /
@@ -526,14 +527,14 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   border: 1px solid rgba(21, 32, 51, 0.08);
   border-radius: var(--ds-radius);
   box-shadow: var(--ds-shadow);
-  padding: 1.4rem 1.1rem 1.3rem 1.4rem;
-  width: 21%;
+  padding: 1.5rem 1.1rem 1.4rem 1.4rem;
+  width: 19%;
   height: auto;      /* theme forces 100vh -> collapses card to content, kills dead space below links */
 }
 /* Sidebar wider than theme default -> the floated two-column layout needs both
    widths set together or the main card wraps below the sidebar (hit 8 Oct 2026). */
 @media (min-width: 769px) {
-  .page, .archive { width: 78%; }
+  .page, .archive { width: 79%; }
 }
 
 /* Sidebar type scale (taller name -> muted details, 8 Oct 2026) */
