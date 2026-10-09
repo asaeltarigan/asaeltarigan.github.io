@@ -78,8 +78,12 @@ html[data-theme="dark"] .author__credentials { color: #94a3b8; }
 }
 
 @media (max-width: 768px) {
-  /* Mobile: sidebar stacks at top, no footer collision -> no cap, no scroll */
+  /* Mobile: sidebar stacks at top and scrolls WITH the page. MUST be static -
+     leaving the desktop sticky active pins the short sidebar below the masthead
+     and it rides over the reading content as you scroll (hit 9 Oct 2026). */
   .sidebar.sticky {
+    position: static !important;
+    top: auto;
     max-height: none;
     overflow-y: visible;
   }
