@@ -99,6 +99,19 @@ html[data-theme="dark"] .author__credentials { color: #94a3b8; }
      leak down here (it would squash the card to ~74px and clip Jakarta/BINUS,
      hit 9 Oct 2026). Enforced explicitly so a regressive width can't hide them. */
   .sidebar { width: 100% !important; }
+  /* Mobile profile card = horizontal row: picture LEFT, name/bio RIGHT,
+     Contact button under the text in the right column (hit 9 Oct 2026).
+     Overrides the theme's 36px table-cell avatar width, which otherwise
+     squashes/clips the photo. */
+  .sidebar .author__avatar { display: table-cell; vertical-align: top; width: auto !important; padding-right: 1rem; text-align: left; }
+  .sidebar .author__avatar img { display: block; margin: 0; width: 120px !important; height: 120px !important; object-fit: cover; border-radius: 18px !important; }
+  .sidebar .author__content { display: table-cell; vertical-align: top; width: auto; text-align: left; margin-top: 0; padding-right: 0; }
+  .sidebar .author__name, .sidebar .author__bio { text-align: left; }
+  .sidebar .author__urls-wrapper { display: block; margin: 0.7rem 0 0 0; }
+  .sidebar .author__urls-wrapper .author__urls { margin-left: 0; }
+  .sidebar .author__urls-wrapper .btn--inverse { margin-left: 131px; }
+  .sidebar .author__urls-wrapper .btn--inverse,
+  .btn--inverse { background: #1f3a5f !important; color: #fff !important; border: none; }
 }
 
 /* Sidebar: name + bio colors */
