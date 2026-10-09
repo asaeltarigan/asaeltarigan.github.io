@@ -23,13 +23,20 @@ html[data-theme="dark"] {
   --global-code-background-color: #16213a;
 }
 
-/* Sidebar: avatar ring + sane size (theme renders it oversized) */
+/* Sidebar: avatar — rounded square, bigger, centered (like chunyang-chen,
+   hit 9 Oct 2026). Radius ~18px (Cheng's value), centered over the column. */
+.author__avatar {
+  display: block;
+  text-align: center;
+}
 .author__avatar img {
   border: 3px solid var(--global-base-color, #1f3a5f);
-  border-radius: 50%;
+  border-radius: 18px;
   box-shadow: 0 2px 8px rgba(31, 58, 95, 0.18);
-  width: 110px;
-  height: 110px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 /* Sidebar: theme JS forces position:fixed which overlaps the footer on short
