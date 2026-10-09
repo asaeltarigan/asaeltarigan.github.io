@@ -528,12 +528,16 @@ a:hover, a:focus { color: var(--ds-accent-strong); }
   border-radius: var(--ds-radius);
   box-shadow: var(--ds-shadow);
   padding: 1.5rem 1.1rem 1.4rem 1.4rem;
-  width: 19%;
   height: auto;      /* theme forces 100vh -> collapses card to content, kills dead space below links */
 }
-/* Sidebar wider than theme default -> the floated two-column layout needs both
-   widths set together or the main card wraps below the sidebar (hit 8 Oct 2026). */
+/* Sidebar width override is DESKTOP-ONLY (inside the media query below). It must
+   NOT apply at mobile, or the sidebar squashes to ~19% width on phones and the
+   page 'breaks' / looks too lean (hit 9 Oct 2026). The theme's mobile layout
+   stacks the sidebar full-width and needs no width override. The floated
+   two-column layout also needs both widths set together or the main card wraps
+   below the sidebar (hit 8 Oct 2026). */
 @media (min-width: 769px) {
+  .sidebar { width: 19%; }
   .page, .archive { width: 79%; }
 }
 
