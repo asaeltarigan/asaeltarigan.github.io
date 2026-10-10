@@ -104,8 +104,16 @@ html[data-theme="dark"] .author__credentials { color: #94a3b8; }
      Overrides the theme's 36px table-cell avatar width, which otherwise
      squashes/clips the photo. */
   .sidebar .author__avatar { display: table-cell; vertical-align: top; width: auto !important; padding-right: 1.1rem; text-align: left; }
-  .sidebar .author__avatar img { display: block; margin: 0; width: 112px !important; height: 112px !important; object-fit: cover; border-radius: 18px !important; background: #1f3a5f !important; }
+  /* The <img> carries the same class as its wrapper div, so the wrapper's
+     padding-right (1.1rem gutter) leaks onto the photo and shrinks its content
+     box, exposing the navy background as a strip on the right edge (hit 10 Oct
+     2026). Kill padding on the img itself so object-fit:cover fills edge-to-edge. */
+  .sidebar .author__avatar img { display: block; margin: 0; padding: 0 !important; width: 112px !important; height: 112px !important; object-fit: cover; border-radius: 18px !important; background: #1f3a5f !important; }
   .sidebar .author__content { display: table-cell; vertical-align: top; width: auto; text-align: left; margin-top: 0; padding-right: 0; }
+  /* Align the Contact button with the name/"Researcher" text line (same 15px
+     theme indent, so the button reads as part of the text column and not a
+     floating element; hit 10 Oct 2026). */
+  .sidebar .author__urls-wrapper { padding-left: 15px; }
   .sidebar .author__name, .sidebar .author__bio { text-align: left; }
   /* Grid: avatar spans 2 rows (col 1), content row1 + Contact row2 in the RIGHT
      column so the button sits JUST BELOW the role text (not at card bottom).
