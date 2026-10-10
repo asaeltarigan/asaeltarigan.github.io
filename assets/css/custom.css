@@ -357,12 +357,14 @@ html[data-theme="dark"] .lang-nav a:hover { color: #94a3b8; }
 .greedy-nav .visible-links .burger-cell { margin-left: auto; }
 
 /* ===== Portfolio page (hybrid: flagship card + metric cards) ===== */
+/* Body text matches the rest of the site: dark navy + 16px (was muted #5a6b80
+   at 16.8/14.4px, which read as a different font/color; hit 10 Oct 2026). */
 .portfolio-intro {
-  color: #5a6b80;
-  font-size: 1.05em;
+  color: #152033;
+  font-size: 1em;
   margin-bottom: 1.8em;
 }
-html[data-theme="dark"] .portfolio-intro { color: #94a3b8; }
+html[data-theme="dark"] .portfolio-intro { color: #cbd5e1; }
 
 /* Flagship feature card (ARISE) */
 .pf-feature {
@@ -396,10 +398,11 @@ html[data-theme="dark"] .pf-feature {
 }
 .pf-feature-title a { color: inherit; }
 .pf-feature-excerpt {
-  color: #5a6b80;
+  color: #152033;
+  font-size: 1em;
   margin-bottom: 1.1em;
 }
-html[data-theme="dark"] .pf-feature-excerpt { color: #94a3b8; }
+html[data-theme="dark"] .pf-feature-excerpt { color: #cbd5e1; }
 
 /* Stat chips row on the feature card */
 .pf-stats {
@@ -442,6 +445,14 @@ html[data-theme="dark"] .pf-stats li {
   text-decoration: none;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
+/* .pf-card is an <a>, so main.css's .archive a { text-decoration: underline }
+   out-specifies our text-decoration: none above and underlined the whole card
+   (the "different font/draft" look; hit 10 Oct 2026). Re-assert no underline
+   on the card and all its children. */
+.archive .pf-card,
+.archive .pf-card * {
+  text-decoration: none !important;
+}
 html[data-theme="dark"] .pf-card {
   border-color: #334155;
   background: #1e293b;
@@ -458,12 +469,12 @@ html[data-theme="dark"] .pf-card {
 }
 html[data-theme="dark"] .pf-card-title { color: #e2e8f0; }
 .pf-card-excerpt {
-  color: #5a6b80;
-  font-size: 0.9em;
+  color: #152033;
+  font-size: 0.95em;
   flex: 1;
   margin-bottom: 1em;
 }
-html[data-theme="dark"] .pf-card-excerpt { color: #94a3b8; }
+html[data-theme="dark"] .pf-card-excerpt { color: #cbd5e1; }
 .pf-chips { display: flex; flex-wrap: wrap; gap: 0.4em; margin-bottom: 1em; }
 .pf-chip {
   font-size: 0.72em;
@@ -603,6 +614,31 @@ html[data-theme="dark"] .page__footer { background: rgba(17, 28, 49, 0.92); back
   padding-bottom: 0.4rem;
   margin-bottom: 0.9rem;
 }
+
+/* Teaching & Publications: keep the section dividers (teaching-section,
+   publication-section) as the BIG headings and shrink the list-item titles so
+   they sit clearly below those headings, then tighten the list. Root cause:
+   .archive h2 forced every h2 (dividers AND items) to 1.28rem and gave each
+   item a hairline + 2em top margin, which flattened the hierarchy and made
+   items big/sprawled (hit 10 Oct 2026). */
+.archive h2.archive__item-title {
+  font-size: 1.05rem;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 1.3rem;
+  margin-bottom: 0.45rem;
+}
+.archive h2.archive__item-title a { color: var(--ds-link-color, #0b57a4); }
+html[data-theme="dark"] .archive h2.archive__item-title a { color: #78b4f0; }
+
+/* Pack the list-item body: smaller metadata/excerpt text, no empty-run gaps */
+.archive .archive__item p,
+.archive .archive__item .archive__item-excerpt {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.45em;
+}
+.archive__item p:empty { display: none; }
 
 .role-chips li { background: #eef3fb; border-color: var(--ds-line); color: #334155; }
 
