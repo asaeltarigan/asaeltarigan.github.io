@@ -563,6 +563,22 @@ body.cv .archive ul {
 body.cv .archive li {
   margin-bottom: 0.25rem;
 }
+/* No underlines on CV list items (Teaching/Publications) — the theme's
+   `.archive a { text-decoration: underline }` underlines every course/paper
+   title, which reads as a visual "break" between rows (hit 12 Oct 2026).
+   Keep them clickable, just clean. */
+body.cv .archive li .archive__item-title a {
+  text-decoration: none;
+}
+body.cv .archive li .archive__item-title a:hover {
+  text-decoration: underline;
+}
+/* Pack the rows tighter on the CV page (the theme's base line-height on these
+   list items is loose). */
+body.cv .archive li .archive__item-title {
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
 
 /* =====================================================================
    Design system (8 Oct 2026): IBM Plex Sans + soft gradient + floating
