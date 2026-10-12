@@ -526,6 +526,30 @@ html { font-size: 16px; }
 }
 html[data-theme="dark"] .role-chips li { background: #1b2740; border-color: #2b3a57; color: #cbd5e1; }
 
+/* CV page (body.cv): consistent section-heading hierarchy + tightened lists.
+   Skills/Publications/Teaching are H2 (matches the Experience/Education timeline
+   headings); give section H2s clear separation from the list above and pack the
+   teaching/publication items so entries don't sprawl (hit 12 Oct 2026). */
+body.cv .archive h2:not(.cv-timeline-heading) {
+  margin-top: 1.7rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--ds-line);
+  padding-bottom: 0.4rem;
+}
+body.cv .archive h2:not(.cv-timeline-heading):first-of-type {
+  margin-top: 1.1rem;
+}
+body.cv .archive .list__item {
+  margin-bottom: 0.3rem;
+}
+body.cv .archive__item-title {
+  margin-top: 0.15rem;
+  margin-bottom: 0.2rem;
+}
+body.cv .archive__item-excerpt {
+  margin: 0;
+}
+
 /* =====================================================================
    Design system (8 Oct 2026): IBM Plex Sans + soft gradient + floating
    cards + section dividers. Modelled on chunyang-chen.github.io.
