@@ -32,6 +32,13 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 </details>
 
 <details>
+<summary><strong>Intelligent Automation — Session 2</strong> <em>(Risks in HR)</em></summary>
+
+<a href="https://sheet-enhancing-this-activities.trycloudflare.com/">Session 2 - Intelligent Automation Risks in HR</a>
+
+</details>
+
+<details>
 <summary><strong>Session 1 — Speech Recognition</strong></summary>
 
 <a href="https://troubleshooting-gui-equation-plays.trycloudflare.com/">Session 1 - Speech Recognition</a>
