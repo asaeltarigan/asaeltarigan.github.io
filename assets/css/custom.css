@@ -549,6 +549,20 @@ body.cv .archive__item-title {
 body.cv .archive__item-excerpt {
   margin: 0;
 }
+/* CV page: kill the default browser bullet-list look on the Teaching/Publications
+   lists (hit 12 Oct 2026). Each course/paper renders as an <li> inside a <ul> that
+   inherits 40px left padding + a disc bullet + 8px li margins -> reads as a spaced
+   bullet list with "breaks" instead of a clean packed list. Remove bullets, collapse
+   the indent, tighten the row gap. Scoped to body.cv so only the CV page changes. */
+body.cv .archive ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+body.cv .archive li {
+  margin-bottom: 0.25rem;
+}
 
 /* =====================================================================
    Design system (8 Oct 2026): IBM Plex Sans + soft gradient + floating
