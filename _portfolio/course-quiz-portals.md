@@ -32,9 +32,9 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 </details>
 
 <details>
-<summary><strong>Intelligent Automation — Session 2</strong> <em>(Risks in HR)</em></summary>
+<summary><strong>Intelligent Automation — Session 6</strong> <em>(Risks in HR)</em></summary>
 
-<a href="https://sheet-enhancing-this-activities.trycloudflare.com/">Session 2 - Intelligent Automation Risks in HR</a>
+<a href="https://sheet-enhancing-this-activities.trycloudflare.com/">Session 6 - Intelligent Automation Risks in HR</a>
 
 </details>
 
