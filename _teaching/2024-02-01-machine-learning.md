@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning (COMP6577001)"
+title: "COMP6577001- Machine Learning"
 collection: teaching
 role: authored
 type: Undergraduate course

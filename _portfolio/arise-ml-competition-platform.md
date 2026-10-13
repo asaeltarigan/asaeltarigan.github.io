@@ -1,5 +1,5 @@
 ---
-title: "ML Competition Platform (ARISE)"
+title: "ARISE - National Machine Learning Competition"
 excerpt: "Kaggle-style ML competition platform for BINUS students, self-hosted on a $5 VPS."
 collection: portfolio
 featured: true

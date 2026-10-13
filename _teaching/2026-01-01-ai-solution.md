@@ -1,5 +1,5 @@
 ---
-title: "Artificial Intelligence Solution (COMP6986001)"
+title: "COMP6986001- Artificial Intelligence Solution"
 collection: teaching
 role: authored
 type: Undergraduate course

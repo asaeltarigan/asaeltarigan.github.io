@@ -1,5 +1,5 @@
 ---
-title: "Applied Natural Language Processing (COMP6965001)"
+title: "COMP6965001- Applied Natural Language Processing"
 collection: teaching
 role: authored
 type: Undergraduate course

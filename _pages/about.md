@@ -30,7 +30,7 @@ redirect_from:
 
 ## Selected Systems & Projects
 
-* **ML Competition Platform (ARISE)**: A custom Kaggle-style competition system built for BINUS AI students, hosted efficiently on a single VPS (FastAPI, cloudflared tunnel, daily submission quotas, automated scoring pipelines, and analytics).
+* **ARISE - National Machine Learning Competition**: A custom Kaggle-style competition system built for BINUS AI students, hosted efficiently on a single VPS (FastAPI, cloudflared tunnel, daily submission quotas, automated scoring pipelines, and analytics).
 * **Course Evaluation & Quiz Portals**: Single-attempt, NIM-gated assessment portals for university machine learning courses with real-time autograding and feedback.
 * **Interactive Backpropagation Visualizer**: A web-based educational visualizer that teaches neural network backpropagation through an intuitive four-step mental model (*guess, measure, blame, nudge*).
 * **Build Diary**: An [automated public repository](https://github.com/asaeltarigan/build-diary) documenting weekly production shipments and technical experiments.

@@ -1,5 +1,5 @@
 ---
-title: "Deep Learning (COSC6051001)"
+title: "COSC6051001- Deep Learning"
 collection: teaching
 role: authored
 type: Undergraduate course

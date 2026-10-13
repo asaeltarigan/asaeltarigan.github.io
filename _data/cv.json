@@ -82,7 +82,7 @@
   "presentations": [],
   "teaching": [
     {
-      "course": "Machine Learning Operations (COMP6984001)",
+      "course": "COMP6984001- Machine Learning Operations",
       "institution": "BINUS University",
       "date": "2026-01-01",
       "role": "Undergraduate course",
@@ -98,7 +98,7 @@
   ],
   "portfolio": [
     {
-      "name": "ML Competition Platform (ARISE)",
+      "name": "ARISE - National Machine Learning Competition",
       "category": "platform",
       "date": "2026-01-01",
       "url": "",

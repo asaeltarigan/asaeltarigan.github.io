@@ -1,5 +1,5 @@
 ---
-title: "Applied Computer Vision (COMP6966001)"
+title: "COMP6966001- Applied Computer Vision"
 collection: teaching
 role: authored
 type: Undergraduate course

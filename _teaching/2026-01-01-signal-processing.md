@@ -1,5 +1,5 @@
 ---
-title: "Signal Processing (COMP6987001)"
+title: "COMP6987001- Signal Processing"
 collection: teaching
 role: authored
 type: Undergraduate course

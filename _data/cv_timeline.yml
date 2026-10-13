@@ -15,7 +15,7 @@ experience:
     location: "International"
     description: "Serving as a peer reviewer, reviewing submitted research papers."
   - time: "2026"
-    title: "ARISE: National ML Competition Platform"
+    title: "ARISE - National Machine Learning Competition"
     org: "BINUS University, BeeFest"
     location: "Jakarta, Indonesia"
     description: "Built and coordinated Indonesia's national AI competition platform, evaluating high school teams' agent submissions live and deterministically."

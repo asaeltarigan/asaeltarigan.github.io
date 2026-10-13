@@ -1,5 +1,5 @@
 ---
-title: "Internet of Things and Robotics (COMP6967001)"
+title: "COMP6967001- Internet of Things and Robotics"
 collection: teaching
 role: authored
 type: Undergraduate course
