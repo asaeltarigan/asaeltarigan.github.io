@@ -94,6 +94,10 @@ publication_category:
     title: 'Preprints'
   theses:
     title: 'Theses'
+  to_be_published:
+    title: 'To be Published'
+  in_writing:
+    title: 'In Writing'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
