@@ -98,6 +98,8 @@ publication_category:
     title: 'To be Published'
   in_writing:
     title: 'In Writing'
+  supervised_projects:
+    title: 'Supervised Student Projects'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
