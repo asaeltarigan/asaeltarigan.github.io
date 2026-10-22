@@ -48,23 +48,23 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 <details>
 <summary><strong>Session 1 — NLP</strong></summary>
 
-<a href="https://kills-spread-framed-firm.trycloudflare.com/">Session 1 - NLP</a>
+<a href="https://includes-cycles-johnny-necessarily.trycloudflare.com/">Session 1 - NLP</a>
 
-<a href="https://influence-bye-backed-television.trycloudflare.com/">NLP Session 2 - Text Preprocessing</a>
+<a href="https://appear-requesting-tulsa-carlos.trycloudflare.com/">NLP Session 2 - Text Preprocessing</a>
 
 </details>
 
 <details>
 <summary><strong>NLP — Session 4</strong> <em>(Named Entity Recognition)</em></summary>
 
-<a href="https://car-parks-persistent-round.trycloudflare.com/">NLP Session 4 - Named Entity Recognition</a>
+<a href="https://fat-tablets-premiere-images.trycloudflare.com/">NLP Session 4 - Named Entity Recognition</a>
 
 </details>
 
 <details>
 <summary><strong>NLP Preprocessing Playground</strong> <em>(interactive game hub)</em></summary>
 
-<a href="https://puerto-shaft-dayton-hull.trycloudflare.com/">NLP Preprocessing Playground — 7 mini-games</a>
+<a href="https://sit-expires-diff-monsters.trycloudflare.com/">NLP Preprocessing Playground — 7 mini-games</a>
 
 </details>
 
