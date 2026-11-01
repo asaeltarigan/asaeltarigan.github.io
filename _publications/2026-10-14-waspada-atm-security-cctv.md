@@ -2,10 +2,11 @@
 title: "WASPADA (Weapon And Suspicious Pose Alert & Detection Aggregator) to Enhance ATM Security via CCTV"
 collection: publications
 category: conferences
+status: accepted
 permalink: /publication/waspada-atm-security-cctv/
 excerpt: "A real-time ATM CCTV surveillance framework combining YOLO26-based weapon and suspicious-pose detection with decision-level threat scoring and automated alerting."
 date: 2026-10-14
-venue: "The 1st International Conference on Computing and Digital Technology (ICoDiT) 2026"
+venue: "The 1st International Conference on Computing and Digital Technology (ICoDiT)"
 citation: "Sutanto, A. A., Pariandika, I. G. W. D., Zefanya, K., Muliana, R. A., Tarigan, G. A., &amp; Samuel (2026). &quot;WASPADA (Weapon And Suspicious Pose Alert &amp; Detection Aggregator) to Enhance ATM Security via CCTV.&quot; <i>The 1st International Conference on Computing and Digital Technology (ICoDiT)</i>."
 ---
 

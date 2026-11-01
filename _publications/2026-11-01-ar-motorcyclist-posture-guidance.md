@@ -2,6 +2,7 @@
 title: "Application of Augmented Reality for Motorcyclist's Sitting Posture Guidance"
 collection: publications
 category: conferences
+status: accepted
 permalink: /publication/ar-motorcyclist-posture-guidance/
 excerpt: "A smartphone-based Augmented Reality application providing real-time spatial calibration for motorcyclists' riding posture, built with Unity, Vuforia, and Blender."
 date: 2026-11-01

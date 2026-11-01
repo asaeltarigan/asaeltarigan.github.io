@@ -2,6 +2,7 @@
 title: "Emotional Framing Effects on Medical Triage in General-Purpose and Medical-Adapted LLMs"
 collection: publications
 category: to_be_published
+status: accepted
 permalink: /publication/emotional-framing-medical-triage-llms/
 excerpt: "A study of how emotional framing affects medical triage performance in general-purpose and medical-adapted large language models."
 date: 2026-11-01

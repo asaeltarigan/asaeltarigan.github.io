@@ -2,6 +2,7 @@
 title: "Enhancing Cross-Dataset Generalization in Deepfake Detection: A Multi-Source Fine-Tuning Approach with XceptionNet"
 collection: publications
 category: conferences
+status: accepted
 permalink: /publication/deepfake-detection-multisource-xceptionnet/
 excerpt: "A multi-source fine-tuning approach with XceptionNet to enhance cross-dataset generalization in deepfake detection."
 date: 2026-11-01

@@ -2,6 +2,7 @@
 title: "Fake Review Detection on E-Commerce Platforms Using a Hybrid Anomaly Detection Approach: Combining Autoencoder and Isolation Forest"
 collection: publications
 category: preprints
+status: preprint
 permalink: /publication/fake-review-detection-ecommerce/
 excerpt: 'A hybrid anomaly detection approach combining autoencoders and Isolation Forest to detect fake reviews on e-commerce platforms.'
 date: 2026-06-29
