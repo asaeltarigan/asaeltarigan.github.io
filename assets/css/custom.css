@@ -720,3 +720,25 @@ html[data-theme="dark"] h4, html[data-theme="dark"] .page__title,
 html[data-theme="dark"] .author__name { color: #e6eefc; }
 html[data-theme="dark"] .role-chips li { background: #1b2740; border-color: #2b3a57; color: #cbd5e1; }
 html[data-theme="dark"] .page__footer { border-top-color: #22304d; }
+
+/* Tablet (900-1279px): the theme switches .author__urls to an always-expanded
+   static block at the $large breakpoint, but the sidebar column is still only
+   ~170px wide until 1280px, so the long links (email etc.) clip and break the
+   card. Keep the contact dropdown (collapsed) form here, with the Contact
+   toggle visible, so the links stay reachable without overflowing. */
+@media screen and (min-width: 900px) and (max-width: 1279px) {
+  .sidebar .author__urls {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    padding: 10px;
+    list-style: none;
+    border: 1px solid var(--global-border-color);
+    border-radius: var(--global-radius);
+    background: var(--global-bg-color);
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  .sidebar .author__urls-wrapper .btn { display: block; }
+}
