@@ -742,3 +742,16 @@ html[data-theme="dark"] .page__footer { border-top-color: #22304d; }
   }
   .sidebar .author__urls-wrapper .btn { display: block; }
 }
+
+/* Responsive author photo: the card used a fixed 150px frame that overflowed
+   the ~128px sidebar column on tablet and got cropped. Scale with the sidebar,
+   capped at 150px so it never looks oversized on wide screens. */
+.sidebar .author__avatar img,
+.author__avatar img {
+  width: 100% !important;
+  max-width: 150px !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  margin: 0 auto !important;
+}
