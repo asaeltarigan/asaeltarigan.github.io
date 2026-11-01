@@ -39,7 +39,7 @@ redirect_from:
 
 A full list with citation metrics is available on my [Google Scholar](https://scholar.google.com/citations?user=FCaQ7i0AAAAJ), [ResearchGate](https://www.researchgate.net/profile/Gabriel-Asael-Tarigan), and the [Publications](/publications/) page.
 
-* **Skeletal Keypoint-Based Pipeline as a Computer Vision-Based Approach**  
+* **Skeletal Keypoint-Based Pipeline as a Computer Vision-Based Approaches**  
   *Gabriel Asael Tarigan*, Kuncahyo Setyo Nugroho, Bens Pardamean.  
   *Communications in Mathematical Biology and Neuroscience*, 2026.
 
