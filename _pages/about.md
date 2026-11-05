@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I started teaching before it was ever a job. Sunday school classes on the weekends, private tutoring after school — and the honest reason I kept at it is that I liked watching a person finally get something. That same feeling still runs everything I do now.
+I started teaching before it was ever a job. Sunday school classes on the weekends, private tutoring after school — and the honest reason I kept at it is that teaching turned out to be how I learned things myself — and there's no feeling like watching someone finally grow. That same feeling still runs everything I do now.
 
 Today I'm a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) at [BINUS University](https://www.binus.ac.id)'s School of Computer Science. I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
 
