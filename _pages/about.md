@@ -8,7 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-[I am](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) a **Lecturer Specialist** and **AI Researcher** at [BINUS University](https://www.binus.ac.id), School of Computer Science, where I serve as a **Subject Developer** and do **Community Outreach** for the Artificial Intelligence program. I design and author the program's **core AI/ML curricula**, engineer the **production systems** that run them (competitive machine learning platforms, automated evaluation portals, interactive visual learning tools), and supervise a broad range of student projects and national competition teams. I was selected from more than **63,000 applicants** to join **Bangkit Academy**, the Google-led career-readiness program, and selected for BINUS University's **Faculty Development Program (FDP)**, which fully funded my master's degree.
+I started teaching before it was ever a job. Sunday school classes on the weekends, private tutoring after school — and the honest reason I kept at it is that I liked watching a person finally get something. That same feeling still runs everything I do now.
+
+Today I'm a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) at [BINUS University](https://www.binus.ac.id)'s School of Computer Science. I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
+
+And I've been on the student side of all of it. I got into Bangkit out of 63,000 applicants, and BINUS's Faculty Development Program paid for my master's. So I know these paths from the inside — and I get to hand that feeling to the person who's just starting.
 
 <ul class="role-chips">
 <li>Lecturer Specialist, AI Program (BINUS)</li>
