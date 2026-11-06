@@ -34,14 +34,26 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 <details>
 <summary><strong>Intelligent Automation — Session 6</strong> <em>(Risks in HR)</em></summary>
 
-<a href="https://sheet-enhancing-this-activities.trycloudflare.com/">Session 6 - Intelligent Automation Risks in HR</a>
-
 </details>
 
 <details>
 <summary><strong>Session 1 — Speech Recognition</strong></summary>
 
 <a href="https://troubleshooting-gui-equation-plays.trycloudflare.com/">Session 1 - Speech Recognition</a>
+
+</details>
+
+<details>
+<summary><strong>Speech Recognition — Recall</strong> <em>(Graded quiz)</em></summary>
+
+<a href="https://arbor-trainer-effect-influences.trycloudflare.com/">Speech Recognition Recall</a>
+
+</details>
+
+<details>
+<summary><strong>Artificial Intelligence — Recall</strong> <em>(Pre-UTS practice)</em></summary>
+
+<a href="https://january-representing-contributors-listprice.trycloudflare.com/">Latihan UTS Artificial Intelligence</a>
 
 </details>
 
@@ -93,9 +105,11 @@ Each course gets its own portal; all are built on the same FastAPI foundation an
 </details>
 
 <details>
-<summary><strong>MLOps — Data Management</strong></summary>
+<summary><strong>MLOps — Recall Sessions</strong> <em>(Full MLOps exam review)</em></summary>
 
 <a href="https://treasures-advantages-focuses-mega.trycloudflare.com/">MLOps Recall - Data Management</a>
+
+<a href="https://lcd-preference-geological-private.trycloudflare.com/">MLOps Recall (Session 1-6)</a>
 
 </details>
 
