@@ -22,6 +22,7 @@ And I've been on the student side of all of it. I got into Bangkit out of 63,000
 <li>Peer Reviewer, EMACS Journal</li>
 <li>Session Chair, ICCSCI</li>
 <li>Community Outreach Lead</li>
+<li>CIPHER 2026 Artificial Intelligence Hive Coordinator</li>
 </ul>
 
 ## Research Interests
