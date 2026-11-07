@@ -9,7 +9,8 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Gabriel Asael Tarigan | AI & Computer Science Lecturer"
+title                    : "Gabriel Asael Tarigan | Artificial Intelligence & Computer Science Lecturer"
+masthead_title           : "Gabriel Asael Tarigan | AI & CS" # short form shown in top bar only
 title_separator          : "-"
 name                     : &name "Gabriel Asael Tarigan"
 description              : &description "Gabriel Asael Tarigan - Lecturer & Researcher in the Artificial Intelligence (AI) Program, School of Computer Science at BINUS University, Jakarta. A computer science lecturer working on applied ML: time-series forecasting, ML systems, MLOps, and the AI curriculum he designed and built."

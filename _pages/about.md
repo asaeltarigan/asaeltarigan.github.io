@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Gabriel Asael Tarigan, S.Kom., M.Kom."
-seo_title: "Gabriel Asael Tarigan | AI & Computer Science Lecturer"
+seo_title: "Gabriel Asael Tarigan | Artificial Intelligence & Computer Science Lecturer"
 description: "Gabriel Asael Tarigan is a computer science lecturer and researcher at BINUS University, teaching in the Artificial Intelligence (AI) Program, School of Computer Science. He works on applied machine learning, ML systems and MLOps, and designed the AI curriculum."
 author_profile: true
 redirect_from:
