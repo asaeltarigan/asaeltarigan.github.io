@@ -1,7 +1,8 @@
 ---
 permalink: /
 title: "Gabriel Asael Tarigan, S.Kom., M.Kom."
-seo_title: "Gabriel Asael Tarigan | AI Lecturer & Researcher"
+seo_title: "Gabriel Asael Tarigan | AI & Computer Science Lecturer"
+description: "Gabriel Asael Tarigan is a computer science lecturer and researcher at BINUS University, teaching in the Artificial Intelligence (AI) Program, School of Computer Science. He works on applied machine learning, ML systems and MLOps, and designed the AI curriculum."
 author_profile: true
 redirect_from:
   - /about/
@@ -16,6 +17,7 @@ And I've been on the student side of all of it. I got into Bangkit out of 63,000
 
 <ul class="role-chips">
 <li>Lecturer Specialist, Artificial Intelligence (AI) Program, School of Computer Science (BINUS)</li>
+<li>Computer Science Lecturer, School of Computer Science (BINUS)</li>
 <li>Curriculum Author, AI Program (BINUS)</li>
 <li>National Machine Learning Competition Coordinator, ARISE &amp; AIPLEX</li>
 <li>Applied Machine Learning Researcher</li>
