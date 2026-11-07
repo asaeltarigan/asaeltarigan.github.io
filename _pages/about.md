@@ -10,12 +10,12 @@ redirect_from:
 
 I started teaching before it was ever a job. Sunday school classes on the weekends, private tutoring after school — and the honest reason I kept at it is that teaching turned out to be how I learned things myself — and there's no feeling like watching someone finally grow. That same feeling still runs everything I do now.
 
-Today I'm a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) at [BINUS University](https://www.binus.ac.id)'s School of Computer Science. I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
+Today I'm a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) in the Artificial Intelligence (AI) Program, School of Computer Science, at [BINUS University](https://www.binus.ac.id). I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
 
 And I've been on the student side of all of it. I got into Bangkit out of 63,000 applicants, and BINUS's Faculty Development Program paid for my master's. So I know these paths from the inside — and I get to hand that feeling to the person who's just starting.
 
 <ul class="role-chips">
-<li>Lecturer Specialist, AI Program (BINUS)</li>
+<li>Lecturer Specialist, Artificial Intelligence (AI) Program, School of Computer Science (BINUS)</li>
 <li>Curriculum Author, AI Program (BINUS)</li>
 <li>National Machine Learning Competition Coordinator, ARISE &amp; AIPLEX</li>
 <li>Applied Machine Learning Researcher</li>
