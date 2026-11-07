@@ -13,7 +13,7 @@ I started teaching before it was ever a job. Sunday school classes on the weeken
 
 Today I'm a computer science lecturer at [BINUS University](https://www.binus.ac.id), where I serve as a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) in the Artificial Intelligence (AI) Program, School of Computer Science. I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
 
-I came to all of this as a student first. I got into Bangkit out of 63,000 applicants, and BINUS's Faculty Development Program paid for my master's. So none of these paths are abstract to me, and I get to hand that feeling to the person who's just starting.
+Before I joined the faculty, I was a student in these same programs: selected for Bangkit Academy's Machine Learning Cohort in 2022 from more than 63,000 applicants, and a recipient of BINUS's Faculty Development Program (FDP) scholarship for my master's degree.
 
 <ul class="role-chips">
 <li>Lecturer Specialist, Artificial Intelligence (AI) Program, School of Computer Science (BINUS)</li>
