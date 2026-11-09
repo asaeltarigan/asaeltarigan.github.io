@@ -1255,6 +1255,10 @@ html[data-theme="dark"] .cv .cv-subhead { color: #f0eae0; }
 
 .hp-grid--systems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
+@media (max-width: 760px) {
+  .hp-interests li { grid-template-columns: 1fr; gap: 0.1rem; }
+}
+
 .hp-more {
   font-size: 0.82rem;
   margin: 0.75rem 0 0;
@@ -1320,6 +1324,10 @@ html[data-theme="dark"] .cv .cv-subhead { color: #f0eae0; }
   color: #57534c;
   padding: 0.42rem 0;
   border-bottom: 1px solid rgba(206, 188, 166, 0.28);
+  display: grid;
+  grid-template-columns: 11.5rem minmax(0, 1fr);
+  gap: 0.6rem;
+  align-items: baseline;
 }
 
 .hp-interests li:last-child { border-bottom: none; }
@@ -1328,7 +1336,7 @@ html[data-theme="dark"] .cv .cv-subhead { color: #f0eae0; }
 .hp-links {
   font-size: 0.86rem;
   color: #8d8377;
-  margin-top: 0.9rem;
+  margin: 1.1rem 0 0.6rem;
 }
 
 .hp-links a { color: #6a7188; text-decoration: none; }
