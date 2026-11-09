@@ -1760,3 +1760,7 @@ html[data-theme="dark"] .cv-feature__note { color: #bdb6aa; }
    the end of every page. Zero the margin; the JS then reserves exactly the
    visible height. */
 .page__footer { margin-top: 0 !important; }
+
+/* The archive container carried a 2em bottom margin, which showed as a band
+   of body background between the content card and the fixed footer. */
+.archive { margin-bottom: 0 !important; }
