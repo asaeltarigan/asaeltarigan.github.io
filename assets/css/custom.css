@@ -1770,3 +1770,67 @@ html[data-theme="dark"] .cv-feature__note { color: #bdb6aa; }
    short pages show a band of background between the last card and the bar. */
 body { margin-bottom: 0 !important; }
 .page__footer { position: static !important; margin-top: 0 !important; }
+
+/* Footer as the bookend to the masthead: same warm slate, sand hairline on
+   top, cream type. Three zones: identity, links, language + year. */
+.page__footer {
+  background: linear-gradient(100deg, #33323c 0%, #4a4f63 45%, #6a7188 100%) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  border-top: 1px solid rgba(235, 208, 170, 0.5) !important;
+  padding: 1.1rem 0 1.15rem !important;
+  margin-top: 0 !important;
+}
+
+.page__footer .ftr {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) auto auto;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.ftr__brand { display: flex; flex-direction: column; gap: 0.16rem; }
+
+.ftr__name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  color: #f4efe6;
+}
+
+.ftr__role { font-size: 0.71rem; letter-spacing: 0.02em; color: #aea69b; }
+
+.ftr__links { display: flex; flex-wrap: wrap; gap: 0.95rem; }
+
+.ftr__links a,
+.ftr__links a:link,
+.ftr__links a:visited {
+  font-size: 0.71rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #cfc8bd !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+
+.ftr__links a:hover,
+.ftr__links a:active { color: #fff !important; border-bottom-color: rgba(235, 208, 170, 0.75); }
+
+.ftr__meta { display: flex; align-items: center; gap: 0.85rem; font-size: 0.71rem; color: #aea69b; }
+
+.page__footer .lang-nav a,
+.page__footer .lang-nav a:link,
+.page__footer .lang-nav a:visited,
+.page__footer .lang-cur,
+.page__footer .lang-sep { color: #cfc8bd !important; text-decoration: none; }
+
+.page__footer .lang-nav a:hover { color: #fff !important; }
+
+@media (max-width: 760px) {
+  .page__footer .ftr { grid-template-columns: 1fr; gap: 0.75rem; }
+  .ftr__links { gap: 0.7rem; }
+}

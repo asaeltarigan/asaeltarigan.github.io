@@ -1,7 +1,21 @@
-<div class="page__footer-copyright">
-  <span class="lang-nav"><span class="lang-cur" lang="en">EN</span><span class="lang-sep"> | </span><a href="https://asaeltarigan.github.io/id/" hreflang="id" lang="id">ID</a></span> &middot;
-  &copy; {{ site.time | date: '%Y' }} Gabriel Asael Tarigan, S.Kom., M.Kom. &middot; Lecturer Specialist, AI Program, BINUS University
+<div class="ftr">
+  <div class="ftr__brand">
+    <span class="ftr__name">Gabriel Asael Tarigan</span>
+    <span class="ftr__role">Lecturer Specialist, AI Program &middot; BINUS University</span>
+  </div>
+  <nav class="ftr__links" aria-label="Footer">
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+    <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+    <a href="{{ '/year-archive/' | relative_url }}">Writing</a>
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
+  </nav>
+  <div class="ftr__meta">
+    <span class="lang-nav"><span class="lang-cur" lang="en">EN</span><span class="lang-sep"> | </span><a href="https://asaeltarigan.github.io/id/" hreflang="id" lang="id">ID</a></span>
+    <span class="ftr__year">&copy; {{ site.time | date: '%Y' }}</span>
+  </div>
 </div>
+
 <script>
   /* Responsive nav controller: flex overflow handling + dropdown anchored under the burger. Watches the lists so the theme's greedy-nav cannot override it. NOTE: only block comments here - the site build collapses inline-script whitespace and line comments would swallow the rest of the script. */
   (function () {
