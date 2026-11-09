@@ -22,7 +22,7 @@ redirect_from:
       <span class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</span>
       <span class="blog-title">{{ post.title }}</span>
       {% if post.excerpt %}<span class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 165 }}</span>{% endif %}
-      <span class="blog-meta">{{ mins }} min read{% if post.tags.size > 0 %} &middot; {{ post.tags | join: ", " }}{% endif %}</span>
+      <span class="blog-meta">{% if words < 120 %}Read on Medium{% else %}{{ mins }} min read{% endif %}{% if post.tags.size > 0 %} &middot; {{ post.tags | join: ", " }}{% endif %}</span>
     </span>
   </a>
   {% endfor %}

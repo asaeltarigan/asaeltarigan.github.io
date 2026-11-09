@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Recognizing Student Engagement from Skeletal Keypoints: A YOLO and MediaPipe Approach"
+excerpt: >
+  A lightweight computer vision pipeline that recognises student engagement from skeletal keypoints, using YOLO and MediaPipe. Adapted from my journal article.
 date: 2026-09-04
 image: "https://cdn-images-1.medium.com/max/1024/0*1r_37D1ZEegdRPTt"
 tags: [medium]

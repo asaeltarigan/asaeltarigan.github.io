@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "What Reviewing Research Papers Taught Me About Writing"
+excerpt: >
+  What reviewing papers for EMACS taught me about writing: what reviewers actually reward, and where my own drafts kept falling short.
 date: 2026-08-28
 image: "https://cdn-images-1.medium.com/max/1024/1*7Mo1tddgJyec32E38j_tIg.jpeg"
 tags: [medium]

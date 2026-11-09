@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "The Inner Game of Machine Learning"
+excerpt: >
+  A student told me three weeks into deep learning that she was not cut out for machine learning. What her flatlined loss curve says about human learning.
 date: 2026-09-01
 image: "https://cdn-images-1.medium.com/max/1024/0*d8gdwFq6yZz2PurW"
 tags: [medium]

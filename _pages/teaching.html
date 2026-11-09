@@ -20,7 +20,7 @@ author_profile: true
   <a class="teach-card" href="{{ c.url | relative_url }}">
     <span class="teach-code">{{ parts[0] | strip }}</span>
     <h3 class="teach-title">{{ parts | last | strip }}</h3>
-    <p class="teach-desc">{{ c.excerpt | strip_html | truncate: 132 }}</p>
+    <p class="teach-desc">{{ c.excerpt | strip_html | truncatewords: 19 }}</p>
     <span class="teach-cta">Course outline &rarr;</span>
   </a>
 {% endfor %}
@@ -47,7 +47,7 @@ author_profile: true
   <a class="teach-card" href="{{ c.url | relative_url }}">
     <span class="teach-code">Program</span>
     <h3 class="teach-title">{{ c.title }}</h3>
-    <p class="teach-desc">{{ c.excerpt | strip_html | truncate: 132 }}</p>
+    <p class="teach-desc">{{ c.excerpt | strip_html | truncatewords: 19 }}</p>
     <span class="teach-cta">Details &rarr;</span>
   </a>
 {% endfor %}

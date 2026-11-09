@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "$5 Server. A 4-Year Scholarship."
+excerpt: >
+  How a $5-a-month VPS ended up running a machine learning competition with 60+ participants from 10 schools.
 date: 2026-09-10
 image: "https://cdn-images-1.medium.com/max/1024/0*hiPqA-_xqp6uEHlv"
 tags: [medium]
