@@ -870,7 +870,7 @@ html[data-theme="dark"] body {
    ============================================================ */
 
 .sidebar {
-  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%) !important;
+  background: linear-gradient(180deg, #fdfaf2 0%, #fbf5e9 100%) !important;
   border: 1px solid rgba(206, 188, 166, 0.5) !important;
   border-radius: 14px !important;
   box-shadow: 0 10px 30px rgba(51, 50, 60, 0.07), 0 1px 2px rgba(51, 50, 60, 0.04) !important;
@@ -923,13 +923,28 @@ html[data-theme="dark"] body {
 }
 
 .sidebar .author__urls.social-icons > li {
-  padding: 0.26rem 0 !important;
+  padding: 0.08rem 0 !important;
+  line-height: 1.15 !important;
+}
+
+.sidebar .author__urls.social-icons > li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.14rem 0;
+  line-height: 1.2 !important;
+}
+
+.sidebar .author__urls.social-icons i {
+  font-size: 0.8rem !important;
+  line-height: 1 !important;
+  margin-right: 0 !important;
 }
 
 .sidebar .author__urls.social-icons > li.author__desktop + li:not(.author__desktop) {
   border-top: 1px solid rgba(206, 188, 166, 0.55) !important;
-  margin-top: 0.75rem !important;
-  padding-top: 0.75rem !important;
+  margin-top: 0.5rem !important;
+  padding-top: 0.5rem !important;
 }
 
 /* Dark theme: same structure, warm charcoal paper */
@@ -1363,3 +1378,17 @@ html[data-theme="dark"] .hp-system__link,
 html[data-theme="dark"] .hp-links { color: #a89c8b; }
 html[data-theme="dark"] .hp-links a,
 html[data-theme="dark"] .hp-more a { color: #9fb0c6; }
+
+/* Main content card picks up the sidebar's warm paper tone,
+   a touch lighter so the two cards still read as layers. */
+.page__inner-wrap {
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%) !important;
+  border: 1px solid rgba(206, 188, 166, 0.5) !important;
+  box-shadow: 0 10px 30px rgba(51, 50, 60, 0.06) !important;
+}
+
+html[data-theme="dark"] .page__inner-wrap {
+  background: linear-gradient(180deg, #1b1a21 0%, #17161c 100%) !important;
+  border-color: rgba(216, 185, 143, 0.22) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+}
