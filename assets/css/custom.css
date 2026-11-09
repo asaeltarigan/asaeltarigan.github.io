@@ -1771,96 +1771,27 @@ html[data-theme="dark"] .cv-feature__note { color: #bdb6aa; }
 body { margin-bottom: 0 !important; }
 .page__footer { position: static !important; margin-top: 0 !important; }
 
-/* Footer as the bookend to the masthead: same warm slate, sand hairline on
-   top, cream type. Three zones: identity, links, language + year. */
+/* Footer: no separate bar. It inherits the page's warm paper background and
+   keeps only a sand hairline, so it blends into the page end instead of
+   reading as a strip of its own. Layout untouched: one copyright line. */
 .page__footer {
-  background: linear-gradient(100deg, #33323c 0%, #4a4f63 45%, #6a7188 100%) !important;
+  background: transparent !important;
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
-  border-top: 1px solid rgba(235, 208, 170, 0.5) !important;
-  padding: 1.1rem 0 1.15rem !important;
+  border-top: 1px solid rgba(206, 188, 166, 0.55) !important;
+  padding: 0.85rem 0 !important;
   margin-top: 0 !important;
 }
 
-.page__footer .ftr {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 1.2rem;
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) auto auto;
-  gap: 1.4rem;
-  align-items: center;
-}
+.page__footer-copyright { color: #7c7368; font-size: 0.78rem; }
 
-.ftr__brand { display: flex; flex-direction: column; gap: 0.16rem; }
+.page__footer a,
+.page__footer a:link,
+.page__footer a:visited { color: #6a7185 !important; }
 
-.ftr__name {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
-  color: #f4efe6;
-}
+.page__footer a:hover { color: #8a5a2b !important; }
 
-.ftr__role { font-size: 0.71rem; letter-spacing: 0.02em; color: #aea69b; }
-
-.ftr__links { display: flex; flex-wrap: wrap; gap: 0.95rem; }
-
-.ftr__links a,
-.ftr__links a:link,
-.ftr__links a:visited {
-  font-size: 0.71rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #cfc8bd !important;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 1px;
-}
-
-.ftr__links a:hover,
-.ftr__links a:active { color: #fff !important; border-bottom-color: rgba(235, 208, 170, 0.75); }
-
-.ftr__meta { display: flex; align-items: center; gap: 0.85rem; font-size: 0.71rem; color: #aea69b; }
-
-.page__footer .lang-nav a,
-.page__footer .lang-nav a:link,
-.page__footer .lang-nav a:visited,
-.page__footer .lang-cur,
-.page__footer .lang-sep { color: #cfc8bd !important; text-decoration: none; }
-
-.page__footer .lang-nav a:hover { color: #fff !important; }
-
-@media (max-width: 760px) {
-  .page__footer .ftr { grid-template-columns: 1fr; gap: 0.75rem; }
-  .ftr__links { gap: 0.7rem; }
-}
-
-/* footer balance: links sit between identity and meta instead of hugging right */
-.page__footer .ftr { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) auto; }
-
-.ftr__links { justify-content: center; }
-
-.ftr__links a,
-.ftr__links a:link,
-.ftr__links a:visited {
-  text-transform: none;
-  letter-spacing: 0.01em;
-  font-size: 0.76rem;
-  color: #d8d1c6 !important;
-}
-
-.ftr__meta, .ftr__role { color: #c2bab0 !important; }
-.page__footer .lang-nav a, .page__footer .lang-cur, .page__footer .lang-sep { color: #d8d1c6 !important; }
-
-@media (max-width: 760px) {
-  .page__footer .ftr { grid-template-columns: 1fr; }
-  .ftr__links { justify-content: flex-start; }
-}
-
-/* true centring: links sit on the page axis, meta pinned right */
-.page__footer .ftr { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
-.ftr__meta { justify-content: flex-end; }
-@media (max-width: 760px) {
-  .page__footer .ftr { grid-template-columns: 1fr; }
-  .ftr__meta { justify-content: flex-start; }
-}
+html[data-theme="dark"] .page__footer { border-top-color: rgba(216, 185, 143, 0.22) !important; }
+html[data-theme="dark"] .page__footer-copyright { color: #a8a094; }
+html[data-theme="dark"] .page__footer a,
+html[data-theme="dark"] .page__footer a:visited { color: #c9c2b6 !important; }
