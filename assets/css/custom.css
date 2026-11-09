@@ -1050,9 +1050,8 @@ html[data-theme="dark"] .sidebar .author__urls.social-icons > li.author__desktop
 }
 
 .cv .cv-feature__venue {
-  font-size: 0.66rem;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
   color: #6a7188;
   font-weight: 600;
 }

@@ -79,7 +79,8 @@ redirect_from:
 <ul class="cv-teachlist">
 {% for post in site.teaching reversed %}
   {% assign year = post.date | date: "%Y" %}
-  <li><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a> <span class="cv-teachlist__year">{{ year }}</span></li>
+  {% assign tname = post.title | split: "-" | last | strip %}
+  <li><a href="{{ base_path }}{{ post.url }}">{{ tname }}</a> <span class="cv-teachlist__year">{{ year }}</span></li>
 {% endfor %}
 </ul>
 
