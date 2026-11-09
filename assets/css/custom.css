@@ -1240,3 +1240,115 @@ html[data-theme="dark"] .cv .cv-teachlist__year { color: #a89c8b; }
 html[data-theme="dark"] .cv .cv-badge { background: #23222a; border-color: rgba(159, 176, 198, 0.35); color: #c3ccdb; }
 html[data-theme="dark"] .cv .cv-skills strong,
 html[data-theme="dark"] .cv .cv-subhead { color: #f0eae0; }
+
+/* ============================================================
+   Homepage: featured research, systems, interests
+   Reuses .cv-feature cards so /cv/ and / stay visually related.
+   ============================================================ */
+
+.hp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 0.9rem 0 0.4rem;
+}
+
+.hp-grid--systems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.hp-more {
+  font-size: 0.82rem;
+  margin: 0.75rem 0 0;
+}
+
+.hp-more a { color: #6a7188; text-decoration: none; border-bottom: 1px solid rgba(106, 113, 136, 0.35); }
+.hp-more a:hover { color: #34333c; }
+
+.hp-system {
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%);
+  border: 1px solid rgba(206, 188, 166, 0.5);
+  border-radius: 12px;
+  padding: 0.95rem 1rem 1rem;
+  box-shadow: 0 6px 18px rgba(51, 50, 60, 0.05);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.hp-system:hover {
+  box-shadow: 0 12px 26px rgba(51, 50, 60, 0.10);
+  transform: translateY(-1px);
+}
+
+.hp-system__tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #8d8377;
+  margin-bottom: 0.35rem;
+}
+
+.hp-system__name {
+  font-size: 0.98rem;
+  line-height: 1.35;
+  margin: 0 0 0.35rem;
+}
+
+.hp-system__name a { color: #2f2e38; text-decoration: none; }
+.hp-system__name a:hover { color: #6a7188; }
+
+.hp-system__desc {
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: #57534c;
+  margin: 0 0 0.5rem;
+}
+
+.hp-system__link {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8d8377;
+}
+
+.hp-interests {
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0;
+}
+
+.hp-interests li {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #57534c;
+  padding: 0.42rem 0;
+  border-bottom: 1px solid rgba(206, 188, 166, 0.28);
+}
+
+.hp-interests li:last-child { border-bottom: none; }
+.hp-interests strong { color: #2f2e38; font-weight: 600; }
+
+.hp-links {
+  font-size: 0.86rem;
+  color: #8d8377;
+  margin-top: 0.9rem;
+}
+
+.hp-links a { color: #6a7188; text-decoration: none; }
+.hp-links a:hover { color: #34333c; text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .hp-grid, .hp-grid--systems { grid-template-columns: 1fr; }
+}
+
+html[data-theme="dark"] .hp-system {
+  background: linear-gradient(180deg, #1b1a21 0%, #17161c 100%);
+  border-color: rgba(216, 185, 143, 0.22);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+html[data-theme="dark"] .hp-system__name a { color: #f0eae0; }
+html[data-theme="dark"] .hp-system__desc,
+html[data-theme="dark"] .hp-interests li { color: #c4bdb2; }
+html[data-theme="dark"] .hp-interests strong { color: #f0eae0; }
+html[data-theme="dark"] .hp-system__tag,
+html[data-theme="dark"] .hp-system__link,
+html[data-theme="dark"] .hp-links { color: #a89c8b; }
+html[data-theme="dark"] .hp-links a,
+html[data-theme="dark"] .hp-more a { color: #9fb0c6; }

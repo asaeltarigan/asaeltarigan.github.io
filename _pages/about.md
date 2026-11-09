@@ -13,58 +13,64 @@ I started teaching before it was ever a job. Sunday school classes on the weeken
 
 Today I'm a computer science lecturer at [BINUS University](https://www.binus.ac.id), where I serve as a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) in the Artificial Intelligence (AI) Program, School of Computer Science. I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
 
-Before I joined the faculty. As a student, I was selected for Google & GoTo’s Bangkit Academy - Machine Learning Cohort in 2022, selected from more than 63,000 applicants. I am also a recipient of BINUS’s Faculty Development Program (FDP) Scholarship, granting me a full scholarship for my master’s degree.
+Before I joined the faculty I was selected for Google & GoTo's Bangkit Academy Machine Learning Cohort in 2022, from more than 63,000 applicants, and I hold BINUS's Faculty Development Program (FDP) scholarship, which funded my master's degree in full.
 
 <ul class="role-chips">
-<li>Lecturer Specialist, Artificial Intelligence (AI) Program, School of Computer Science (BINUS)</li>
-<li>Computer Science Lecturer, School of Computer Science (BINUS)</li>
-<li>Curriculum Author, AI Program (BINUS)</li>
-<li>National Machine Learning Competition Coordinator, ARISE &amp; AIPLEX</li>
-<li>Applied Machine Learning Researcher</li>
-<li>Peer Reviewer, EMACS Journal</li>
-<li>Session Chair, ICCSCI</li>
-<li>Community Outreach Lead</li>
-<li>CIPHER 2026 Artificial Intelligence Hive Coordinator</li>
+<li>Lecturer Specialist, AI Program, School of Computer Science</li>
+<li>Curriculum author, AI Program</li>
+<li>Coordinator, ARISE &amp; AIPLEX national competitions</li>
+<li>Peer reviewer, EMACS Journal</li>
+<li>CIPHER 2026 AI Hive coordinator</li>
 </ul>
 
-## Research Interests
+<h2 class="cv-section">What I'm working on</h2>
 
-* **Computer Vision**: Pose estimation, skeletal keypoint tracking, and engagement detection.
-* **Deep Learning & Architectures**: Hybrid neural models, parallelized LSTM-GRU networks, and Vision Transformers.
-* **Time-Series Forecasting**: Multivariate financial and sequential signal modeling.
-* **ML Systems & MLOps**: End-to-end model monitoring, edge inference, and lightweight LLM integration.
-* **Educational Technology**: AI-driven learning tools, gamified assessment platforms, and intelligent tutoring systems.
+<div class="hp-grid">
+{% for item in site.data.cv_highlights %}
+  <article class="cv-feature">
+    <div class="cv-feature__meta">
+      <span class="cv-feature__venue">{{ item.venue }}</span>
+      {% if item.status %}<span class="cv-badge">{{ item.status }}</span>{% endif %}
+      <span class="cv-feature__tags">{{ item.tags }}</span>
+    </div>
+    <h3 class="cv-feature__title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+    <p class="cv-feature__note">{{ item.note }}</p>
+  </article>
+{% endfor %}
+</div>
 
-## Selected Systems & Projects
+<p class="hp-more"><a href="{{ '/cv/' | relative_url }}">Full CV and publication list &rarr;</a></p>
 
-* **ARISE - National Machine Learning Competition**: A custom Kaggle-style competition system built for BINUS AI students, hosted efficiently on a single VPS (FastAPI, cloudflared tunnel, daily submission quotas, automated scoring pipelines, and analytics).
-* **Course Evaluation & Quiz Portals**: Single-attempt, NIM-gated assessment portals for university machine learning courses with real-time autograding and feedback.
-* **Interactive Backpropagation Visualizer**: A web-based educational visualizer that teaches neural network backpropagation through an intuitive four-step mental model (*guess, measure, blame, nudge*).
-* **Build Diary**: An [automated public repository](https://github.com/asaeltarigan/build-diary) documenting weekly production shipments and technical experiments.
+<h2 class="cv-section">Things I build</h2>
 
-## Selected Publications
+<div class="hp-grid hp-grid--systems">
+{% for item in site.data.home_systems %}
+  <article class="hp-system">
+    <div class="hp-system__tag">{{ item.tag }}</div>
+    <h3 class="hp-system__name"><a href="{{ item.url | relative_url }}">{{ item.name }}</a></h3>
+    <p class="hp-system__desc">{{ item.description }}</p>
+    <span class="hp-system__link">{{ item.link_label }} &rarr;</span>
+  </article>
+{% endfor %}
+</div>
 
-A full list with citation metrics is available on my [Google Scholar](https://scholar.google.com/citations?user=FCaQ7i0AAAAJ), [ResearchGate](https://www.researchgate.net/profile/Gabriel-Asael-Tarigan), and the [Publications](/publications/) page.
+<h2 class="cv-section">Research interests</h2>
 
-* **Skeletal Keypoint-Based Pipeline as a Computer Vision-Based Approaches**  
-  *Gabriel Asael Tarigan*, Kuncahyo Setyo Nugroho, Bens Pardamean.  
-  *Communications in Mathematical Biology and Neuroscience*, 2026.
+<ul class="hp-interests">
+<li><strong>Computer vision</strong> pose estimation, skeletal keypoints, classroom engagement</li>
+<li><strong>Deep learning</strong> hybrid architectures, parallel LSTM-GRU, vision transformers</li>
+<li><strong>Time-series forecasting</strong> multivariate financial and sequential signals</li>
+<li><strong>ML systems</strong> deployment, monitoring, edge inference, lightweight LLMs</li>
+<li><strong>Educational technology</strong> assessment platforms, intelligent tutoring</li>
+</ul>
 
-* **Computer Vision-Based Pose Estimation for Student Engagement Detection: Trends and Challenges**  
-  *Gabriel Asael Tarigan*, Gregorius Natanael Elwirehardja, Kuncahyo Setyo Nugroho, Bens Pardamean.  
-  *IEEE 7th International Conference on Cybernetics and Intelligent System (ICORIS)*, 2025.
+<h2 class="cv-section">Where to find the work</h2>
 
-* **InterQ: A Job Interview Training Platform Using Facial Expression Detection and Answer Scoring**  
-  Y. Boer, A. C. Permatasari, K. Kevin, *Gabriel Asael Tarigan*, D. Suhartono.  
-  *IEEE 8th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)*, 2025.
-
-* **Indonesian Food Detection with YOLO and Calorie Estimation Using Lightweight LLMs**  
-  M. Nasari, *Gabriel Asael Tarigan*, et al.
-
-* **Lighter Student Engagement Recognition in a Classroom Environment Using Skeletal Keypoints**  
-  *Gabriel Asael Tarigan*, Gregorius Natanael Elwirehardja, Kuncahyo Setyo Nugroho, Bens Pardamean.  
-  *IAENG International Journal of Computer Science*.
-
-* **Parallelization of LSTM-GRU Architectures for Multivariate Prediction of Stock Prices**  
-  *Gabriel Asael Tarigan*, Eric Savero Hermawan, Abba Suganda Girsang.  
-  *2024 International Conference on Information Management and Technology (ICIMTech), IEEE*, 2024.
+<p class="hp-links">
+<a href="{{ '/publications/' | relative_url }}">Publications</a> &middot;
+<a href="{{ '/cv/' | relative_url }}">CV</a> &middot;
+<a href="{{ site.author.googlescholar }}">Google Scholar</a> &middot;
+<a href="https://github.com/asaeltarigan">GitHub</a> &middot;
+<a href="https://www.linkedin.com/in/gabrielasael">LinkedIn</a> &middot;
+<a href="{{ site.author.medium }}">Medium</a>
+</p>

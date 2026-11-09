@@ -1,0 +1,24 @@
+# Cards under "Things I build" on the homepage.
+- name: "ARISE - National ML Competition"
+  tag: "FastAPI · SQLite · one VPS"
+  description: "Kaggle-style competition platform for national high-school teams: three scored tracks, deterministic evaluation, live leaderboard, daily submission quotas."
+  url: "https://github.com/asaeltarigan/arise-competition-platform"
+  link_label: "Code"
+
+- name: "Course quiz portals"
+  tag: "FastAPI · Teaching"
+  description: "Single-attempt, NIM-gated assessment portals for university ML courses: manual grading, per-question points, bilingual interface."
+  url: "/portfolio/"
+  link_label: "Portfolio"
+
+- name: "Backpropagation visualiser"
+  tag: "Interactive · Teaching"
+  description: "Teaches backpropagation through four steps a student can hold in their head: guess, measure, blame, nudge."
+  url: "/portfolio/"
+  link_label: "Portfolio"
+
+- name: "Build diary"
+  tag: "Automation"
+  description: "A weekly public log of what actually shipped, generated from my own repositories rather than written by hand."
+  url: "https://github.com/asaeltarigan/build-diary"
+  link_label: "GitHub"
