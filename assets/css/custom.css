@@ -1384,7 +1384,7 @@ html[data-theme="dark"] .hp-more a { color: #9fb0c6; }
    space here costs the reader a scroll for nothing. Photo, block
    rhythm and list rows all tightened; text sizes kept legible. */
 .sidebar {
-  padding: 0.72rem 0.72rem 0.8rem !important;
+  padding: 0.68rem 0.68rem 0.6rem !important;
 }
 
 .sidebar .author__avatar { margin-bottom: 0.2rem !important; }
