@@ -1,7 +1,7 @@
 ---
 title: "Analyzing Indonesian political hoax detection system on social media using deep learning and natural language processing"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/indonesian-political-hoax-detection/
 excerpt: "The widespread dissemination of false information across social media platforms has become a pressing concern, significantly impacting how individuals perceive reality a..."
 date: 2025-01-01

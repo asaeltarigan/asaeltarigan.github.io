@@ -1,0 +1,34 @@
+# Featured work shown at the top of /cv/
+# Edit this list to change what leads the CV; the rest of the publications
+# are pulled automatically from _publications/.
+- title: "Enhancing Cross-Dataset Generalization in Deepfake Detection"
+  subtitle: "Multi-source fine-tuning with XceptionNet"
+  venue: "IEEE ISRITI 2026"
+  status: "Accepted"
+  tags: "Security · Computer Vision"
+  url: "/publication/deepfake-detection-multisource-xceptionnet/"
+  note: "Asks whether a detector trained on one deepfake corpus still holds up on another, and what multi-source fine-tuning actually buys."
+
+- title: "Emotional Framing Effects on Medical Triage in General-Purpose and Medical-Adapted LLMs"
+  subtitle: "How wording moves a triage decision"
+  venue: "IEEE ICICyTA 2026"
+  status: "Accepted"
+  tags: "LLM Safety · Health"
+  url: "/publication/emotional-framing-medical-triage-llms/"
+  note: "Tests whether emotionally worded prompts shift triage decisions, and whether medical-tuned models resist it better than general ones."
+
+- title: "Application of Augmented Reality for Motorcyclist's Sitting Posture Guidance"
+  subtitle: "Real-time posture coaching in AR"
+  venue: "IEEE ICICyTA 2026"
+  status: "Accepted"
+  tags: "AR · Pose Estimation"
+  url: "/publication/ar-motorcyclist-posture-guidance/"
+  note: "An augmented-reality overlay that guides a rider's sitting posture as they ride, rather than after the fact."
+
+- title: "A Low Latency Python–Unity Framework for Real-Time BISINDO Recognition"
+  subtitle: "Sign-language recognition, measured on latency"
+  venue: "AISDW 2026"
+  status: "Accepted"
+  tags: "Accessibility · Real-time ML"
+  url: "/publication/bisindo-aisdw-low-latency-python-unity/"
+  note: "Compares coordinate-based architectures on latency as well as accuracy, inside a Unity client that has to keep up with a signer."

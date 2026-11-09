@@ -1,7 +1,7 @@
 ---
 title: "Product sales recommendation system using item-based collaborative and content-based filtering"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/product-sales-recommendation-system/
 excerpt: "In the fast-evolving world of e-commerce, improving user experience and operational efficiency emerges from the utilization of recommendation systems."
 date: 2025-01-01

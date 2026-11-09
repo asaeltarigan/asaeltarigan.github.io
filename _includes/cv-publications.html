@@ -1,0 +1,26 @@
+{% include base_path %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+
+{% assign journals = pubs | where: "category", "manuscripts" %}
+{% if journals.size > 0 %}
+<h3 class="cv-subhead">Journal articles <span class="cv-count">{{ journals.size }}</span></h3>
+{% for post in journals %}{% include cv-pub-row.html post=post %}{% endfor %}
+{% endif %}
+
+{% assign conferences = pubs | where: "category", "conferences" %}
+{% if conferences.size > 0 %}
+<h3 class="cv-subhead">Conference papers <span class="cv-count">{{ conferences.size }}</span></h3>
+{% for post in conferences %}{% include cv-pub-row.html post=post %}{% endfor %}
+{% endif %}
+
+{% assign preprints = pubs | where: "category", "preprints" %}
+{% if preprints.size > 0 %}
+<h3 class="cv-subhead">Preprints <span class="cv-count">{{ preprints.size }}</span></h3>
+{% for post in preprints %}{% include cv-pub-row.html post=post %}{% endfor %}
+{% endif %}
+
+{% assign theses = pubs | where: "category", "theses" %}
+{% if theses.size > 0 %}
+<h3 class="cv-subhead">Theses <span class="cv-count">{{ theses.size }}</span></h3>
+{% for post in theses %}{% include cv-pub-row.html post=post %}{% endfor %}
+{% endif %}

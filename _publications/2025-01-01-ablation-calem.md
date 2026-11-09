@@ -1,7 +1,7 @@
 ---
 title: "Ablation study: Calibrated adaptive learning ensemble methodology"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/ablation-calem/
 excerpt: "We conduct a systematic ablation study of the Calibrated Adaptive Learning via Mutual-Ensemble Fusion (CALM) framework to determine how teacher ensemble size influences ..."
 date: 2025-01-01
