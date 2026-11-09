@@ -930,9 +930,10 @@ html[data-theme="dark"] body {
 .sidebar .author__urls.social-icons > li a {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.14rem 0;
+  gap: 0.5rem;
+  padding: 0.12rem 0;
   line-height: 1.2 !important;
+  font-size: 0.78rem !important;
 }
 
 .sidebar .author__urls.social-icons i {
@@ -1378,6 +1379,31 @@ html[data-theme="dark"] .hp-system__link,
 html[data-theme="dark"] .hp-links { color: #a89c8b; }
 html[data-theme="dark"] .hp-links a,
 html[data-theme="dark"] .hp-more a { color: #9fb0c6; }
+
+/* Sidebar compaction: the card is a fixed-width column, so vertical
+   space here costs the reader a scroll for nothing. Photo, block
+   rhythm and list rows all tightened; text sizes kept legible. */
+.sidebar {
+  padding: 0.72rem 0.72rem 0.8rem !important;
+}
+
+.sidebar .author__avatar { margin-bottom: 0.2rem !important; }
+
+@media (min-width: 769px) {
+  .sidebar .author__avatar img { width: 112px !important; height: 112px !important; }
+}
+
+.sidebar .author__name { margin: 0.22rem 0 0 !important; font-size: 1.18rem !important; line-height: 1.15 !important; }
+.sidebar .author__name .author__credentials { margin-top: 0.26rem !important; font-size: 0.61rem !important; letter-spacing: 0.13em !important; }
+.sidebar .author__bio { margin: 0.26rem 0 0.5rem !important; font-size: 0.79rem !important; line-height: 1.38 !important; }
+.sidebar .author__urls-wrapper { margin-top: 0 !important; }
+
+.sidebar .author__urls.social-icons > li a { padding: 0.09rem 0 !important; font-size: 0.78rem !important; gap: 0.5rem !important; }
+.sidebar .author__urls.social-icons i { font-size: 0.78rem !important; }
+.sidebar .author__urls.social-icons > li.author__desktop + li:not(.author__desktop) {
+  margin-top: 0.38rem !important;
+  padding-top: 0.38rem !important;
+}
 
 /* Main content card picks up the sidebar's warm paper tone,
    a touch lighter so the two cards still read as layers. */
