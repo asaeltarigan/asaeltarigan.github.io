@@ -1398,11 +1398,11 @@ html[data-theme="dark"] .hp-more a { color: #9fb0c6; }
 .sidebar .author__bio { margin: 0.26rem 0 0.5rem !important; font-size: 0.79rem !important; line-height: 1.38 !important; }
 .sidebar .author__urls-wrapper { margin-top: 0 !important; }
 
-.sidebar .author__urls.social-icons > li a { padding: 0.09rem 0 !important; font-size: 0.78rem !important; gap: 0.5rem !important; }
+.sidebar .author__urls.social-icons > li a { padding: 0.05rem 0 !important; font-size: 0.77rem !important; gap: 0.48rem !important; }
 .sidebar .author__urls.social-icons i { font-size: 0.78rem !important; }
 .sidebar .author__urls.social-icons > li.author__desktop + li:not(.author__desktop) {
-  margin-top: 0.38rem !important;
-  padding-top: 0.38rem !important;
+  margin-top: 0.32rem !important;
+  padding-top: 0.32rem !important;
 }
 
 /* Main content card picks up the sidebar's warm paper tone,
