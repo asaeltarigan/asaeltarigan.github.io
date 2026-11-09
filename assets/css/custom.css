@@ -756,3 +756,102 @@ html[data-theme="dark"] .page__footer { border-top-color: #22304d; }
   object-fit: cover !important;
   margin: 0 auto !important;
 }
+
+/* ============================================================
+   Blue gradient: gradient masthead + page wash
+   Added 9 Nov 2026 at Gabriel's request (soft-blue direction,
+   deliberately not a copy of chunyang-chen.github.io: his bar is
+   flat navy and the wash near-invisible, ours is a navy->azure
+   bar over a cool page gradient).
+   ============================================================ */
+
+:root {
+  --global-masthead-link-color: #e8f1fa;
+  --global-masthead-link-color-hover: #ffffff;
+  --ds-grad-line: rgba(114, 174, 222, 0.55);
+}
+
+html[data-theme="dark"] {
+  --global-masthead-link-color: #dfeaf6;
+  --global-masthead-link-color-hover: #ffffff;
+}
+
+/* --- Masthead: navy -> azure --- */
+.masthead {
+  background: linear-gradient(100deg, #0d2035 0%, #1b3a5c 45%, #2a5d8c 100%) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.masthead::after {
+  height: 2px;
+  background: linear-gradient(90deg,
+    rgba(42, 93, 140, 0) 0%,
+    var(--ds-grad-line) 28%,
+    rgba(150, 205, 240, 0.6) 50%,
+    var(--ds-grad-line) 72%,
+    rgba(42, 93, 140, 0) 100%);
+}
+
+/* menu items and the nav wrapper paint their own bg in the base theme;
+   let the gradient show through */
+.masthead #site-nav,
+.masthead .greedy-nav,
+.masthead__menu-item {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.masthead__menu-item a,
+.masthead__menu-item a:link,
+.masthead__menu-item a:visited,
+.masthead .lang-cur,
+.masthead .lang-sep {
+  color: #e8f1fa !important;
+}
+
+.masthead__menu-item a:hover,
+.masthead__menu-item a:active,
+.masthead .lang-nav a:link,
+.masthead .lang-nav a:visited {
+  color: #ffffff !important;
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: #ffffff !important;
+  border-bottom-color: #8fc2ea !important;
+}
+
+.masthead a:focus-visible {
+  outline: 2px solid #9ccdf0;
+  outline-offset: 3px;
+}
+
+/* Overflow / mobile dropdown needs a solid surface over the gradient */
+.masthead ul.hidden-links {
+  background: #142f4d;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 12px 28px rgba(8, 22, 40, 0.28);
+}
+
+.masthead ul.hidden-links .masthead__menu-item {
+  background: transparent !important;
+}
+
+/* --- Page: cool gradient wash + soft top glow --- */
+body {
+  background-image:
+    radial-gradient(900px 340px at 50% -12%, rgba(44, 111, 168, 0.10), transparent 60%),
+    linear-gradient(180deg, #f7fafd 0%, #edf3fa 60%, #f6f9fc 100%) !important;
+  background-attachment: fixed !important;
+}
+
+html[data-theme="dark"] body {
+  background-image:
+    radial-gradient(900px 340px at 50% -12%, rgba(84, 152, 220, 0.12), transparent 62%),
+    linear-gradient(180deg, #0a1320 0%, #0d1a2c 60%, #0b1626 100%) !important;
+}
+
+html[data-theme="dark"] .masthead {
+  background: linear-gradient(100deg, #071120 0%, #102640 45%, #1a3d61 100%) !important;
+}
