@@ -1811,3 +1811,16 @@ html[data-theme="dark"] .page__footer a:visited { color: #c9c2b6 !important; }
   letter-spacing: 0 !important;
   line-height: 1.06 !important;
 }
+
+/* Sidebar link list: tighter vertical rhythm (10 Nov 2026) */
+.sidebar .author__urls.social-icons > li {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0.1rem 0 !important;
+  line-height: 1.15 !important;
+}
+.sidebar .author__urls.social-icons > li a { padding: 0.03rem 0 !important; line-height: 1.2 !important; }
+.sidebar .author__urls.social-icons > li.author__desktop + li:not(.author__desktop) {
+  margin-top: 0.3rem !important;
+  padding-top: 0.3rem !important;
+}
