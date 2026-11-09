@@ -1418,3 +1418,276 @@ html[data-theme="dark"] .page__inner-wrap {
   border-color: rgba(216, 185, 143, 0.22) !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
 }
+
+/* ---------- Pages: publications, teaching, outreach, portfolio, blog ----------
+   One card language across the archive pages: warm paper, sand hairline,
+   serif headings. Mirrors the CV and homepage so the site reads as one thing. */
+
+.pg-count {
+  display: inline-block;
+  margin-left: 0.55rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #a49a8c;
+}
+
+/* --- Publications --- */
+.pub-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.pub-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(206, 188, 166, 0.34);
+}
+
+.pub-item:last-child { border-bottom: 0; }
+
+.pub-item__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.pub-item__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #2f2e38;
+}
+
+a.pub-item__title:hover { color: #8a5a2b; }
+
+.pub-item__meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #857b6d;
+}
+
+.pub-item__link {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #6a7188;
+}
+
+.pub-list--sup .pub-item__title { font-weight: 500; }
+
+/* --- Teaching --- */
+.teach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.teach-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.95rem 1rem 1rem;
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%);
+  border: 1px solid rgba(206, 188, 166, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(51, 50, 60, 0.05);
+  color: #2f2e38;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.teach-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(51, 50, 60, 0.09);
+  border-color: rgba(180, 150, 110, 0.65);
+  text-decoration: none;
+}
+
+.teach-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8d8377;
+}
+
+.teach-title {
+  margin: 0.28rem 0 0.35rem;
+  font-size: 0.97rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #2f2e38;
+}
+
+.teach-desc {
+  margin: 0 0 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #5c5750;
+}
+
+.teach-cta {
+  margin-top: auto;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6a7188;
+}
+
+.teach-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.teach-chips li {
+  padding: 0.24rem 0.6rem;
+  font-size: 0.78rem;
+  color: #4a4640;
+  background: rgba(235, 208, 170, 0.22);
+  border: 1px solid rgba(206, 188, 166, 0.55);
+  border-radius: 999px;
+}
+
+.teach-chips li span {
+  margin-left: 0.25rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8d8377;
+}
+
+/* --- Outreach --- */
+.out-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.out-card {
+  padding: 1rem 1.05rem 1.05rem;
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%);
+  border: 1px solid rgba(206, 188, 166, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(51, 50, 60, 0.05);
+}
+
+.out-title {
+  margin: 0 0 0.25rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2f2e38;
+}
+
+.out-sub {
+  margin: 0 0 0.55rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #8d8377;
+}
+
+.out-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.out-list li {
+  position: relative;
+  padding: 0.2rem 0 0.2rem 0.8rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #4a4640;
+}
+
+.out-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c9b393;
+}
+
+/* --- Blog --- */
+.blog-item {
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%) !important;
+  border: 1px solid rgba(206, 188, 166, 0.5) !important;
+  border-radius: 12px;
+}
+
+.blog-item:hover {
+  border-color: rgba(180, 150, 110, 0.65) !important;
+  box-shadow: 0 10px 24px rgba(51, 50, 60, 0.07) !important;
+}
+
+.blog-body { display: flex; flex-direction: column; gap: 0.16rem; }
+
+.blog-date {
+  font-size: 0.67rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8d8377;
+}
+
+.blog-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.02rem;
+  line-height: 1.3;
+  color: #2f2e38;
+}
+
+.blog-excerpt {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #5c5750;
+}
+
+.blog-meta {
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: #a49a8c;
+}
+
+/* --- Portfolio feature card --- */
+.pf-feature {
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%) !important;
+  border: 1px solid rgba(206, 188, 166, 0.5) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 10px 30px rgba(51, 50, 60, 0.06);
+}
+
+/* --- dark mode --- */
+html[data-theme="dark"] .pub-item__title,
+html[data-theme="dark"] .teach-title,
+html[data-theme="dark"] .out-title,
+html[data-theme="dark"] .blog-title { color: #efe9df; }
+
+html[data-theme="dark"] .teach-card,
+html[data-theme="dark"] .out-card,
+html[data-theme="dark"] .blog-item,
+html[data-theme="dark"] .pf-feature {
+  background: linear-gradient(180deg, #1b1a21 0%, #17161c 100%) !important;
+  border-color: rgba(216, 185, 143, 0.22) !important;
+}
+
+html[data-theme="dark"] .teach-desc,
+html[data-theme="dark"] .out-list li,
+html[data-theme="dark"] .blog-excerpt,
+html[data-theme="dark"] .pub-item__meta { color: #b9b2a6; }
+
+@media (max-width: 760px) {
+  .teach-grid, .out-grid { grid-template-columns: 1fr; }
+}

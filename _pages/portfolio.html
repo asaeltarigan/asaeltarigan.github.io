@@ -7,39 +7,32 @@ author_profile: true
 
 {% include base_path %}
 
-<p class="portfolio-intro">Systems I designed, built, and run myself. Proof over claims: these are live in production and power the BINUS AI program.</p>
+<p class="cv-lede">Systems I designed, built, and run myself. Proof over claims: these are live, and they carry real teaching load every week.</p>
 
-{% comment %}Flagship feature card{% endcomment %}
 {% for post in site.portfolio %}
   {% if post.featured %}
-<div class="pf-feature">
-  <div class="pf-feature-body">
-    <span class="pf-feature-flag">Flagship build</span>
-    <h2 class="pf-feature-title">
-      <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <p class="pf-feature-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    <ul class="pf-stats">
-      {% for s in post.stats %}<li>{{ s }}</li>{% endfor %}
-    </ul>
-    <div class="pf-actions">
-      {% if post.source %}<a class="btn btn--primary" href="{{ post.source }}" rel="noopener">Source</a>{% endif %}
-      <a class="btn" href="{{ base_path }}{{ post.url }}">Project details</a>
-    </div>
+<article class="pf-feature">
+  <span class="pf-feature-flag">Flagship build</span>
+  <h2 class="pf-feature-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <p class="pf-feature-excerpt">{{ post.excerpt | strip_html }}</p>
+  <div class="pf-actions">
+    {% if post.source %}<a class="btn btn--primary" href="{{ post.source }}" rel="noopener">Source</a>{% endif %}
+    <a class="btn" href="{{ post.url | relative_url }}">Project details</a>
   </div>
-</div>
+</article>
   {% endif %}
 {% endfor %}
 
-{% comment %}Metric cards for the rest{% endcomment %}
-<div class="pf-grid">
+<h2 class="cv-section">Other builds</h2>
+
+<div class="hp-grid hp-grid--systems">
 {% for post in site.portfolio %}
   {% unless post.featured %}
-  <a class="pf-card" href="{{ base_path }}{{ post.url }}">
-    <h3 class="pf-card-title">{{ post.title }}</h3>
-    <p class="pf-card-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    {% if post.chips %}<div class="pf-chips">{% for c in post.chips %}<span class="pf-chip">{{ c }}</span>{% endfor %}</div>{% endif %}
-    <span class="pf-card-cta">Explore project &rsaquo;</span>
+  <a class="hp-system" href="{{ post.url | relative_url }}">
+    <div class="hp-system__tag">Build</div>
+    <h3 class="hp-system__name">{{ post.title }}</h3>
+    <p class="hp-system__desc">{{ post.excerpt | strip_html }}</p>
+    <span class="hp-system__link">Project details &rarr;</span>
   </a>
   {% endunless %}
 {% endfor %}

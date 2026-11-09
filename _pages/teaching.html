@@ -7,35 +7,49 @@ author_profile: true
 
 {% include base_path %}
 
-I designed and authored the core Artificial Intelligence curriculum at BINUS University's School of Computer Science — seven courses spanning machine learning, applied NLP, deep learning, computer vision, MLOps, signal processing, and IoT and robotics, including full course outlines, assessment (AoL) design, lecture series, and labs.
+{% assign authored = site.teaching | where: "role", "authored" | sort: "title" %}
+{% assign taught_docs = site.teaching | where: "role", "taught" | sort: "title" %}
 
-The pages below show each course's session structure and assessment design. Full session materials are shared with enrolled students only.
+<p class="cv-lede">I designed and authored the core Artificial Intelligence curriculum at BINUS University's School of Computer Science: seven courses spanning machine learning, applied NLP, deep learning, computer vision, MLOps, signal processing, and IoT and robotics, including full course outlines, assessment (AoL) design, lecture series, and labs. Course pages below show each session structure; full materials stay with enrolled students.</p>
 
-{% assign authored_courses = site.teaching | sort: 'title' | where: 'role', 'authored' %}
-{% assign taught_courses = site.teaching | sort: 'title' | where: 'role', 'taught' %}
+<h2 class="cv-section">Authored curriculum<span class="pg-count">{{ authored.size }}</span></h2>
 
-<h2 class="teaching-section authored">Authored curriculum — BINUS AI Program</h2>
-<p class="teaching-section-note">Courses I designed and built: course outlines, assessment (AoL) design, and lecture materials.</p>
-
-{% for post in authored_courses %}
-  {% include archive-single.html %}
+<div class="teach-grid">
+{% for c in authored %}
+  {% assign parts = c.title | split: "-" %}
+  <a class="teach-card" href="{{ c.url | relative_url }}">
+    <span class="teach-code">{{ parts[0] | strip }}</span>
+    <h3 class="teach-title">{{ parts | last | strip }}</h3>
+    <p class="teach-desc">{{ c.excerpt | strip_html | truncate: 132 }}</p>
+    <span class="teach-cta">Course outline &rarr;</span>
+  </a>
 {% endfor %}
+</div>
 
-<h2 class="teaching-section taught">Courses taught</h2>
-<p class="teaching-section-note">Courses and workshops delivered across programs, including global classes.</p>
-<ul class="taught-list">
+<h2 class="cv-section">Courses taught</h2>
+<p class="cv-lede">Delivered across programs, including global classes.</p>
+<ul class="teach-chips">
   <li>Artificial Intelligence</li>
-  <li>Code Reengineering (in Java)</li>
+  <li>Code Reengineering (Java)</li>
   <li>Computer Vision</li>
-  <li>Data Mining (including Global Class)</li>
-  <li>Data Structures (in C)</li>
+  <li>Data Mining <span>Global Class</span></li>
+  <li>Data Structures (C)</li>
   <li>Deep Learning</li>
   <li>Foundations of AI</li>
-  <li>Natural Language Processing (Global Class)</li>
+  <li>Natural Language Processing <span>Global Class</span></li>
   <li>Speech Recognition</li>
 </ul>
 
-<h3 class="teaching-subsection">Other courses taught</h3>
-{% for post in taught_courses %}
-  {% include archive-single.html %}
+{% if taught_docs.size > 0 %}
+<h2 class="cv-section">Workshops and mentoring</h2>
+<div class="teach-grid teach-grid--two">
+{% for c in taught_docs %}
+  <a class="teach-card" href="{{ c.url | relative_url }}">
+    <span class="teach-code">Program</span>
+    <h3 class="teach-title">{{ c.title }}</h3>
+    <p class="teach-desc">{{ c.excerpt | strip_html | truncate: 132 }}</p>
+    <span class="teach-cta">Details &rarr;</span>
+  </a>
 {% endfor %}
+</div>
+{% endif %}

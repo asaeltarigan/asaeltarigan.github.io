@@ -6,17 +6,23 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
+{% include base_path %}
+
+<p class="cv-lede">{{ site.posts.size }} posts, mostly written for Medium. Teaching notes, research process, and the occasional argument with myself about how machine learning is taught.</p>
+
 {% if site.posts.size == 0 %}
-<p>No posts yet.</p>
+<p class="cv-lede">No posts yet.</p>
 {% else %}
 <div class="blog-list">
   {% for post in site.posts %}
+  {% assign words = post.content | strip_html | number_of_words %}
+  {% assign mins = words | divided_by: 200 | plus: 1 %}
   <a class="blog-item" href="{{ post.url | relative_url }}">
-    {% if post.image %}<img class="blog-thumb" src="{{ post.image }}" alt="" loading="lazy">{% endif %}
     <span class="blog-body">
+      <span class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</span>
       <span class="blog-title">{{ post.title }}</span>
-      <span class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-      {% if post.excerpt %}<span class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 130 }}</span>{% endif %}
+      {% if post.excerpt %}<span class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 165 }}</span>{% endif %}
+      <span class="blog-meta">{{ mins }} min read{% if post.tags.size > 0 %} &middot; {{ post.tags | join: ", " }}{% endif %}</span>
     </span>
   </a>
   {% endfor %}

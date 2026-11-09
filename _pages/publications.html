@@ -5,32 +5,62 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
+{% assign pubs = site.publications %}
+{% assign n_journal = pubs | where: "category", "manuscripts" | size %}
+{% assign n_conf = pubs | where: "category", "conferences" | size %}
+{% assign n_pre = pubs | where: "category", "preprints" | size %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2 class="publication-section">{{ category[1].title }}</h2>
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<p class="cv-lede">Peer-reviewed papers, preprints, and the student research I supervise. {{ n_journal }} journal articles and {{ n_conf }} conference papers to date, newest first within each group. Full citations and PDFs are on the individual records, and everything is mirrored on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+
+<h2 class="cv-section">Selected work</h2>
+
+<div class="cv-features">
+{% for item in site.data.cv_highlights %}
+  <article class="cv-feature">
+    <div class="cv-feature__meta">
+      <span class="cv-feature__venue">{{ item.venue }}</span>
+      {% if item.status %}<span class="cv-badge">{{ item.status }}</span>{% endif %}
+      <span class="cv-feature__tags">{{ item.tags }}</span>
+    </div>
+    <h3 class="cv-feature__title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+    <p class="cv-feature__sub">{{ item.subtitle }}</p>
+    <p class="cv-feature__note">{{ item.note }}</p>
+  </article>
+{% endfor %}
+</div>
+
+{% for cat in site.publication_category %}
+  {% unless cat[0] == "supervised_projects" %}
+  {% assign items = pubs | where: "category", cat[0] | sort: "date" | reverse %}
+  {% if items.size > 0 %}
+  <h2 class="cv-section">{{ cat[1].title }}<span class="pg-count">{{ items.size }}</span></h2>
+  <ul class="pub-list">
+  {% for post in items %}
+    <li class="pub-item">
+      <div class="pub-item__head">
+        <a class="pub-item__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.status %}<span class="cv-badge">{{ post.status }}</span>{% endif %}
+      </div>
+      <p class="pub-item__meta">{{ post.venue }}{% if post.date %} &middot; {{ post.date | date: "%Y" }}{% endif %}</p>
+      {% if post.paperurl %}<a class="pub-item__link" href="{{ post.paperurl }}">PDF &rarr;</a>{% endif %}
+    </li>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  </ul>
+  {% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% assign sup = pubs | where: "category", "supervised_projects" | sort: "date" | reverse %}
+{% if sup.size > 0 %}
+<h2 class="cv-section">Supervised student projects<span class="pg-count">{{ sup.size }}</span></h2>
+<p class="cv-lede">Capstone projects I supervised at BINUS. Student work, listed with their names; the papers above are my own.</p>
+<ul class="pub-list pub-list--sup">
+{% for post in sup %}
+  <li class="pub-item">
+    <div class="pub-item__head"><span class="pub-item__title">{{ post.title }}</span></div>
+    <p class="pub-item__meta">{{ post.venue }}{% if post.date %} &middot; {{ post.date | date: "%Y" }}{% endif %}</p>
+  </li>
+{% endfor %}
+</ul>
 {% endif %}
-
-
-
