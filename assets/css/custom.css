@@ -1800,3 +1800,14 @@ html[data-theme="dark"] .page__footer { border-top-color: rgba(216, 185, 143, 0.
 html[data-theme="dark"] .page__footer-copyright { color: #a8a094; }
 html[data-theme="dark"] .page__footer a,
 html[data-theme="dark"] .page__footer a:visited { color: #c9c2b6 !important; }
+
+/* Sidebar name: Instrument Serif + side breathing room (10 Nov 2026) */
+.sidebar { padding-left: 17px !important; padding-right: 17px !important; }
+.sidebar .author__content { padding-left: 0 !important; padding-right: 0 !important; }
+.sidebar .author__name {
+  font-family: "Instrument Serif", Georgia, "Times New Roman", serif !important;
+  font-weight: 400 !important;
+  font-size: 1.60rem !important;
+  letter-spacing: 0 !important;
+  line-height: 1.06 !important;
+}
