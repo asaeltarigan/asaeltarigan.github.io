@@ -758,42 +758,46 @@ html[data-theme="dark"] .page__footer { border-top-color: #22304d; }
 }
 
 /* ============================================================
-   Blue gradient: gradient masthead + page wash
-   Added 9 Nov 2026 at Gabriel's request (soft-blue direction,
-   deliberately not a copy of chunyang-chen.github.io: his bar is
-   flat navy and the wash near-invisible, ours is a navy->azure
-   bar over a cool page gradient).
+   Gradient masthead + warm-blue page wash
+   v1 (9 Nov 2026): navy->azure, too cold in review.
+   v2 (9 Nov 2026): warm slate masthead + a blue page wash warmed
+   by a cream glow. Keeps the blue identity, moves the temperature
+   up so it reads "dusk" rather than "clinical".
+   Tunable knobs: --ds-warm (cream glow strength),
+   masthead gradient stops, and the page linear-gradient end.
    ============================================================ */
 
 :root {
-  --global-masthead-link-color: #e8f1fa;
+  --global-masthead-link-color: #f3ede4;
   --global-masthead-link-color-hover: #ffffff;
-  --ds-grad-line: rgba(114, 174, 222, 0.55);
+  --ds-warm: 0.30;
+  --ds-sand: #ebd0aa;
 }
 
 html[data-theme="dark"] {
-  --global-masthead-link-color: #dfeaf6;
+  --global-masthead-link-color: #efe9df;
   --global-masthead-link-color-hover: #ffffff;
+  --ds-warm: 0.12;
+  --ds-sand: #d8b98f;
 }
 
-/* --- Masthead: navy -> azure --- */
+/* --- Masthead: warm slate -> dusty indigo --- */
 .masthead {
-  background: linear-gradient(100deg, #0d2035 0%, #1b3a5c 45%, #2a5d8c 100%) !important;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07);
+  background: linear-gradient(100deg, #33323c 0%, #4a4f63 45%, #6a7188 100%) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .masthead::after {
   height: 2px;
   background: linear-gradient(90deg,
-    rgba(42, 93, 140, 0) 0%,
-    var(--ds-grad-line) 28%,
-    rgba(150, 205, 240, 0.6) 50%,
-    var(--ds-grad-line) 72%,
-    rgba(42, 93, 140, 0) 100%);
+    rgba(106, 113, 136, 0) 0%,
+    rgba(206, 188, 166, 0.55) 30%,
+    rgba(235, 208, 170, 0.65) 50%,
+    rgba(206, 188, 166, 0.55) 70%,
+    rgba(106, 113, 136, 0) 100%);
 }
 
-/* menu items and the nav wrapper paint their own bg in the base theme;
-   let the gradient show through */
+/* The base theme paints the nav wrapper and menu items; let the gradient show */
 .masthead #site-nav,
 .masthead .greedy-nav,
 .masthead__menu-item {
@@ -806,7 +810,7 @@ html[data-theme="dark"] {
 .masthead__menu-item a:visited,
 .masthead .lang-cur,
 .masthead .lang-sep {
-  color: #e8f1fa !important;
+  color: #f3ede4 !important;
 }
 
 .masthead__menu-item a:hover,
@@ -819,39 +823,41 @@ html[data-theme="dark"] {
 .masthead__menu-item.selected a,
 .masthead__menu-item.selected a:hover {
   color: #ffffff !important;
-  border-bottom-color: #8fc2ea !important;
+  border-bottom-color: #e6cfa8 !important;
 }
 
 .masthead a:focus-visible {
-  outline: 2px solid #9ccdf0;
+  outline: 2px solid #e6cfa8;
   outline-offset: 3px;
 }
 
 /* Overflow / mobile dropdown needs a solid surface over the gradient */
 .masthead ul.hidden-links {
-  background: #142f4d;
+  background: #42465a;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 12px 28px rgba(8, 22, 40, 0.28);
+  box-shadow: 0 12px 28px rgba(30, 26, 20, 0.28);
 }
 
 .masthead ul.hidden-links .masthead__menu-item {
   background: transparent !important;
 }
 
-/* --- Page: cool gradient wash + soft top glow --- */
+/* --- Page: blue wash warmed by a cream glow --- */
 body {
   background-image:
-    radial-gradient(900px 340px at 50% -12%, rgba(44, 111, 168, 0.10), transparent 60%),
-    linear-gradient(180deg, #f7fafd 0%, #edf3fa 60%, #f6f9fc 100%) !important;
+    radial-gradient(780px 420px at 84% 4%, rgba(240, 206, 168, var(--ds-warm)), transparent 62%),
+    radial-gradient(700px 320px at 4% 0%, rgba(150, 172, 198, 0.20), transparent 60%),
+    linear-gradient(180deg, #f4f2ef 0%, #eaeef4 55%, #f6efe6 100%) !important;
   background-attachment: fixed !important;
+}
+
+html[data-theme="dark"] .masthead {
+  background: linear-gradient(100deg, #262430 0%, #3a3d4c 45%, #555463 100%) !important;
 }
 
 html[data-theme="dark"] body {
   background-image:
-    radial-gradient(900px 340px at 50% -12%, rgba(84, 152, 220, 0.12), transparent 62%),
-    linear-gradient(180deg, #0a1320 0%, #0d1a2c 60%, #0b1626 100%) !important;
-}
-
-html[data-theme="dark"] .masthead {
-  background: linear-gradient(100deg, #071120 0%, #102640 45%, #1a3d61 100%) !important;
+    radial-gradient(780px 420px at 84% 4%, rgba(216, 185, 143, var(--ds-warm)), transparent 64%),
+    radial-gradient(700px 320px at 4% 0%, rgba(96, 116, 148, 0.18), transparent 60%),
+    linear-gradient(180deg, #121319 0%, #14161d 55%, #17151a 100%) !important;
 }
