@@ -1720,3 +1720,36 @@ html[data-theme="dark"] .pub-item__meta { color: #b9b2a6; }
 
 .teach-chips { gap: 0.46rem; }
 .teach-chips li span::before { content: "\00b7"; margin-right: 0.3rem; color: #c0b3a0; }
+
+/* Featured cards outside /cv/ (homepage, publications): the .cv scoped
+   rules only apply to the CV page, so mirror them unscoped. */
+.cv-features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.85rem; }
+
+.cv-feature {
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%);
+  border: 1px solid rgba(206, 188, 166, 0.5);
+  border-radius: 12px;
+  padding: 0.95rem 1rem 1.05rem;
+  box-shadow: 0 6px 18px rgba(51, 50, 60, 0.05);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.cv-feature:hover { box-shadow: 0 12px 26px rgba(51, 50, 60, 0.10); transform: translateY(-1px); }
+
+.cv-feature__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; margin-bottom: 0.45rem; }
+.cv-feature__venue { font-size: 0.7rem; letter-spacing: 0.02em; color: #6a7188; font-weight: 600; }
+.cv-feature__tags { font-size: 0.66rem; color: #8d8377; letter-spacing: 0.03em; }
+.cv-feature__title { font-size: 0.98rem; line-height: 1.35; margin: 0 0 0.3rem; }
+.cv-feature__title a { color: #2f2e38; text-decoration: none; }
+.cv-feature__title a:hover { color: #6a7188; text-decoration: underline; }
+.cv-feature__sub { font-size: 0.78rem; color: #6a7188; margin: 0 0 0.4rem; }
+.cv-feature__note { font-size: 0.82rem; line-height: 1.5; color: #57534c; margin: 0; }
+
+html[data-theme="dark"] .cv-feature { background: linear-gradient(180deg, #1b1a21 0%, #17161c 100%); border-color: rgba(216, 185, 143, 0.22); box-shadow: none; }
+html[data-theme="dark"] .cv-feature__title a { color: #f0ebe2; }
+html[data-theme="dark"] .cv-feature__sub { color: #a8a094; }
+html[data-theme="dark"] .cv-feature__note { color: #bdb6aa; }
+
+@media (max-width: 760px) {
+  .cv-features { grid-template-columns: 1fr; }
+}
