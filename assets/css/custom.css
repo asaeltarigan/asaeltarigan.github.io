@@ -1779,11 +1779,16 @@ body { margin-bottom: 0 !important; }
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
   border-top: 1px solid rgba(206, 188, 166, 0.55) !important;
-  padding: 0.85rem 0 !important;
+  padding: 0.5rem 0 !important;
   margin-top: 0 !important;
+  line-height: 1.2 !important;
 }
 
-.page__footer-copyright { color: #7c7368; font-size: 0.78rem; }
+/* the theme nests a <footer> inside .page__footer; its 16px margin + 16px
+   padding are most of the bar's bulk */
+.page__footer > footer { margin: 0 !important; padding: 0 !important; }
+
+.page__footer-copyright { color: #7c7368; font-size: 0.7rem; letter-spacing: 0.005em; }
 
 .page__footer a,
 .page__footer a:link,
