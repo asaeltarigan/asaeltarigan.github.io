@@ -1268,6 +1268,8 @@ html[data-theme="dark"] .cv .cv-subhead { color: #f0eae0; }
 .hp-more a:hover { color: #34333c; }
 
 .hp-system {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%);
   border: 1px solid rgba(206, 188, 166, 0.5);
   border-radius: 12px;
@@ -1306,6 +1308,7 @@ html[data-theme="dark"] .cv .cv-subhead { color: #f0eae0; }
 }
 
 .hp-system__link {
+  margin-top: auto;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
