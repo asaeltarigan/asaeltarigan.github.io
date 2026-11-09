@@ -67,7 +67,7 @@ html[data-theme="dark"] {
 
 /* Sidebar: name credentials on their own lighter line (Gabriel Asael Tarigan /
    S.Kom., M.Kom.) */
-.author__name .author__credentials {
+.sidebar .author__name .author__credentials {
   display: block;
   font-size: 0.70rem;
   font-weight: 400;
@@ -860,4 +860,96 @@ html[data-theme="dark"] body {
     radial-gradient(780px 420px at 84% 4%, rgba(216, 185, 143, var(--ds-warm)), transparent 64%),
     radial-gradient(700px 320px at 4% 0%, rgba(96, 116, 148, 0.18), transparent 60%),
     linear-gradient(180deg, #121319 0%, #14161d 55%, #17151a 100%) !important;
+}
+
+/* ============================================================
+   Sidebar: editorial card
+   Serif name, micro-tracked credentials, warm paper surface,
+   sand hairlines, muted icons. CSS-only (no Liquid changes) so
+   the EN and ID sites stay in sync by copy.
+   ============================================================ */
+
+.sidebar {
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%) !important;
+  border: 1px solid rgba(206, 188, 166, 0.5) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 10px 30px rgba(51, 50, 60, 0.07), 0 1px 2px rgba(51, 50, 60, 0.04) !important;
+  padding: 1.15rem 0.95rem 1.3rem !important;
+}
+
+.author__avatar img {
+  border: 1px solid rgba(206, 188, 166, 0.85) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 18px rgba(51, 50, 60, 0.14) !important;
+}
+
+.sidebar .author__name {
+  font-family: Georgia, "Source Serif 4", "Times New Roman", serif !important;
+  font-size: 1.30rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.2 !important;
+  color: #2f2e38 !important;
+}
+
+.sidebar .author__name .author__credentials {
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 0.66rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: #8d8377 !important;
+  margin-top: 0.5rem !important;
+}
+
+.sidebar .author__bio {
+  font-size: 0.85rem !important;
+  line-height: 1.55 !important;
+  color: #57534c !important;
+}
+
+.sidebar .author__urls.social-icons li,
+.sidebar .author__urls.social-icons li a {
+  font-size: 0.82rem !important;
+  color: #4c4a44 !important;
+}
+
+.sidebar .author__urls.social-icons i {
+  color: #9a8f80 !important;
+}
+
+.sidebar .author__urls.social-icons a:hover,
+.sidebar .author__urls.social-icons a:hover i {
+  color: #6a7188 !important;
+}
+
+.sidebar .author__urls.social-icons > li {
+  padding: 0.26rem 0 !important;
+}
+
+.sidebar .author__urls.social-icons > li.author__desktop + li:not(.author__desktop) {
+  border-top: 1px solid rgba(206, 188, 166, 0.55) !important;
+  margin-top: 0.75rem !important;
+  padding-top: 0.75rem !important;
+}
+
+/* Dark theme: same structure, warm charcoal paper */
+html[data-theme="dark"] .sidebar {
+  background: linear-gradient(180deg, #1b1a21 0%, #17161c 100%) !important;
+  border-color: rgba(216, 185, 143, 0.22) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] .author__avatar img {
+  border-color: rgba(216, 185, 143, 0.38) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4) !important;
+}
+
+html[data-theme="dark"] .sidebar .author__name { color: #f3ede4 !important; }
+html[data-theme="dark"] .sidebar .author__name .author__credentials { color: #a89c8b !important; }
+html[data-theme="dark"] .sidebar .author__bio { color: #c4bdb2 !important; }
+html[data-theme="dark"] .sidebar .author__urls.social-icons li,
+html[data-theme="dark"] .sidebar .author__urls.social-icons li a { color: #cfc8bd !important; }
+html[data-theme="dark"] .sidebar .author__urls.social-icons i { color: #a89c8b !important; }
+html[data-theme="dark"] .sidebar .author__urls.social-icons > li.author__desktop + li:not(.author__desktop) {
+  border-top-color: rgba(216, 185, 143, 0.28) !important;
 }
