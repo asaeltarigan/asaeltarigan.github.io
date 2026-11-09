@@ -1775,7 +1775,7 @@ body { margin-bottom: 0 !important; }
    keeps only a sand hairline, so it blends into the page end instead of
    reading as a strip of its own. Layout untouched: one copyright line. */
 .page__footer {
-  background: transparent !important;
+  background: linear-gradient(180deg, #fffdf8 0%, #faf4ea 100%) !important;
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
   border-top: 1px solid rgba(206, 188, 166, 0.55) !important;
