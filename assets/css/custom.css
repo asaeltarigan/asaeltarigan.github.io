@@ -1834,3 +1834,25 @@ body { margin-bottom: 0 !important; }
   .page__footer .ftr { grid-template-columns: 1fr; gap: 0.75rem; }
   .ftr__links { gap: 0.7rem; }
 }
+
+/* footer balance: links sit between identity and meta instead of hugging right */
+.page__footer .ftr { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) auto; }
+
+.ftr__links { justify-content: center; }
+
+.ftr__links a,
+.ftr__links a:link,
+.ftr__links a:visited {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.76rem;
+  color: #d8d1c6 !important;
+}
+
+.ftr__meta, .ftr__role { color: #c2bab0 !important; }
+.page__footer .lang-nav a, .page__footer .lang-cur, .page__footer .lang-sep { color: #d8d1c6 !important; }
+
+@media (max-width: 760px) {
+  .page__footer .ftr { grid-template-columns: 1fr; }
+  .ftr__links { justify-content: flex-start; }
+}
