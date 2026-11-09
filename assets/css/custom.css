@@ -1856,3 +1856,11 @@ body { margin-bottom: 0 !important; }
   .page__footer .ftr { grid-template-columns: 1fr; }
   .ftr__links { justify-content: flex-start; }
 }
+
+/* true centring: links sit on the page axis, meta pinned right */
+.page__footer .ftr { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+.ftr__meta { justify-content: flex-end; }
+@media (max-width: 760px) {
+  .page__footer .ftr { grid-template-columns: 1fr; }
+  .ftr__meta { justify-content: flex-start; }
+}
