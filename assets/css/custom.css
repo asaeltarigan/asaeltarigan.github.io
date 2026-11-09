@@ -1753,3 +1753,10 @@ html[data-theme="dark"] .cv-feature__note { color: #bdb6aa; }
 @media (max-width: 760px) {
   .cv-features { grid-template-columns: 1fr; }
 }
+
+/* The fixed footer's theme JS reserves body margin = footer outerHeight().
+   The footer carried a 48px margin-top that is invisible when fixed, so the
+   reservation (101px) overshot the real bar (53px) and left a dead band at
+   the end of every page. Zero the margin; the JS then reserves exactly the
+   visible height. */
+.page__footer { margin-top: 0 !important; }
