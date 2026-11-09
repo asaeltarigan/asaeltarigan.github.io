@@ -1769,7 +1769,7 @@ html[data-theme="dark"] .cv-feature__note { color: #bdb6aa; }
    fixed-footer script (body margin = footer height) is overridden, otherwise
    short pages show a band of background between the last card and the bar. */
 body { margin-bottom: 0 !important; }
-.page__footer { position: static !important; margin-top: 0 !important; }
+.page__footer { position: sticky !important; bottom: 0 !important; margin-top: 0 !important; }
 
 /* Footer: no separate bar. It inherits the page's warm paper background and
    keeps only a sand hairline, so it blends into the page end instead of
