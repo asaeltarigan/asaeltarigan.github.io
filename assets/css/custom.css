@@ -1764,3 +1764,9 @@ html[data-theme="dark"] .cv-feature__note { color: #bdb6aa; }
 /* The archive container carried a 2em bottom margin, which showed as a band
    of body background between the content card and the fixed footer. */
 .archive { margin-bottom: 0 !important; }
+
+/* Footer sits in normal flow so it always hugs the content. The theme's
+   fixed-footer script (body margin = footer height) is overridden, otherwise
+   short pages show a band of background between the last card and the bar. */
+body { margin-bottom: 0 !important; }
+.page__footer { position: static !important; margin-top: 0 !important; }
