@@ -1843,3 +1843,21 @@ html[data-theme="dark"] .page__footer a:visited { color: #c9c2b6 !important; }
   border-color: rgba(206, 188, 166, 0.75);
   background: #fffdf8;
 }
+
+/* Portfolio flagship card: warm accents, whole card clickable (10 Nov 2026) */
+.pf-feature { position: relative; transition: box-shadow .18s ease, transform .18s ease; }
+.pf-feature:hover { box-shadow: 0 12px 26px rgba(51, 50, 60, 0.10) !important; transform: translateY(-2px); }
+.pf-feature-title { color: #2f2e38 !important; border-bottom-color: rgba(206, 188, 166, 0.55) !important; }
+.pf-feature-title a { text-decoration: none !important; }
+.pf-feature-title a::after { content: ""; position: absolute; inset: 0; border-radius: 14px; }
+.pf-feature-flag { background: #96652c !important; color: #fffdf7 !important; }
+.pf-actions { position: relative; z-index: 2; }
+.pf-actions .btn { background: transparent !important; border: 1px solid rgba(206, 188, 166, 0.85) !important; color: #7d5320 !important; text-decoration: none !important; }
+.pf-actions .btn:hover { background: rgba(214, 190, 160, 0.20) !important; }
+.pf-actions .btn--primary { background: #96652c !important; border-color: #96652c !important; color: #fffdf7 !important; }
+.pf-actions .btn--primary:hover { background: #7d5320 !important; border-color: #7d5320 !important; }
+.pf-stats li { color: #6a5535 !important; border-color: rgba(206, 188, 166, 0.75) !important; }
+html[data-theme="dark"] .pf-feature-title { color: #efe9df !important; border-bottom-color: rgba(216, 185, 143, 0.28) !important; }
+html[data-theme="dark"] .pf-actions .btn { border-color: rgba(216, 185, 143, 0.45) !important; color: #e8dcc8 !important; }
+html[data-theme="dark"] .pf-actions .btn--primary { background: #8a5a1e !important; border-color: #8a5a1e !important; color: #fff8ee !important; }
+html[data-theme="dark"] .pf-stats li { color: #d9cfbe !important; border-color: rgba(216, 185, 143, 0.35) !important; }
