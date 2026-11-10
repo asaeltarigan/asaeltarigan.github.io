@@ -10,7 +10,7 @@ stats:
   - "30 submissions/day cap"
   - "NIM-gated access"
   - "admin analytics"
-source: "https://github.com/asaeltarigan"
+source: "https://github.com/asaeltarigan/arise-competition-platform"
 ---
 
 A Kaggle-style ML competition platform that makes machine learning hands-on and competitive for BINUS students. Built, deployed, and operated by me: I teach it, I build it, I run it.
