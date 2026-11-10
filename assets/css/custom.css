@@ -1824,3 +1824,22 @@ html[data-theme="dark"] .page__footer a:visited { color: #c9c2b6 !important; }
   margin-top: 0.3rem !important;
   padding-top: 0.3rem !important;
 }
+
+/* Warm accent pass: links and bubbles join the cream/sand theme (10 Nov 2026).
+   No !important here on purpose: the dark-mode rules use a more specific
+   html[data-theme="dark"] selector and must keep winning. */
+:root {
+  --ds-accent: #96652c;
+  --ds-accent-strong: #7d5320;
+  --ds-link-color: #96652c;
+}
+.role-chips li {
+  background: #f7eddc;
+  border-color: #e6d5b6;
+  color: #6a5535;
+}
+.pf-chip {
+  color: #6a5535;
+  border-color: rgba(206, 188, 166, 0.75);
+  background: #fffdf8;
+}
