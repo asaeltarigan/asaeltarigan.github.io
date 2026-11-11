@@ -69,10 +69,10 @@ redirect_from:
 
 <h2 class="cv-section">Skills</h2>
 <ul class="cv-skills">
-  <li><strong>Programming</strong> Python, SQLite, Bash</li>
-  <li><strong>Deep learning</strong> LSTM, GRU, Transformers (PyTorch)</li>
-  <li><strong>ML systems &amp; MLOps</strong> FastAPI, uvicorn, systemd, cloudflared; self-hosted on a single VPS</li>
-  <li><strong>Research &amp; writing</strong> LaTeX, IEEE format, academic writing</li>
+  <li><strong>Research and modelling</strong> Python for data processing, model development, experimentation and evaluation. PyTorch, TensorFlow, scikit-learn, NumPy, pandas, OpenCV.</li>
+  <li><strong>ML systems</strong> MLOps, model deployment, automated evaluation, FastAPI, REST APIs, SQL, Docker, GitHub Actions, Linux.</li>
+  <li><strong>Other</strong> Java, PHP, C, JavaScript, HTML/CSS. LLM APIs and AI coding assistants for development.</li>
+  <li><strong>Languages</strong> Bahasa Indonesia (native). English, EF SET C2 (Proficient).</li>
 </ul>
 
 <h2 class="cv-section">Teaching</h2>
@@ -86,7 +86,23 @@ redirect_from:
 
 <h2 class="cv-section">Service</h2>
 <ul class="cv-skills">
-  <li><strong>Peer reviewer</strong> EMACS Journal, 2025 - present</li>
-  <li><strong>Session chair</strong> ICCSCI</li>
+  <li><strong>Coordinator</strong> ARISE, national machine learning competition, 2026</li>
+  <li><strong>Coordinator</strong> AIPLEX (AI Prototype and Logic Exhibition), BeeFest 2025</li>
+  <li><strong>Session chair</strong> ICCSCI, International Conference on Computer Science and Computational Intelligence, 2024 - 2025</li>
+  <li><strong>Peer reviewer</strong> EMACS Conference, 2024 - present</li>
   <li><strong>Organising committee</strong> ICPC Asia Pacific Championship, 2024 - 2026</li>
+</ul>
+
+<h2 class="cv-section">Honours and awards</h2>
+<ul class="cv-skills">
+  <li><strong>Summa Cum Laude</strong> Master of Computer Science, BINUS University, 2024. <strong>Best Graduate</strong> Bachelor of Computer Science, Soegijapranata Catholic University, 2022.</li>
+  <li><strong>Faculty Development Program scholarship</strong> full funding for master's studies, BINUS University.</li>
+  <li><strong>Bangkit Academy 2022</strong> machine learning path (Google, GoTo, Traveloka). Led the capstone team behind Kerjamin, a freelancing platform that widens income opportunities for rural workers.</li>
+</ul>
+
+<h2 class="cv-section">Training and certifications</h2>
+<ul class="cv-skills">
+  <li><strong>SecOps AI-ML Pen Certified Professional</strong> 2025. Practical exam on AI and ML security, including prompt injection and RAG poisoning.</li>
+  <li><strong>Microsoft AI-900</strong> 2025. Core AI and machine learning concepts and the Azure AI service stack.</li>
+  <li><strong>Kominfo Digital Talent Scholarship</strong> 2021, AI track by Huawei, with the Huawei Certified ICT Associate Artificial Intelligence credential.</li>
 </ul>
