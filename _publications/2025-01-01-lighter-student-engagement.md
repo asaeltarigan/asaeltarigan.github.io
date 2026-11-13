@@ -12,4 +12,6 @@ citation: 'Tarigan, G. A.; Elwirehardja, G. N.; Nugroho, K. S.; &amp; Pardamean,
 
 A lightweight approach to recognizing student engagement in classroom environments using skeletal keypoints, published in the IAENG International Journal of Computer Science. The proposed method combines YOLOv8m person detection with MediaPipe skeletal keypoint estimation, outperforming the baseline (YOLOv4 + OpenPose) on accuracy and speed. Code and companion data are in the [skeletal-keypoint-engagement repository](https://github.com/asaeltarigan/skeletal-keypoint-engagement).
 
+This article is the peer-reviewed version of my [Master's thesis](/publication/masters-thesis-lighter-student-engagement/) at BINUS University (2024), which carries the same title.
+
 The full paper is available for download [here](/files/lighter-student-engagement-ijcs.pdf).
