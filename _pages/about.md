@@ -2,7 +2,7 @@
 permalink: /
 title: "Gabriel Asael Tarigan, S.Kom., M.Kom."
 seo_title: "Gabriel Asael Tarigan | Artificial Intelligence & Computer Science Lecturer"
-description: "Gabriel Asael Tarigan is a computer science lecturer and researcher at BINUS University, teaching in the Artificial Intelligence (AI) Program, School of Computer Science. He works on applied machine learning, ML systems and MLOps, and designed the AI curriculum."
+description: "Gabriel Asael Tarigan is a computer science lecturer and researcher at BINUS University, teaching in the Artificial Intelligence (AI) Program, School of Computer Science. He works on applied machine learning, ML systems and MLOps, and designed the AI curriculum. He has taught at BINUS University since 2025."
 author_profile: true
 redirect_from:
   - /about/
@@ -11,7 +11,7 @@ redirect_from:
 
 I started teaching before it was ever a job. Sunday school classes on the weekends, private tutoring after school, and the honest reason I kept at it is that teaching turned out to be how I learned things myself. There's no feeling like watching someone finally grow. That same feeling still runs everything I do now.
 
-Today I'm a computer science lecturer at [BINUS University](https://www.binus.ac.id), where I serve as a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) in the Artificial Intelligence (AI) Program, School of Computer Science. I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
+Today I'm a computer science lecturer at [BINUS University](https://www.binus.ac.id), where I have taught since 2025. I serve as a [Lecturer Specialist](https://socs.binus.ac.id/artificial-intelligence/people/gabriel-asael-tarigan-s-kom-m-kom/) in the Artificial Intelligence (AI) Program, School of Computer Science. I design the program's core AI/ML curriculum and build the systems that run it: competition platforms, automated evaluation portals, interactive tools students can tinker with. I also mentor student teams and national competition squads.
 
 Before I joined the faculty I was selected for Google & GoTo's Bangkit Academy Machine Learning Cohort in 2022, from more than 63,000 applicants, and I hold BINUS's Faculty Development Program (FDP) scholarship, which funded my master's degree in full.
 
