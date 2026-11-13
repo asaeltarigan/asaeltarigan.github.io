@@ -20,6 +20,7 @@ Before I joined the faculty I was selected for Google & GoTo's Bangkit Academy M
 <li>Curriculum author, AI Program</li>
 <li>Coordinator, ARISE &amp; AIPLEX national competitions</li>
 <li>Peer reviewer, EMACS Journal</li>
+<li>Session chair, ICCSCI 2024 and 2025</li>
 <li>CIPHER 2026 AI Hive coordinator</li>
 </ul>
 
