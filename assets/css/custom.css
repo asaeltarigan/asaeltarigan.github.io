@@ -1861,3 +1861,49 @@ html[data-theme="dark"] .pf-feature-title { color: #efe9df !important; border-bo
 html[data-theme="dark"] .pf-actions .btn { border-color: rgba(216, 185, 143, 0.45) !important; color: #e8dcc8 !important; }
 html[data-theme="dark"] .pf-actions .btn--primary { background: #8a5a1e !important; border-color: #8a5a1e !important; color: #fff8ee !important; }
 html[data-theme="dark"] .pf-stats li { color: #d9cfbe !important; border-color: rgba(216, 185, 143, 0.35) !important; }
+
+/* metric strip outside /cv/ (publications page) */
+.cv-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin: 0 0 0.7rem;
+}
+
+.cv-metrics__item {
+  background: linear-gradient(180deg, #fffefb 0%, #fdfaf5 100%);
+  border: 1px solid rgba(206, 188, 166, 0.5);
+  border-radius: 10px;
+  padding: 0.65rem 0.7rem 0.7rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(51, 50, 60, 0.05);
+}
+
+.cv-metrics__n {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  line-height: 1.1;
+  color: #2f2e38;
+}
+
+.cv-metrics__l {
+  display: block;
+  font-size: 0.66rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #8d8377;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 640px) {
+  .cv-metrics { grid-template-columns: repeat(2, 1fr); }
+}
+
+html[data-theme="dark"] .cv-metrics__item {
+  background: linear-gradient(180deg, #1b1a21 0%, #17161c 100%);
+  border-color: rgba(216, 185, 143, 0.22);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+html[data-theme="dark"] .cv-metrics__n { color: #f3ede4; }
+html[data-theme="dark"] .cv-metrics__l { color: #a89c8b; }

@@ -10,8 +10,17 @@ author_profile: true
 {% assign n_journal = pubs | where: "category", "manuscripts" | size %}
 {% assign n_conf = pubs | where: "category", "conferences" | size %}
 {% assign n_pre = pubs | where: "category", "preprints" | size %}
+{% assign n_sup = pubs | where: "category", "supervised_projects" | size %}
+{% assign n_acc = pubs | where: "status", "accepted" | size %}
 
-<p class="cv-lede">Peer-reviewed papers, preprints, and the student research I supervise. {{ n_journal }} journal articles and {{ n_conf }} conference papers to date, newest first within each group. Full citations and PDFs are on the individual records, and everything is mirrored on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+<div class="cv-metrics">
+  <div class="cv-metrics__item"><span class="cv-metrics__n">{{ n_journal }}</span><span class="cv-metrics__l">journal articles</span></div>
+  <div class="cv-metrics__item"><span class="cv-metrics__n">{{ n_conf }}</span><span class="cv-metrics__l">conference papers</span></div>
+  <div class="cv-metrics__item"><span class="cv-metrics__n">{{ n_pre }}</span><span class="cv-metrics__l">preprint</span></div>
+  <div class="cv-metrics__item"><span class="cv-metrics__n">{{ n_sup }}</span><span class="cv-metrics__l">capstones supervised</span></div>
+</div>
+
+<p class="cv-lede">Peer-reviewed papers, preprints, and the student research I supervise, newest first within each group. The totals include the {{ n_acc }} papers accepted and forthcoming, marked with an <em>Accepted</em> badge. Full citations and PDFs are on the individual records, and everything is mirrored on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 
 <h2 class="cv-section">Selected work</h2>
 
