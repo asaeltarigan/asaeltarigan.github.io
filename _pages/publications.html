@@ -22,7 +22,7 @@ author_profile: true
 
 <p class="cv-lede">Peer-reviewed papers, preprints, and the student research I supervise, newest first within each group. The totals include the {{ n_acc }} papers accepted and forthcoming, marked with an <em>Accepted</em> badge. Full citations and PDFs are on the individual records, and everything is mirrored on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 
-<h2 class="cv-section">Selected works</h2>
+<h2 class="cv-section">Selected Works</h2>
 
 <p class="cv-lede">Six papers that carry the record, led by the current NLP and LLM direction. Where I am not the first author, the work was done with students and colleagues I supervise.</p>
 
@@ -41,7 +41,7 @@ author_profile: true
 {% endfor %}
 </div>
 
-<h2 class="cv-section">Recent works</h2>
+<h2 class="cv-section">Recent Works</h2>
 
 <p class="cv-lede">The four most recent acceptances, listed before the complete record by type below.</p>
 
@@ -83,7 +83,7 @@ author_profile: true
 
 {% assign sup = pubs | where: "category", "supervised_projects" | sort: "date" | reverse %}
 {% if sup.size > 0 %}
-<h2 class="cv-section">Supervised student projects<span class="pg-count">{{ sup.size }}</span></h2>
+<h2 class="cv-section">Supervised Student Projects<span class="pg-count">{{ sup.size }}</span></h2>
 <p class="cv-lede">Capstone projects I supervised at BINUS. Student work, listed with their names; the papers above are my own.</p>
 <ul class="pub-list pub-list--sup">
 {% for post in sup %}
