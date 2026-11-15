@@ -22,7 +22,28 @@ author_profile: true
 
 <p class="cv-lede">Peer-reviewed papers, preprints, and the student research I supervise, newest first within each group. The totals include the {{ n_acc }} papers accepted and forthcoming, marked with an <em>Accepted</em> badge. Full citations and PDFs are on the individual records, and everything is mirrored on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 
-<h2 class="cv-section">Selected work</h2>
+<h2 class="cv-section">Selected works</h2>
+
+<p class="cv-lede">Six papers that carry the record, led by the current NLP and LLM direction. Where I am not the first author, the work was done with students and colleagues I supervise.</p>
+
+<div class="cv-features">
+{% for item in site.data.selected_works %}
+  <article class="cv-feature">
+    <div class="cv-feature__meta">
+      <span class="cv-feature__venue">{{ item.venue }}</span>
+      {% if item.status %}<span class="cv-badge">{{ item.status }}</span>{% endif %}
+      <span class="cv-feature__tags">{{ item.tags }}</span>
+    </div>
+    <h3 class="cv-feature__title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+    <p class="cv-feature__sub">{{ item.subtitle }}</p>
+    <p class="cv-feature__note">{{ item.note }}</p>
+  </article>
+{% endfor %}
+</div>
+
+<h2 class="cv-section">Recent works</h2>
+
+<p class="cv-lede">The four most recent acceptances, listed before the complete record by type below.</p>
 
 <div class="cv-features">
 {% for item in site.data.cv_highlights %}

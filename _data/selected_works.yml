@@ -1,0 +1,52 @@
+# Curated "Selected works" for /publications/
+# Hand-picked, ordered by what leads: current NLP and LLM work first, then the
+# first-author journal papers that carry the record.
+# Where Gabriel is not the first author, the note or lede says so plainly.
+
+- title: "Emotional Framing Effects on Medical Triage in General-Purpose and Medical-Adapted LLMs"
+  subtitle: "How wording moves a clinical decision"
+  venue: "IEEE ICICyTA 2026"
+  status: "Accepted"
+  tags: "LLM Evaluation · Clinical NLP"
+  url: "/publication/emotional-framing-medical-triage-llms/"
+  note: "448 triage vignettes, 1,792 prompts, Gemma 3 27B against MedGemma 27B. Framing moved at most 7.4% of cases, and anxious wording lowered urgency because both models already over-triaged."
+
+- title: "Lighter student engagement recognition in a classroom environment using skeletal keypoints"
+  subtitle: "Engagement detection that runs on ordinary hardware"
+  venue: "IAENG International Journal of Computer Science, 52(6)"
+  status: "Published"
+  tags: "Education · Pose Estimation"
+  url: "/publication/lighter-student-engagement/"
+  note: "The core result of my master's thesis: YOLOv8m person detection plus MediaPipe keypoints feeding a lightweight classifier, ahead of a YOLOv4 and OpenPose baseline on both accuracy and speed."
+
+- title: "Analyzing Indonesian political hoax detection system on social media using deep learning and natural language processing"
+  subtitle: "Indonesian-language misinformation, end to end"
+  venue: "Procedia Computer Science, 269"
+  status: "Published"
+  tags: "NLP · Indonesian Text"
+  url: "/publication/political-hoax-detection/"
+  note: "Where my NLP line started: deep learning and language modelling applied to hoax detection in Indonesian social media text, with the data and evaluation problems stated honestly."
+
+- title: "Skeletal keypoint-based pipeline as a computer vision-based approaches"
+  subtitle: "A pipeline, not a bigger model"
+  venue: "Communications in Mathematical Biology and Neuroscience"
+  status: "Published"
+  tags: "Pose Estimation · Human Behavior"
+  url: "/publication/skeletal-keypoint-pipeline/"
+  note: "Argues that careful pipeline design beats architectural complexity for classroom behaviour analysis, and shows what the lightweight path costs and buys."
+
+- title: "Parallelization of LSTM-GRU Architectures for Multivariate Prediction of Stock Prices"
+  subtitle: "Sequence modelling under a latency budget"
+  venue: "IEEE ICIMTech 2024"
+  status: "Published"
+  tags: "Sequence Modeling · Forecasting"
+  url: "/publication/plg-lstm-gru-icimtech/"
+  note: "Parallel LSTM-GRU hybrids benchmarked against transformer comparators on multivariate financial sequences, which is where my interest in long-context sequence modelling began."
+
+- title: "Computer Vision-Based Pose Estimation for Student Engagement Detection: Trends and Challenges"
+  subtitle: "What the field has and has not solved"
+  venue: "IEEE ICORIS 2025"
+  status: "Published"
+  tags: "Pose Estimation · Survey"
+  url: "/publication/pose-estimation-engagement/"
+  note: "A systematic review of pose-based engagement detection, organised around the three problems that keep recurring: dataset diversity, annotation cost, and crowded classrooms."
