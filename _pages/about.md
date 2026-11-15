@@ -58,11 +58,12 @@ Before I joined the faculty I was selected for Google & GoTo's Bangkit Academy M
 <h2 class="cv-section">Research interests</h2>
 
 <ul class="hp-interests">
-<li><strong>Computer vision</strong> pose estimation, skeletal keypoints, classroom engagement</li>
-<li><strong>Deep learning</strong> hybrid architectures, parallel LSTM-GRU, vision transformers</li>
-<li><strong>Time-series forecasting</strong> multivariate financial and sequential signals</li>
-<li><strong>ML systems</strong> deployment, monitoring, edge inference, lightweight LLMs</li>
-<li><strong>Educational technology</strong> assessment platforms, intelligent tutoring</li>
+<li><strong>Natural language processing</strong> Indonesian low-resource text, hoax and misinformation detection, evidence retrieval</li>
+<li><strong>Large language models</strong> prompt and framing robustness, domain adaptation, clinical and mental-health text</li>
+<li><strong>Retrieval-augmented generation</strong> hybrid retrieval, evidence grounding, claim verification</li>
+<li><strong>LLM evaluation and uncertainty</strong> calibration, faithfulness, attribution, large-scale benchmarking</li>
+<li><strong>Multimodal and agentic models</strong> vision-language engagement analysis, tool-using agents, LLM-assisted software engineering</li>
+<li><strong>NLP for education</strong> automated assessment and feedback, learning analytics, LLM tutoring</li>
 </ul>
 
 <h2 class="cv-section">Where to find the work</h2>

@@ -64,10 +64,10 @@
     { "language": "English", "fluency": "Professional" }
   ],
   "interests": [
-    { "name": "Deep Learning" },
-    { "name": "Time-Series Forecasting" },
-    { "name": "ML Systems & MLOps" },
-    { "name": "Educational Technology" }
+    { "name": "Natural Language Processing" },
+    { "name": "Large Language Models & RAG" },
+    { "name": "LLM Evaluation & Uncertainty" },
+    { "name": "Multimodal & Agentic AI" }
   ],
   "references": [],
   "publications": [
