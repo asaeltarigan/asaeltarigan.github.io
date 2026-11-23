@@ -26,5 +26,8 @@ main:
   - title: "CV"
     url: /cv/
 
+  - title: "Text to MD"
+    url: /text2md/
+
   # - title: "CV"
   #   url: /cv-json/

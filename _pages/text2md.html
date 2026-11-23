@@ -1,0 +1,223 @@
+---
+title: "Text to Markdown"
+layout: single
+permalink: /text2md/
+author_profile: false
+classes: wide
+excerpt: "Paste rich text or HTML, get clean Markdown. Runs entirely in your browser."
+---
+
+<style>
+  .t2m { --line: #d8d8d8; --ink: #1a1a1a; --muted: #6b6b6b; }
+  .t2m * { box-sizing: border-box; }
+  .t2m-bar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: 0 0 1rem; }
+  .t2m-bar button, .t2m-bar a.btn {
+    font: inherit; font-size: .82rem; letter-spacing: .02em; cursor: pointer;
+    padding: .42rem .8rem; border: 1px solid var(--line); border-radius: 3px;
+    background: #fff; color: var(--ink); text-decoration: none;
+  }
+  .t2m-bar button:hover, .t2m-bar a.btn:hover { background: #f4f4f4; }
+  .t2m-bar button.primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  .t2m-bar button.primary:hover { background: #333; }
+  .t2m-tabs { display: flex; gap: 0; margin: 0 0 .9rem; border-bottom: 1px solid var(--line); }
+  .t2m-tabs button {
+    font: inherit; font-size: .82rem; background: none; border: 0; cursor: pointer;
+    padding: .5rem .9rem; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px;
+  }
+  .t2m-tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+  .t2m-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 760px) { .t2m-grid { grid-template-columns: 1fr; } }
+  .t2m-pane { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: #fff; }
+  .t2m-pane header {
+    font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+    padding: .45rem .75rem; border-bottom: 1px solid var(--line); background: #fafafa;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .t2m-pane header span.count { text-transform: none; letter-spacing: 0; }
+  .t2m-drop { min-height: 340px; max-height: 60vh; overflow: auto; padding: .9rem; outline: none; }
+  .t2m-drop:empty:before { content: attr(data-placeholder); color: #9b9b9b; font-style: italic; }
+  .t2m-pane textarea {
+    width: 100%; min-height: 340px; max-height: 60vh; border: 0; outline: none; resize: vertical;
+    padding: .9rem; font-family: SFMono-Regular, Menlo, Consolas, monospace; font-size: .82rem;
+    line-height: 1.55; color: var(--ink); background: #fff;
+  }
+  .t2m-pane textarea[readonly] { background: #fcfcfc; }
+  .t2m-opts { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0 0; font-size: .8rem; color: var(--muted); }
+  .t2m-opts label { display: inline-flex; gap: .35rem; align-items: center; cursor: pointer; }
+  .t2m-note { font-size: .78rem; color: var(--muted); margin: 1.1rem 0 0; }
+  .t2m-toast {
+    position: fixed; left: 50%; bottom: 2rem; transform: translateX(-50%) translateY(1rem);
+    background: #1a1a1a; color: #fff; padding: .5rem .9rem; border-radius: 3px; font-size: .8rem;
+    opacity: 0; pointer-events: none; transition: opacity .18s, transform .18s; z-index: 9999;
+  }
+  .t2m-toast.on { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+
+<div class="t2m">
+  <div class="t2m-tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-mode="rich">Paste rich text</button>
+    <button role="tab" aria-selected="false" data-mode="html">Paste HTML</button>
+  </div>
+
+  <div class="t2m-grid">
+    <div class="t2m-pane">
+      <header><span id="t2m-inlabel">Rich text</span><span class="count" id="t2m-incount"></span></header>
+      <div id="t2m-rich" class="t2m-drop" contenteditable="true" spellcheck="true"
+           data-placeholder="Paste here from Word, Google Docs, a web page, or an email."></div>
+      <textarea id="t2m-html" style="display:none" placeholder="&lt;p&gt;Paste raw HTML here…&lt;/p&gt;" spellcheck="false"></textarea>
+    </div>
+
+    <div class="t2m-pane">
+      <header><span>Markdown</span><span class="count" id="t2m-outcount"></span></header>
+      <textarea id="t2m-out" readonly placeholder="Converted Markdown appears here."></textarea>
+    </div>
+  </div>
+
+  <div class="t2m-bar" style="margin-top:1rem">
+    <button id="t2m-copy" class="primary" type="button">Copy Markdown</button>
+    <button id="t2m-dl" type="button">Download .md</button>
+    <button id="t2m-clear" type="button">Clear</button>
+  </div>
+
+  <div class="t2m-opts">
+    <label><input type="checkbox" id="t2m-links" checked> keep links</label>
+    <label><input type="checkbox" id="t2m-images" checked> keep images</label>
+    <label><input type="checkbox" id="t2m-tables" checked> GFM tables</label>
+  </div>
+
+  <p class="t2m-note">Nothing leaves your browser. No upload, no server, no tracking.</p>
+  <div class="t2m-toast" id="t2m-toast">Copied</div>
+</div>
+
+<script src="{{ '/assets/js/turndown.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/turndown-plugin-gfm.js' | relative_url }}"></script>
+<script>
+(function () {
+  var rich = document.getElementById('t2m-rich');
+  var html = document.getElementById('t2m-html');
+  var out  = document.getElementById('t2m-out');
+  var mode = 'rich';
+  var timer = null;
+
+  var optLinks  = document.getElementById('t2m-links');
+  var optImages = document.getElementById('t2m-images');
+  var optTables = document.getElementById('t2m-tables');
+  var toast = document.getElementById('t2m-toast');
+
+  function td() {
+    var s = new TurndownService({
+      headingStyle: 'atx',
+      hr: '---',
+      bulletListMarker: '-',
+      codeBlockStyle: 'fenced',
+      emDelimiter: '_'
+    });
+    s.remove(['script', 'style', 'meta', 'link', 'noscript']);
+    if (optTables.checked) { try { s.use(turndownPluginGfm.gfm); } catch (e) {} }
+    if (!optLinks.checked) {
+      s.addRule('plainLinks', { filter: 'a', replacement: function (c) { return c; } });
+    }
+    if (!optImages.checked) {
+      s.addRule('dropImages', { filter: 'img', replacement: function () { return ''; } });
+    }
+    return s;
+  }
+
+  function source() {
+    return mode === 'rich' ? rich.innerHTML : html.value;
+  }
+
+  function convert() {
+    var src = source();
+    if (!src || !src.trim()) { out.value = ''; counts(); return; }
+    try {
+      var md = td().turndown(src).replace(/\n{3,}/g, '\n\n');
+      md = md.replace(/^(\s*)([-*+])\s{2,}/gm, '$1$2 ');
+      out.value = md.trim();
+    } catch (e) {
+      out.value = 'Could not convert this input: ' + e.message;
+    }
+    counts();
+  }
+
+  function counts() {
+    var src = mode === 'rich' ? rich.innerText : html.value;
+    var o = out.value;
+    document.getElementById('t2m-incount').textContent = src.trim() ? src.trim().split(/\s+/).length + ' words' : '';
+    document.getElementById('t2m-outcount').textContent = o ? o.split(/\s+/).length + ' words' : '';
+  }
+
+  function later() { clearTimeout(timer); timer = setTimeout(convert, 160); }
+
+  // Small/typical documents convert immediately; only large ones are debounced,
+  // so the result is deterministic even when the tab is in the background.
+  function onInput() {
+    if (source().length < 40000) { clearTimeout(timer); convert(); } else { later(); }
+  }
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') { clearTimeout(timer); convert(); }
+  });
+
+  function flash(msg) {
+    toast.textContent = msg;
+    toast.classList.add('on');
+    setTimeout(function () { toast.classList.remove('on'); }, 1400);
+  }
+
+  rich.addEventListener('input', onInput);
+  rich.addEventListener('paste', function (e) {
+    var cd = e.clipboardData || window.clipboardData;
+    if (!cd) return;
+    var h = cd.getData('text/html');
+    if (h) {
+      e.preventDefault();
+      rich.innerHTML = h;
+      convert();
+    }
+  });
+
+  html.addEventListener('input', onInput);
+
+  document.querySelectorAll('.t2m-tabs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.t2m-tabs button').forEach(function (x) { x.setAttribute('aria-selected', 'false'); });
+      b.setAttribute('aria-selected', 'true');
+      mode = b.dataset.mode;
+      var isRich = mode === 'rich';
+      rich.style.display = isRich ? '' : 'none';
+      html.style.display = isRich ? 'none' : '';
+      document.getElementById('t2m-inlabel').textContent = isRich ? 'Rich text' : 'HTML source';
+      convert();
+    });
+  });
+
+  [optLinks, optImages, optTables].forEach(function (c) { c.addEventListener('change', convert); });
+
+  document.getElementById('t2m-copy').addEventListener('click', function () {
+    if (!out.value) { flash('Nothing to copy'); return; }
+    var done = function () { flash('Copied'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(out.value).then(done, function () { out.select(); document.execCommand('copy'); done(); });
+    } else {
+      out.select(); document.execCommand('copy'); done();
+    }
+  });
+
+  document.getElementById('t2m-dl').addEventListener('click', function () {
+    if (!out.value) { flash('Nothing to download'); return; }
+    var blob = new Blob([out.value], { type: 'text/markdown;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'converted.md';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+
+  document.getElementById('t2m-clear').addEventListener('click', function () {
+    rich.innerHTML = ''; html.value = ''; out.value = ''; counts();
+  });
+
+  counts();
+})();
+</script>
