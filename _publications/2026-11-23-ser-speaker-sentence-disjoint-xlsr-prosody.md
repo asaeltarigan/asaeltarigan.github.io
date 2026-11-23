@@ -6,7 +6,7 @@ status: preprint
 permalink: /publication/ser-xlsr-prosody-indonesian/
 excerpt: "A prosody-aware pooling mechanism inside an XLS-R 300M encoder adapted with LoRA, evaluated under leave-one-speaker-out and sentence-disjoint protocols on the Indonesian Expressive Speech Corpus."
 date: 2026-11-23
-venue: 'Preprint'
+venue: 'IJIES (preprint)'
 citation: 'Nugroho, K. S.; Imani, A.; Jarin, A.; Tarigan, G. A.; Bachtiar, F. A.; Cooper, E. W.; &amp; Pardamean, B. (2026). &quot;Speaker and Sentence-Disjoint Evaluation of XLS-R with Prosody-Aware Pooling for Indonesian Speech Emotion Recognition.&quot; <i>Preprint</i>.'
 ---
 
@@ -16,4 +16,3 @@ Experiments used the Indonesian Expressive Speech Corpus (INESCO) — 2,399 audi
 
 Two limits are stated plainly in the paper: the individual contributions of each component were not ablated, so the gain cannot yet be attributed to the prosodic features alone, and four speakers is a small base for claims about cross-speaker generalization.
 
-Manuscript prepared for submission to IJIES.
