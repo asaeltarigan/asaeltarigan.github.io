@@ -1907,3 +1907,25 @@ html[data-theme="dark"] .cv-metrics__item {
 }
 html[data-theme="dark"] .cv-metrics__n { color: #f3ede4; }
 html[data-theme="dark"] .cv-metrics__l { color: #a89c8b; }
+
+/* ── Back link on collection pages (teaching, publications, portfolio, posts) ── */
+.back-link {
+  display: inline-block;
+  margin: 0 0 0.9rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8d8377;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.back-link:hover,
+.back-link:focus {
+  color: #2f2e38;
+  border-bottom-color: rgba(141, 131, 119, 0.6);
+  text-decoration: none;
+}
+html[data-theme="dark"] .back-link { color: #a89c8b; }
+html[data-theme="dark"] .back-link:hover,
+html[data-theme="dark"] .back-link:focus { color: #f3ede4; border-bottom-color: rgba(168, 156, 139, 0.6); }

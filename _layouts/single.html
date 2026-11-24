@@ -18,6 +18,19 @@ layout: default
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% comment %} Back link to the section this page belongs to. {% endcomment %}
+    {% assign back_url = "" %}
+    {% assign back_label = "" %}
+    {% if page.collection == 'teaching' %}
+      {% assign back_url = '/teaching/' %}{% assign back_label = 'Teaching' %}
+    {% elsif page.collection == 'publications' %}
+      {% assign back_url = '/publications/' %}{% assign back_label = 'Publications' %}
+    {% elsif page.collection == 'portfolio' %}
+      {% assign back_url = '/portfolio/' %}{% assign back_label = 'Portfolio' %}
+    {% elsif page.collection == 'posts' %}
+      {% assign back_url = '/year-archive/' %}{% assign back_label = 'Blog Posts' %}
+    {% endif %}
+    {% if back_url != "" %}<a class="back-link" href="{{ back_url | relative_url }}">&larr; Back to {{ back_label }}</a>{% endif %}
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
