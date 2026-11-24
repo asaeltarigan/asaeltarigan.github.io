@@ -16,100 +16,16 @@ Weekly quiz portals for machine learning courses at BINUS.
 - Questions follow the lecture order and restate data (no forced recall)
 - Instant feedback and live results per class
 
-Each course gets its own portal; all are built on the same FastAPI foundation and operated from a single VPS.
+Each course gets its own portal; all are built on the same FastAPI foundation and operated from a single VPS. Students reach a portal through a link issued for the term, and the portals carry real graded load every week.
 
-## Live portals
+## What is covered
 
-<details>
-<summary><strong>Session 1 — AI Foundations</strong> <em>(Introduction to AI · Intelligent Agents)</em></summary>
+- **Introduction to AI** — foundations, intelligent agents, search
+- **Speech Recognition** — session quizzes plus a graded recall set
+- **NLP** — text preprocessing, named entity recognition, plus a seven-game preprocessing playground
+- **Machine Learning** — sessions 17 to 22: Markov decision processes, introduction to ML, linear regression, decision trees, KNN, neural networks
+- **MLOps** — recall sessions covering data management and sessions 1 to 6
+- **Intelligent Automation** — risks in HR
+- **Exam preparation** — pre-UTS and pre-final review sets
 
-<a href="https://manhattan-nvidia-clay-project.trycloudflare.com/">Session 1 - Introduction to AI</a>
-
-<a href="https://qualifying-amsterdam-salmon-able.trycloudflare.com/">Session 2 - Intelligent Agents</a>
-
-<a href="https://constitute-against-cheese-earnings.trycloudflare.com/">Session 3 & 4 - Search</a>
-
-</details>
-
-<details>
-<summary><strong>Intelligent Automation — Session 6</strong> <em>(Risks in HR)</em></summary>
-
-</details>
-
-<details>
-<summary><strong>Session 1 — Speech Recognition</strong></summary>
-
-<a href="https://troubleshooting-gui-equation-plays.trycloudflare.com/">Session 1 - Speech Recognition</a>
-
-</details>
-
-<details>
-<summary><strong>Speech Recognition — Recall</strong> <em>(Graded quiz)</em></summary>
-
-<a href="https://arbor-trainer-effect-influences.trycloudflare.com/">Speech Recognition Recall</a>
-
-</details>
-
-<details>
-<summary><strong>Artificial Intelligence — Recall</strong> <em>(Pre-UTS practice)</em></summary>
-
-<a href="https://january-representing-contributors-listprice.trycloudflare.com/">Latihan UTS Artificial Intelligence</a>
-
-</details>
-
-<details>
-<summary><strong>Session 1 — NLP</strong></summary>
-
-<a href="https://includes-cycles-johnny-necessarily.trycloudflare.com/">Session 1 - NLP</a>
-
-<a href="https://appear-requesting-tulsa-carlos.trycloudflare.com/">NLP Session 2 - Text Preprocessing</a>
-
-</details>
-
-<details>
-<summary><strong>NLP — Session 4</strong> <em>(Named Entity Recognition)</em></summary>
-
-<a href="https://fat-tablets-premiere-images.trycloudflare.com/">NLP Session 4 - Named Entity Recognition</a>
-
-</details>
-
-<details>
-<summary><strong>NLP Preprocessing Playground</strong> <em>(interactive game hub)</em></summary>
-
-<a href="https://sit-expires-diff-monsters.trycloudflare.com/">NLP Preprocessing Playground — 7 mini-games</a>
-
-</details>
-
-<details open>
-<summary><strong>Machine Learning series</strong> <em>(Session 17 – 22)</em></summary>
-
-<a href="https://inspiration-fly-diabetes-arrival.trycloudflare.com/">Session 17 - Markov Decision Process</a>
-
-<a href="https://devel-arrive-wellness-specified.trycloudflare.com/">Session 18 - Introduction to Machine Learning</a>
-
-<a href="https://marked-refine-owner-tuner.trycloudflare.com/">Session 19 - Linear Regression</a>
-
-<a href="https://weddings-prefers-commissions-biography.trycloudflare.com/">Session 20 - Decision Tree</a>
-
-<a href="https://dominant-marker-libs-democratic.trycloudflare.com/">Session 21 - KNN</a>
-
-<a href="https://para-partially-tutorial-excluded.trycloudflare.com/">Session 22 - Neural Network</a>
-
-</details>
-
-<details>
-<summary><strong>Pre-Final Exam Review</strong> <em>(Kuis Sebelum Final Exam)</em></summary>
-
-<a href="https://area-trans-had-signed.trycloudflare.com/">Kuis Sebelum Final Exam</a>
-
-</details>
-
-<details>
-<summary><strong>MLOps — Recall Sessions</strong> <em>(Full MLOps exam review)</em></summary>
-
-<a href="https://treasures-advantages-focuses-mega.trycloudflare.com/">MLOps Recall - Data Management</a>
-
-<a href="https://lcd-preference-geological-private.trycloudflare.com/">MLOps Recall (Session 1-6)</a>
-
-</details>
-
+The links are short-lived by design: each term's portals are opened to the enrolled class and closed when the term ends. If you want to see one running, ask me and I will open a demo instance.
