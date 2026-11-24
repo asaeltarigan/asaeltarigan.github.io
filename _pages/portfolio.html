@@ -16,7 +16,8 @@ author_profile: true
   <h2 class="pf-feature-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
   <p class="pf-feature-excerpt">{{ post.excerpt | strip_html }}</p>
   <div class="pf-actions">
-    {% if post.source %}<a class="btn btn--primary" href="{{ post.source }}" rel="noopener">Source</a>{% endif %}
+    {% if post.demo %}<a class="btn btn--primary" href="{{ post.demo }}" rel="noopener">Try the live demo</a>{% endif %}
+    {% if post.source %}<a class="btn{% unless post.demo %} btn--primary{% endunless %}" href="{{ post.source }}" rel="noopener">Source</a>{% endif %}
     <a class="btn" href="{{ post.url | relative_url }}">Project details</a>
   </div>
 </article>
