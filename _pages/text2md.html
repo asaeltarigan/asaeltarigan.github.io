@@ -149,8 +149,11 @@ excerpt: "Paste rich text or HTML, get clean Markdown. Runs entirely in your bro
 
   function later() { clearTimeout(timer); timer = setTimeout(convert, 160); }
 
-  // Small/typical documents convert immediately; only large ones are debounced,
-  // so the result is deterministic even when the tab is in the background.
+  /* Small/typical documents convert immediately; only large ones are debounced,
+     so the result is deterministic even when the tab is in the background.
+     Keep this as a block comment: the jekyll-compress-html layout collapses
+     newlines inside inline scripts, which turns a // comment into a comment
+     that swallows every line after it. */
   function onInput() {
     if (source().length < 40000) { clearTimeout(timer); convert(); } else { later(); }
   }
@@ -207,11 +210,17 @@ excerpt: "Paste rich text or HTML, get clean Markdown. Runs entirely in your bro
   document.getElementById('t2m-dl').addEventListener('click', function () {
     if (!out.value) { flash('Nothing to download'); return; }
     var blob = new Blob([out.value], { type: 'text/markdown;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
+    a.href = url;
     a.download = 'converted.md';
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    a.rel = 'noopener';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    /* Revoke late: revoking after 1s can cancel the download on slow devices. */
+    setTimeout(function () { URL.revokeObjectURL(url); }, 60000);
+    flash('Download started');
   });
 
   document.getElementById('t2m-clear').addEventListener('click', function () {
