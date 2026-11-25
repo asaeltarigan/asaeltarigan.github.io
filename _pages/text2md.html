@@ -110,7 +110,7 @@ excerpt: "Paste rich text or HTML, get clean Markdown. Runs entirely in your bro
       hr: '---',
       bulletListMarker: '-',
       codeBlockStyle: 'fenced',
-      emDelimiter: '_'
+      emDelimiter: '*'
     });
     s.remove(['script', 'style', 'meta', 'link', 'noscript']);
     if (optTables.checked) { try { s.use(turndownPluginGfm.gfm); } catch (e) {} }
