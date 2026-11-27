@@ -5,6 +5,7 @@
   .cv-timeline .tl-item::before { content: ""; position: absolute; left: -1.35rem; top: 0.32rem; width: 12px; height: 12px; border-radius: 50%; background: #1f3a5f; border: 2px solid #ffffff; transform: translateX(-50%); }
   .cv-timeline .tl-time { display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-style: italic; font-size: 0.78rem; color: #6b7280; background: #eef2f7; border: 1px solid #e5e7eb; border-radius: 999px; padding: 0.06rem 0.6rem; margin-bottom: 0.4rem; }
   .cv-timeline .tl-title { font-weight: 700; }
+  .cv-timeline .tl-honour { display: inline-block; margin-left: 0.45rem; vertical-align: 0.1em; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #7d5320; background: #fbf1e1; border: 1px solid rgba(206,188,166,0.9); border-radius: 999px; padding: 0.08rem 0.55rem; }
   .cv-timeline .tl-org { color: #1f3a5f; font-weight: 600; font-size: 0.9rem; margin-top: 0.1rem; }
   .cv-timeline .tl-loc { color: #6b7280; font-weight: 400; }
   .cv-timeline .tl-desc { color: #6b7280; font-size: 0.9rem; margin-top: 0.35rem; }
@@ -32,7 +33,7 @@
   {% for item in site.data.cv_timeline.education %}
   <li class="tl-item">
     <span class="tl-time">{{ item.time }}</span>
-    <div class="tl-title">{{ item.title }}</div>
+    <div class="tl-title">{{ item.title }}{% if item.honour %} <span class="tl-honour">{{ item.honour }}</span>{% endif %}</div>
     <div class="tl-org">{{ item.org }}{% if item.location %} <span class="tl-loc">&middot; {{ item.location }}</span>{% endif %}</div>
     {% if item.description %}<div class="tl-desc">{{ item.description }}</div>{% endif %}
   </li>

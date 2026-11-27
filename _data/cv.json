@@ -35,20 +35,20 @@
     {
       "institution": "Bina Nusantara University",
       "area": "Computer Science",
-      "studyType": "M.S.",
+      "studyType": "Master in Computer Science",
       "startDate": "",
-      "endDate": "",
+      "endDate": "2024",
       "gpa": "3.95",
       "courses": ["Summa Cum Laude"]
     },
     {
-      "institution": "Bina Nusantara University",
+      "institution": "Soegijapranata Catholic University",
       "area": "Computer Science",
-      "studyType": "B.S.",
+      "studyType": "Bachelor in Computer Science",
       "startDate": "",
-      "endDate": "",
+      "endDate": "2022",
       "gpa": null,
-      "courses": ["Best graduate of the cohort"]
+      "courses": ["Best Graduate"]
     }
   ],
   "skills": [

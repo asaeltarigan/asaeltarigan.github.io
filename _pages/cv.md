@@ -95,7 +95,7 @@ redirect_from:
 
 <h2 class="cv-section">Honours and awards</h2>
 <ul class="cv-skills">
-  <li><strong>Summa Cum Laude</strong> Master of Computer Science, BINUS University, 2024. <strong>Best Graduate</strong> Bachelor of Computer Science, Soegijapranata Catholic University, 2022.</li>
+  <li><strong>Summa Cum Laude</strong> Master in Computer Science, Bina Nusantara University, 2024. <strong>Best Graduate</strong> Bachelor in Computer Science, Soegijapranata Catholic University, 2022.</li>
   <li><strong>Faculty Development Program scholarship</strong> full funding for master's studies, BINUS University.</li>
   <li><strong>Bangkit Academy 2022</strong> machine learning path (Google, GoTo, Traveloka). Led the capstone team behind Kerjamin, a freelancing platform that widens income opportunities for rural workers.</li>
 </ul>
